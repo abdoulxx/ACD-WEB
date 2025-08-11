@@ -1,0 +1,40 @@
+# General
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/vendor
+/storage/app
+/bibliotheque.acdcorporateservices.com
+.DS_Store
+/navbar&footer
+
+# Laravel Env Files
+/.env.*
+!.env.example
+.env
+.env.backup
+.env.production
+
+# Laravel Storage
+/storage/app/public
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*.log
+
+# System Files
+*.log
+npm-debug.log
+yarn-error.log
+
+# IDE / Editor Directories
+/.fleet
+/.idea
+/.vscode
+
+# Homestead
+Homestead.json
+Homestead.yaml
+auth.json

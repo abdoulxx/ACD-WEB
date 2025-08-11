@@ -1,0 +1,509 @@
+/* Import Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+
+/* Modern Navbar Styles for ACD Corporate Services */
+
+/* Styles ultra-spécifiques pour notre navbar moderne uniquement */
+.modern-navbar-acd .navbar-toggler {
+  border: none !important;
+  background: transparent !important;
+  padding: 0.25rem 0.5rem !important;
+  position: relative !important;
+  z-index: 9999 !important;
+}
+
+.modern-navbar-acd .navbar-toggler:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.modern-navbar-acd .navbar-toggler-icon {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 1.5em !important;
+  height: 1.5em !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 100% !important;
+}
+
+/* Desktop - Assurer que le burger est caché */
+@media (min-width: 992px) {
+  .modern-navbar-acd .navbar-toggler {
+    display: none !important;
+  }
+}
+
+/* Mobile uniquement - Afficher le burger */
+@media (max-width: 991.98px) {
+  .modern-navbar-acd .navbar-toggler {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    float: right !important;
+    margin-left: auto !important;
+  }
+  
+  .modern-navbar-acd .container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding-left: 5px !important; /* Réduire encore le padding */
+    padding-right: 5px !important;
+  }
+  
+  .modern-navbar-acd .navbar-brand {
+    margin-right: auto !important;
+    margin-left: -10px !important; /* Pousser le logo plus à gauche sur mobile aussi */
+  }
+}
+
+/* Desktop - Logo plus à gauche */
+@media (min-width: 992px) {
+  .modern-navbar-acd .navbar-brand {
+    margin-left: -25px !important; /* Encore plus à gauche sur desktop */
+  }
+  
+  .modern-navbar-acd .container {
+    padding-left: 0 !important;
+  }
+}
+
+.navbar {
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+  background-color: #ffffff !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-scrolled {
+  padding: 0.5rem 0;
+}
+
+.navbar-brand img {
+  transition: all 0.3s ease;
+}
+
+.navbar-scrolled .navbar-brand img {
+  height: 40px !important;
+}
+
+/* Positionner le logo plus à gauche */
+.modern-navbar-acd .navbar-brand {
+  margin-right: auto!important;
+  margin-left: -45px !important; /* Décaler le logo plus à gauche */
+}
+
+.modern-navbar-acd .container {
+  padding-left: 0; /* Réduire le padding gauche du container */
+}
+
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600 !important;
+  color: #6c757d !important;
+  position: relative;
+  margin: 0 0.1rem;
+  padding: 0.5rem 0.5rem !important;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #dc3545 !important;
+  text-decoration: none !important;
+}
+
+/* Dropdown toggle arrows */
+.dropdown-toggle::after {
+  display: inline-block !important;
+  margin-left: 0.5rem;
+  vertical-align: 0.2em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+/* Dropdown toggle arrows */
+.dropdown-toggle::after {
+  display: inline-block !important;
+  margin-left: 0.5rem;
+  vertical-align: 0.2em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.dropdown-toggle:hover::after {
+  border-top-color: #dc3545;
+}
+
+.dropdown-menu {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-top: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dropdown-item {
+  font-family: 'Roboto', sans-serif;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #dc3545;
+  transform: translateX(5px);
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(220,53,69,0.3);
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Language dropdown custom styling */
+.language-selector {
+  font-family: 'Roboto', sans-serif;
+  color: #6c757d !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  padding: 0.5rem 0.5rem !important;
+  margin: 0 0.1rem;
+  transition: all 0.3s ease;
+}
+
+.language-selector:hover {
+  color: #dc3545 !important;
+  text-decoration: none !important;
+}
+
+/* Application button styling - matching original mbutton3 style */
+.btn-candidature {
+  font-family: 'Roboto', sans-serif;
+  background: #FF0000 !important;
+  border: 2px solid #FF0000;
+  color: #FFF !important;
+  margin: 0;
+  padding: 8px 27px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-candidature:hover {
+  color: #FF0000 !important;
+  border: 2px solid #FF0000;
+  background: transparent !important;
+  opacity: 1 !important;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-candidature:focus,
+.btn-candidature:active {
+  color: #FF0000 !important;
+  border: 2px solid #FF0000;
+  background: transparent !important;
+  box-shadow: none;
+}
+
+/* Impact Féminin button styling - same design as candidature */
+.btn-impact-feminin {
+  font-family: 'Roboto', sans-serif;
+  background: #FF0000 !important;
+  border: 2px solid #FF0000;
+  color: #FFF !important;
+  margin: 0 0 0 10px;
+  padding: 8px 27px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-impact-feminin:hover {
+  color: #FF0000 !important;
+  border: 2px solid #FF0000;
+  background: transparent !important;
+  opacity: 1 !important;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-impact-feminin:focus,
+.btn-impact-feminin:active {
+  color: #FF0000 !important;
+  border: 2px solid #FF0000;
+  background: transparent !important;
+  box-shadow: none;
+}
+
+/* Rencontre 2026 button styling - same design as candidature */
+.btn-rencontre-2026 {
+  font-family: 'Roboto', sans-serif;
+  background: #FF0000 !important;
+  border: 2px solid #FF0000;
+  color: #FFF !important;
+  margin: 0 0 0 10px;
+  padding: 8px 27px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-rencontre-2026:hover {
+  color: #FF0000 !important;
+  border: 2px solid #FF0000;
+  background: transparent !important;
+  opacity: 1 !important;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-rencontre-2026:focus,
+.btn-rencontre-2026:active {
+  color: #FF0000 !important;
+  border: 2px solid #FF0000;
+  background: transparent !important;
+  box-shadow: none;
+}
+
+/* Remove the old btn-danger styles */
+.btn-danger {
+  display: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 991.98px) {
+  /* Navbar container et burger button */
+  .modern-navbar-acd .navbar {
+    padding: 0.5rem 0;
+    position: relative;
+  }
+  
+  .modern-navbar-acd .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .modern-navbar-acd .navbar-brand {
+    margin-right: auto;
+  }
+  
+  .modern-navbar-acd .navbar-brand img {
+    height: 40px !important;
+  }
+  
+  .modern-navbar-acd .navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.5rem;
+    margin-left: auto;
+    z-index: 9999;
+  }
+  
+  .modern-navbar-acd .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  /* Menu mobile - positionnement et structure */
+  .modern-navbar-acd .navbar-collapse {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    background-color: #ffffff !important;
+    border-top: 1px solid #e9ecef !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+    z-index: 1000 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 1rem 0 !important;
+  }
+  
+  .modern-navbar-acd .navbar-nav {
+    text-align: center !important;
+    padding: 0 1rem !important;
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+  
+  .modern-navbar-acd .nav-item {
+    margin: 0.5rem 0 !important;
+    width: 100% !important;
+  }
+  
+  .modern-navbar-acd .nav-link {
+    padding: 0.75rem 1rem !important;
+    font-size: 1.1rem !important;
+    border-bottom: 1px solid #f8f9fa !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    color: #333 !important;
+    text-align: center !important;
+  }
+  
+  .modern-navbar-acd .nav-link:hover {
+    background-color: #f8f9fa !important;
+    color: #dc3545 !important;
+  }
+  
+  /* Dropdown dans le mobile */
+  .modern-navbar-acd .dropdown-menu {
+    position: static !important;
+    float: none !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: #f8f9fa !important;
+    padding: 0.5rem 0 !important;
+  }
+  
+  .modern-navbar-acd .dropdown-item {
+    text-align: center !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 1rem !important;
+    color: #666 !important;
+  }
+  
+  .modern-navbar-acd .dropdown-item:hover {
+    background-color: #e9ecef !important;
+    color: #dc3545 !important;
+  }
+  
+  /* Sélecteur de langue mobile */
+  .modern-navbar-acd .language-selector {
+    justify-content: center !important;
+    margin: 1rem 0 !important;
+    padding: 0.75rem 1rem !important;
+    border-bottom: 1px solid #f8f9fa !important;
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  
+  /* Bouton candidature mobile */
+  .modern-navbar-acd .btn-candidature {
+    margin: 1rem auto !important;
+    width: 80% !important;
+    max-width: 200px !important;
+    display: block !important;
+  }
+  
+  /* Bouton impact féminin mobile */
+  .modern-navbar-acd .btn-impact-feminin {
+    margin: 0.5rem auto 1rem auto !important;
+    width: 80% !important;
+    max-width: 200px !important;
+    display: block !important;
+  }
+  
+  /* Bouton rencontre 2026 mobile */
+  .modern-navbar-acd .btn-rencontre-2026 {
+    margin: 0.5rem auto 1rem auto !important;
+    width: 80% !important;
+    max-width: 200px !important;
+    display: block !important;
+  }
+  
+  /* Flèches de dropdown en mobile */
+  .modern-navbar-acd .dropdown-toggle::after {
+    display: inline-block !important;
+    margin-left: 0.3rem !important;
+    vertical-align: 0.1em !important;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+  }
+  
+  .modern-navbar-acd .dropdown-toggle:hover::after {
+    border-top-color: #dc3545 !important;
+  }
+  
+  /* Position relative pour les liens dropdown */
+  .modern-navbar-acd .dropdown-toggle {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  /* Assurer que le body a le bon padding en mobile */
+  body {
+    padding-top: 80px !important;
+  }
+}
+
+/* Body padding for fixed navbar */
+body {
+  padding-top: 100px;
+}
+
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 80px;
+  }
+}
+
+/* Override old styles */
+.header-section {
+  display: none !important;
+}
+
+/* Ensure dropdown arrows work properly */
+.dropdown-toggle::after {
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+/* Active menu highlighting */
+.navbar-nav .nav-item .nav-link.text-danger {
+  font-weight: 700;
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.3s ease;
+}
