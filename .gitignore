@@ -10,6 +10,9 @@
 .DS_Store
 /navbar&footer
 
+# Configuration Files (Sensitive)
+SERVEUR
+
 # Laravel Env Files
 /.env.*
 !.env.example
