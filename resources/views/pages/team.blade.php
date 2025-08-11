@@ -4,11 +4,11 @@
 @section("content")
 
 
-<section class="background-image110 padding-top-bottom3 text-center">
+<<section class="background-image110 padding-top-bottom3 text-center">
     <div class="container">
         <div class="row nopadding">
       
-        <h2 class="big2 white font-weight8">Équipe de Direction Internationale </h2>
+        <h2 class="big2 white font-weight8">{{ __('equipe.team.titre') }}</h2>
         
     </div>
     </div>
@@ -30,8 +30,8 @@
               <div class="textbox">
                 <h5 class="white font-weight6 margin-bottom padding-top7">Dr. Anuraag Guglaani</h5>
                 <p class="white sfont margin-bottom2">
-                  Directeur des Investissements Stratégiques<br>
-                  Expert en finance internationale avec plus de 25 ans d'expérience dans le développement d'investissements transfrontaliers.
+                  {{ __('equipe.direction.anuraag_guglaani.poste') }}<br>
+                  {{ __('equipe.direction.anuraag_guglaani.description') }}
                 </p>
               </div>
             </div>
@@ -44,8 +44,8 @@
               <div class="textbox">
                 <h5 class="white font-weight6 margin-bottom padding-top7">Farooq Cheema</h5>
                 <p class="white sfont margin-bottom2">
-                  Directeur Régional - Émirats Arabes Unis<br>
-                  Spécialiste des marchés du Moyen-Orient avec une expertise reconnue en développement commercial international.
+                  {{ __('equipe.direction.farooq_cheema.poste') }}<br>
+                  {{ __('equipe.direction.farooq_cheema.description') }}
                 </p>
               </div>
             </div>
@@ -58,8 +58,8 @@
               <div class="textbox">
                 <h5 class="white font-weight6 margin-bottom padding-top7">Auguste Deza</h5>
                 <p class="white sfont margin-bottom2">
-                  Directeur Régional - Afrique Francophone<br>
-                  Leader chevronné dans le développement des marchés africains avec une profonde connaissance des enjeux régionaux.
+                  {{ __('equipe.direction.auguste_deza.poste') }}<br>
+                  {{ __('equipe.direction.auguste_deza.description') }}
                 </p>
               </div>
             </div>
@@ -72,8 +72,8 @@
               <div class="textbox">
                 <h5 class="white font-weight6 margin-bottom padding-top7">Sadja Bob</h5>
                 <p class="white sfont margin-bottom2">
-                  Directeur Régional - Inde<br>
-                  Expert en développement commercial sur le marché indien avec une solide expérience dans les partenariats stratégiques.
+                  {{ __('equipe.direction.sadja_bob.poste') }}<br>
+                  {{ __('equipe.direction.sadja_bob.description') }}
                 </p>
               </div>
             </div>
@@ -101,7 +101,7 @@
         <div class="container">
         <div class="row nopadding">
       
-            <h2 class="big2 white font-weight8">Réseau investisseurs international</h2>
+            <h2 class="big2 white font-weight8">{{ __('equipe.reseau_investisseurs') ?? 'Réseau investisseurs international' }}</h2>
         
         </div>
         </div>

@@ -3,6 +3,27 @@
 
 /* Modern Navbar Styles for ACD Corporate Services */
 
+/* Logo styles - Enhanced for desktop */
+.modern-navbar-acd .navbar-brand img,
+.modern-navbar-acd .navbar-logo {
+  height: 70px !important; /* Increased from 50px to 70px for better visibility */
+  width: auto !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Logo hover effect */
+.modern-navbar-acd .navbar-brand:hover img,
+.modern-navbar-acd .navbar-brand:hover .navbar-logo {
+  transform: scale(1.05) !important;
+}
+
+/* Logo responsive - smaller on mobile */
+@media (max-width: 991.98px) {
+  .modern-navbar-acd .navbar-brand img,
+  .modern-navbar-acd .navbar-logo {
+    height: 45px !important; /* Slightly smaller on mobile */
+  }
+}
 /* Styles ultra-spécifiques pour notre navbar moderne uniquement */
 .modern-navbar-acd .navbar-toggler {
   border: none !important;

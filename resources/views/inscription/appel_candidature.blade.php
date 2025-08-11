@@ -1,5 +1,5 @@
 @extends("layouts.app")
-@section('title', 'APPEL À LA CANDIDATURE')
+@section('title', __('candidature.title'))
 @section("content")
 
 
@@ -238,7 +238,7 @@ p {
 <!-- En-tête de la page -->
 <section class="background-image110 padding-top-bottom3 text-center">
   <div class="container">
-    <h2 class="big2 white font-weight8">APPEL À LA CANDIDATURE</h2>
+    <h2 class="big2 white font-weight8">{{ __('candidature.title') }}</h2>
   </div>
 </section>
 
@@ -253,10 +253,10 @@ p {
           <div class="openTabby--slidesContainer">
 
             <!-- Onglet 1 : Catégories -->
-            <section id="1" data-tab-name="Catégories" class="openTabby--slide py-5">
+            <section id="1" data-tab-name="{{ __('candidature.categories.title') }}" class="openTabby--slide py-5">
               <div class="container">
                 <h3 class="font-weight7 text-uppercase text-dark mb-4">
-                  Catégories d'Excellence Sectorielle
+                  {{ __('candidature.categories.excellence_sectorielle') }}
                 </h3>
             
                 <div class="carousel-wrapper">
@@ -267,14 +267,14 @@ p {
                   <div class="horizontal-carousel" id="cardCarousel">
                     @php
                       $categories = [
-                        ['titre' => "Excellence Agro-Industrielle", 'image' => "categories/2.jpg", 'description' => "Leadership en innovation agricole durable..."],
-                        ['titre' => "Excellence Manufacturière", 'image' => "categories/2.jpg", 'description' => "Innovation dans l'industrie 4.0..."],
-                        ['titre' => "Excellence Bancaire & FinTech", 'image' => "categories/3.jpg", 'description' => "Services financiers numériques, blockchain..."],
-                        ['titre' => "Excellence Médicale", 'image' => "categories/4.jpg", 'description' => "Télémédecine, médecine prédictive, soins personnalisés."],
-                        ['titre' => "Innovation Technologique", 'image' => "categories/5.jpg", 'description' => "IA, IoT, cloud computing pour l'Afrique."],
-                        ['titre' => "Excellence en Infrastructure", 'image' => "categories/6.jpg", 'description' => "Mobilité durable, optimisation énergétique..."],
-                        ['titre' => "Excellence Minière", 'image' => "categories/7.jpg", 'description' => "Extraction responsable, technologies vertes..."],
-                        ['titre' => "Des Talents Nationaux", 'image' => "categories/8.jpg", 'description' => "Leaders émergents, vision stratégique..."],
+                        ['titre' => __('candidature.cards.excellence_agro'), 'image' => "categories/2.jpg", 'description' => __('candidature.cards.excellence_agro_desc')],
+                        ['titre' => __('candidature.cards.excellence_manufacturiere'), 'image' => "categories/2.jpg", 'description' => __('candidature.cards.excellence_manufacturiere_desc')],
+                        ['titre' => __('candidature.cards.excellence_bancaire'), 'image' => "categories/3.jpg", 'description' => __('candidature.cards.excellence_bancaire_desc')],
+                        ['titre' => __('candidature.cards.excellence_medicale'), 'image' => "categories/4.jpg", 'description' => __('candidature.cards.excellence_medicale_desc')],
+                        ['titre' => __('candidature.cards.innovation_tech'), 'image' => "categories/5.jpg", 'description' => __('candidature.cards.innovation_tech_desc')],
+                        ['titre' => __('candidature.cards.excellence_infrastructure'), 'image' => "categories/6.jpg", 'description' => __('candidature.cards.excellence_infrastructure_desc')],
+                        ['titre' => __('candidature.cards.excellence_miniere'), 'image' => "categories/7.jpg", 'description' => __('candidature.cards.excellence_miniere_desc')],
+                        ['titre' => __('candidature.cards.talents_nationaux'), 'image' => "categories/8.jpg", 'description' => __('candidature.cards.talents_nationaux_desc')],
                       ];
                     @endphp
             
@@ -284,7 +284,7 @@ p {
                         <h5 class="font-weight5 margin-top2 margin-bottom">{{ $cat['titre'] }}</h5>
                         <p class="margin-bottom1" style="line-height: 20px;">{{ $cat['description'] }}</p>
                         <br/>
-                         <a href="{{ route("appel.formulaire") }}" class="button6 sty3">S'inscrire</a>
+                         <a href="{{ route("appel.formulaire") }}" class="button6 sty3">{{ __("candidature.buttons.inscrire") }}</a>
                       </div>
                     @endforeach
                   </div>
@@ -298,53 +298,15 @@ p {
 
               <div class="container">
                 <h3 class="font-weight7 text-uppercase text-dark mb-4">
-                  Catégories immobilieres
+                  {{ __('candidature.categories.immobilieres') }}
                 </h3>
             
             
                     @php
                       $categories = [
-                        ['titre' => "promoteur
-                        immobilier innovant", 'image' => "categories/9.jpg", 'description' => "Distingue les promoteurs
-                        immobiliers qui excellent dans
-                        la création de projets avantgardistes,
-                        alliant innovation
-                        technologique et développement
-                        durable. Cette récompense
-                        honore ceux qui transforment
-                        le secteur immobilier à
-                        travers des concepts
-                        révolutionnaires et des
-                        solutions d'habitat
-                        intelligent."],
-
-                        ['titre' => "Cabinet architectural
-                        innovant", 'image' => "categories/10.jpg", 'description' => "Récompense l'excellence
-                        architecturale à travers des
-                        projets qui redéfinissent les
-                        standards du design
-                        contemporain. Cette
-                        distinction met en valeur les
-                        cabinets qui créent des
-                        espaces exceptionnels,
-                        conjuguant innovation
-                        technique, respect
-                        environnemental et élégance
-                        architecturale."],
-
-                        ['titre' => "Constructeur
-                        innovant", 'image' => "categories/11.jpg", 'description' => "Honore les constructeurs
-                        d'excellence qui se démarquent
-                        par la qualité exceptionnelle
-                        de leurs réalisations, leur
-                        maîtrise technique et leur
-                        engagement envers la
-                        satisfaction client. Cette
-                        récompense souligne
-                        l'expertise, la fiabilité et
-                        l'innovation dans l'exécution
-                        des projets de construction."],
-                        
+                        ['titre' => __('candidature.cards.promoteur_immobilier'), 'image' => "categories/9.jpg", 'description' => __('candidature.cards.promoteur_immobilier_desc')],
+                        ['titre' => __('candidature.cards.cabinet_architectural'), 'image' => "categories/10.jpg", 'description' => __('candidature.cards.cabinet_architectural_desc')],
+                        ['titre' => __('candidature.cards.constructeur_innovant'), 'image' => "categories/11.jpg", 'description' => __('candidature.cards.constructeur_innovant_desc')],
                       ];
                     @endphp
             
@@ -354,7 +316,7 @@ p {
                         <h5 class="font-weight5 margin-top2 margin-bottom">{{ $cat['titre'] }}</h5>
                         <p class="margin-bottom1" style="line-height: 20px;">{{ $cat['description'] }}</p>
                         <br/>
-                        <a href="{{ route("appel.formulaire") }}" class="button6 sty3">S'inscrire</a>
+                        <a href="{{ route("appel.formulaire") }}" class="button6 sty3">{{ __("candidature.buttons.inscrire") }}</a>
                       </div>
                     @endforeach
                   </div>
@@ -369,85 +331,16 @@ p {
      
                    <div class="container">
                      <h3 class="font-weight7 text-uppercase text-dark mb-4">
-                      Catégories de Prix Techniques
+                      {{ __('candidature.categories.prix_techniques') }}
                      </h3>
                  
                  
                          @php
                            $categories = [
-                             ['titre' => "Aménageur
-                             Foncier
-                             innovant", 'image' => "categories/12.jpg", 'description' => "Reconnaît
-                             l'excellence dans
-                             l'optimisation et
-                             l'aménagement des
-                             terrains, avec une
-                             expertise
-                             particulière dans la
-                             viabilisation
-                             intelligente, la
-                             gestion écologique
-                             des ressources et la
-                             création d'espaces
-                             urbains durables
-                             répondant aux défis
-                             du futur."],
-     
-                             ['titre' => "Génie
-                             Électrique
-                             innovant", 'image' => "categories/13.jpg", 'description' => "Met en valeur les
-                             innovations
-                             révolutionnaires dans
-                             les systèmes
-                             électriques
-                             intelligents,
-                             l'optimisation
-                             énergétique et les
-                             solutions
-                             d'automation
-                             avancées, favorisant
-                             la transition vers
-                             des bâtiments plus
-                             économes et
-                             connectés."],
-     
-                             ['titre' => "Cabinet
-                             Ingénieurie
-                             innovant", 'image' => "categories/14.jpg", 'description' => "Récompense
-                             l'excellence en
-                             ingénierie à travers
-                             des solutions
-                             techniques
-                             innovantes, une
-                             expertise pointue en
-                             calculs structurels
-                             et une vision avantgardiste
-                             dans la
-                             conception de projets
-                             complexes et
-                             durables."],
-
-
-
-                             ['titre' => "Agent
-                             Immobilier
-                             innovant", 'image' => "categories/15.jpg", 'description' => "Distingue les
-                             professionnels de
-                             l'immobilier qui
-                             excellent dans la
-                             gestion de projets
-                             prestigieux,
-                             démontrant une
-                             maîtrise
-                             exceptionnelle des
-                             standards
-                             internationaux et une
-                             capacité à délivrer
-                             des résultats
-                             remarquables avec une
-                             précision technique
-                             irréprochable."],
-                             
+                             __('candidature.categories_techniques.amenageur_foncier'),
+                             __('candidature.categories_techniques.genie_electrique'),
+                             __('candidature.categories_techniques.cabinet_ingenierie'),
+                             __('candidature.categories_techniques.agent_immobilier'),
                            ];
                          @endphp
                  
@@ -457,7 +350,7 @@ p {
                              <h5 class="font-weight5 margin-top2 margin-bottom">{{ $cat['titre'] }}</h5>
                              <p class="margin-bottom1" style="line-height: 20px;">{{ $cat['description'] }}</p>
                              <br/>
-                              <a href="{{ route("appel.formulaire") }}" class="button6 sty3">S'inscrire</a>
+                              <a href="{{ route("appel.formulaire") }}" class="button6 sty3">{{ __("candidature.buttons.inscrire") }}</a>
                            </div>
                          @endforeach
                        </div>
@@ -471,61 +364,16 @@ p {
      
                    <div class="container">
                      <h3 class="font-weight7 text-uppercase text-dark mb-4">
-                      Catégories de Prix Spécialisés
+                      {{ __('candidature.categories.prix_specialises') }}
                      </h3>
                  
                  
                          @php
                            $categories = [
-                             ['titre' => "Urbaniste
-                             Innovant
-                             ", 'image' => "categories/16.jpg", 'description' => "Récompense
-                             l'excellence en
-                             matière de
-                             planification urbaine
-                             innovante et de
-                             conception durable
-                             des espaces publics
-                             qui façonnent les
-                             villes de demain."],
-     
-                             ['titre' => "Cabinet
-                             innovant de
-                             Géomètre", 'image' => "categories/17.jpg", 'description' => "Distingue l'expertise
-                             exceptionnelle dans
-                             les relevés
-                             topographiques, la
-                             cartographie
-                             numérique et les
-                             solutions cadastrales
-                             de haute précision."],
-     
-                             ['titre' => "Ingénieurie en
-                             eau et
-                             assainissement", 'image' => "categories/18.jpg", 'description' => "Célèbre l'innovation
-                             dans les techniques
-                             de forage,
-                             l'excellence en
-                             exploration
-                             géotechnique et la
-                             gestion responsable
-                             des ressources
-                             souterraines."],
-
-
-
-                             ['titre' => "Excellence en
-                             Plomberie", 'image' => "categories/19.jpg", 'description' => "Honore la maîtrise
-                             technique
-                             exceptionnelle dans
-                             les systèmes
-                             hydrauliques,
-                             l'innovation en
-                             plomberie et les
-                             solutions durables
-                             pour le confort
-                             moderne."],
-                             
+                             __('candidature.categories_specialisees.urbaniste'),
+                             __('candidature.categories_specialisees.cabinet_geometre'),
+                             __('candidature.categories_specialisees.ingenierie_eau'),
+                             __('candidature.categories_specialisees.excellence_plomberie'),
                            ];
                          @endphp
                  
@@ -535,7 +383,7 @@ p {
                              <h5 class="font-weight5 margin-top2 margin-bottom">{{ $cat['titre'] }}</h5>
                              <p class="margin-bottom1" style="line-height: 20px;">{{ $cat['description'] }}</p>
                              <br/>
-                              <a href="{{ route("appel.formulaire") }}" class="button6 sty3">S'inscrire</a>
+                              <a href="{{ route("appel.formulaire") }}" class="button6 sty3">{{ __("candidature.buttons.inscrire") }}</a>
                            </div>
                          @endforeach
                        </div>
@@ -551,49 +399,24 @@ p {
 
               <div class="container">
                 <h3 class="font-weight7 text-uppercase text-dark mb-4">
-                  Categorie Gouvernance et
-                  Leadership Administratif
+                  {{ __('candidature.categories.gouvernance_leadership') }}
                 </h3>
             
             
                     @php
                       $categories = [
-                        ['titre' => "Leadership
-                        Visionnaire", 'image' => "categories/9.jpg", 'description' => "Célèbre les dirigeants qui
-                        transforment leur vision en
-                        succès tangible : Gestion stratégique
-                        innovante - Développement de talents
-                        exceptionnels - Impact mesurable sur la
-                        croissance"],
-
-                        ['titre' => "Gouvernance
-                        Éthique", 'image' => "categories/10.jpg", 'description' => "Honore l'excellence en
-                        matière de transparence et
-                        responsabilité : Pratiques commerciales
-                        exemplaires - Conformité réglementaire
-                        rigoureuse - Initiatives de
-                        responsabilité sociale"],
-
-                        ['titre' => "Innovation
-                        Administrative", 'image' => "categories/11.jpg", 'description' => "Récompense les solutions
-                        administratives
-                        révolutionnaires qui
-                        optimisent l'efficacité
-                        organisationnelle : Digitalisation des
-                        processus - Systèmes de gestion
-                        novateurs - Excellence opérationnelle
-                        mesurable"],
-                        
+                        __('candidature.categories_gouvernance_leadership.leadership_visionnaire'),
+                        __('candidature.categories_gouvernance_leadership.gouvernance_ethique'),
+                        __('candidature.categories_gouvernance_leadership.innovation_administrative'),
                       ];
                     @endphp
             
                     @foreach ($categories as $cat)
                       <div class="col-md-4">
-                       
                         <h5 class="font-weight5 margin-top2 margin-bottom">{{ $cat['titre'] }}</h5>
                         <p class="margin-bottom1" style="line-height: 20px;">{{ $cat['description'] }}</p>
                         <br/>
-                         <a href="{{ route("appel.formulaire") }}" class="button6 sty3">S'inscrire</a>
+                         <a href="{{ route("appel.formulaire") }}" class="button6 sty3">{{ __("candidature.buttons.inscrire") }}</a>
                       </div>
                     @endforeach
                   </div>
@@ -608,8 +431,7 @@ p {
 
                   <div class="container">
                     <h3 class="font-weight7 text-uppercase text-dark mb-4">
-                      Categorie Gouvernance et
-                      Leadership Administratif
+                      {{ __('candidature.categories.gestion_ressources') }}
                     </h3>
                 
                     <div class="carousel-wrapper">
@@ -620,61 +442,12 @@ p {
                       <div class="horizontal-carousel" id="cardCarousel">
                         @php
                           $categories = [
-                            ['titre' => "Gestion des
-                            Ressources", 'image' => "categories/20.jpg", 'description' => "Optimisation
-                            exemplaire des
-                            ressources humaines
-                            et financières pour
-                            des résultats
-                            mesurables et
-                            efficaces dans
-                            l'administration
-                            publique."],
-
-                            ['titre' => "Innovation
-                            Administrative", 'image' => "categories/21.jpg", 'description' => "Solutions innovantes
-                            et réformes
-                            transformatives pour
-                            améliorer la qualité
-                            des services publics
-                            et leur
-                            accessibilité."],
-
-                            ['titre' => "Développement
-                            Durable", 'image' => "categories/22.jpg", 'description' => "Leadership dans les
-                            initiatives
-                            environnementales et
-                            l'inclusion sociale
-                            pour un développement
-                            harmonieux et
-                            durable."],
-
-                            ['titre' => "Modernisation
-                            Numérique", 'image' => "categories/23.jpg", 'description' => "Transformation
-                            digitale des services
-                            publics pour une
-                            administration
-                            moderne et
-                            efficiente."],
-
-                            ['titre' => "Impact
-                            Communautaire", 'image' => "categories/24.jpg", 'description' => "Programmes et projets
-                            à fort impact social,
-                            améliorant
-                            directement la vie
-                            des populations
-                            locales."],
-
-                            ['titre' => "Partenariat
-                            Public-Privé", 'image' => "categories/25.jpg", 'description' => "Développement de
-                            collaborations
-                            stratégiques entre
-                            secteurs public et
-                            privé pour une
-                            meilleure efficacité
-                            administrative."],
-
-                           
+                            __('candidature.categories_gestion_ressources.gestion_ressources'),
+                            __('candidature.categories_gestion_ressources.innovation_administrative_2'),
+                            __('candidature.categories_gestion_ressources.developpement_durable'),
+                            __('candidature.categories_gestion_ressources.modernisation_numerique'),
+                            __('candidature.categories_gestion_ressources.impact_communautaire'),
+                            __('candidature.categories_gestion_ressources.partenariat_public_prive'),
                           ];
                         @endphp
                 
@@ -684,7 +457,7 @@ p {
                             <h5 class="font-weight5 margin-top2 margin-bottom">{{ $cat['titre'] }}</h5>
                             <p class="margin-bottom1" style="line-height: 20px;">{{ $cat['description'] }}</p>
                             <br/>
-                             <a href="{{ route("appel.formulaire") }}" class="button6 sty3">S'inscrire</a>
+                             <a href="{{ route("appel.formulaire") }}" class="button6 sty3">{{ __("candidature.buttons.inscrire") }}</a>
                           </div>
                         @endforeach
                       </div>
@@ -701,27 +474,12 @@ p {
             
 
             <!-- Onglet 2 -->
-            <section id="2" data-tab-name="Domaines d'Activités Éligibles" class="openTabby--slide">
+            <section id="2" data-tab-name="{{ __('candidature.domaines.title') }}" class="openTabby--slide">
               <div class="row align-items-center flex-row-reverse">
                 <div class="col-md-12 padding-left3">
-                  <h3 class="font-weight7 margin-bottom2 text-uppercase text-dark">Domaines d'Activités Éligibles</h3>
+                  <h3 class="font-weight7 margin-bottom2 text-uppercase text-dark">{{ __('candidature.domaines.title') }}</h3>
                   <p class="line-height3 text-muted">
-                    Éducation et Formation - Ministères ou départements chargés de l'éducation et de la
-formation professionnelle
-Santé Publique - Administrations responsables de la gestion des infrastructures et des
-politiques sanitaires
-Infrastructures et Transports - Services liés au développement des infrastructures
-routières, ferroviaires, aériennes et maritimes
-Économie et Finances - Institutions gérant les budgets nationaux, la fiscalité, et les
-politiques économiques
-Environnement et Développement Durable - Administrations en charge de la gestion des
-ressources naturelles
-Sécurité et Justice - Ministères ou départements de l'intérieur, de la défense et de la
-justice
-Culture et Tourisme - Responsables de la préservation du patrimoine culturel et du
-développement touristique
-Travail et Affaires Sociales - Administrations en charge des politiques sociales et de
-l'emploi
+                    {{ __('candidature.domaines.content') }}
                   </p>
                 </div>
               </div>
@@ -732,41 +490,12 @@ l'emploi
 
 
             <!-- Onglet 3 -->
-            <section id="3" data-tab-name="Critères d'Évaluation" class="openTabby--slide">
+            <section id="3" data-tab-name="{{ __('candidature.criteres.tab_name') }}" class="openTabby--slide">
               <div class="row align-items-center">
                 <div class="col-md-12 padding-right3">
-                  <h3 class="font-weight7 margin-bottom2 text-uppercase text-dark">Un soutien constant pour vos projets</h3>
+                  <h3 class="font-weight7 margin-bottom2 text-uppercase text-dark">{{ __('candidature.criteres.title') }}</h3>
                   <p class="line-height3 text-muted">
-                    Leadership et Vision Stratégique - Capacité à élaborer et à mettre en Suvre une vision
-                    claire et ambitieuse. Influence positive sur les équipes et les parties prenantes.
-                    1.
-                    Résultats et Impact - Indicateurs clés de performance (KPI) atteints ou dépassés. Impact
-                    mesurable des initiatives sur la vie des citoyens et le développement national.
-                    2.
-                    Innovation et Créativité - Intégration de nouvelles technologies ou méthodologies dans le
-                    fonctionnement des administrations. Mise en place de solutions innovantes aux problèmes
-                    structurels.
-                    3.
-                    Gestion des Ressources - Utilisation optimale des ressources humaines, matérielles et
-                    financières. Transparence dans la gestion des fonds publics.
-                    4.
-                    Contribution au Développement Durable - Initiatives favorisant un développement respectueux
-                    de l'environnement. Actions en faveur de l'inclusion et de la réduction des inégalités.
-                    5.
-                    Réputation et Reconnaissance - Retour positif des citoyens et des bénéficiaires des
-                    services publics. Distinctions ou récompenses précédentes (nationales ou internationales).
-                    6.
-                    Collaboration et Partenariats - Promotion d'une coopération intersectorielle (secteur
-                    privé, ONG, autres administrations). Engagement pour des partenariats gagnant-gagnant.
-                    7.
-                    Intégrité et Éthique - Respect des principes d'éthique et de transparence. Absence de
-                    scandales ou d'accusations de corruption.
-                    8.
-                    Communication et Sensibilisation - Capacité à communiquer efficacement avec le public et
-                    les parties prenantes. Campagnes de sensibilisation réussies.
-                    9.
-                    Résilience et Gestion des Crises - Réaction et adaptation face à des situations d'urgence
-                    ou de crise. Mesures efficaces pour atténuer les impacts des crises.
+                    {{ __('candidature.criteres.content') }}
                   </p>
                 </div>
                
@@ -777,42 +506,12 @@ l'emploi
 
 
             <!-- Onglet 4 -->
-            <section id="4" data-tab-name="Confirmation" class="openTabby--slide">
+            <section id="4" data-tab-name="{{ __('candidature.confirmation.tab_name') }}" class="openTabby--slide">
               <div class="row align-items-center flex-row-reverse">
                 <div class="col-md-12 padding-left3">
-                  <h3 class="font-weight7 margin-bottom2 text-uppercase text-dark">Confirmation pour
-                    le Prix d'Excellence
-                    Dubai</h3>
+                  <h3 class="font-weight7 margin-bottom2 text-uppercase text-dark">{{ __('candidature.confirmation.title') }}</h3>
                   <p class="line-height3 text-muted">
-                    Le processus de confirmation pour le Prix d'Excellence
-                    Dubai repose sur une méthodologie d'évaluation
-                    rigoureuse et internationalement reconnue. Notre
-                    Directeur Régional supervise personnellement chaque
-                    candidature, assurant une analyse approfondie et
-                    impartiale de chaque dossier selon les plus hauts
-                    standards professionnels.
-                    L'évaluation s'appuie sur quatre piliers fondamentaux
-                    :
-                    Conformité réglementaire : Évaluation exhaustive
-                    de la constitution légale de l'entreprise et
-                    vérification des licences professionnelles
-                    requises selon la juridiction applicable.
-                    Excellence en gouvernance : Analyse détaillée de
-                    la structure organisationnelle, incluant la
-                    gestion des ressources humaines et la stratégie
-                    client.
-                    Performance financière : Examen approfondi du
-                    portfolio de projets, des processus d'acquisition,
-                    du chiffre d'affaires et de la gestion de la masse
-                    salariale.
-                    Stratégie commerciale : Évaluation des processus
-                    de vente et des initiatives marketing démontrant
-                    une approche innovante et durable.
-                    À l'issue de cette évaluation minutieuse, les
-                    entreprises candidates reçoivent une notification
-                    officielle par voie électronique dans un délai de cinq
-                    jours ouvrables, les informant de la décision finale
-                    du comité de sélection.
+                    {{ __('candidature.confirmation.content') }}
                   </p>
 
 
@@ -826,7 +525,7 @@ l'emploi
 
                 <div class="col-md-12 padding-left3">
                   <h3 class="font-weight7 margin-bottom2 text-uppercase text-dark">
-                    Notation du Prix d'Excellence International
+                    {{ __('candidature.notation.title') }}
                     </h3>
                   
                     @php
@@ -901,7 +600,7 @@ l'emploi
                         <h5 class="font-weight5 margin-top2 margin-bottom">{{ $cat['titre'] }}</h5>
                         <p class="margin-bottom1" style="line-height: 20px;">{{ $cat['description'] }}</p>
                         <br/>
-                         <a href="{{ route("appel.formulaire") }}" class="button6 sty3">S'inscrire</a>
+                         <a href="{{ route("appel.formulaire") }}" class="button6 sty3">{{ __("candidature.buttons.inscrire") }}</a>
                       </div>
                     @endforeach
 
@@ -915,7 +614,7 @@ l'emploi
 <br/>
         
                   <h3 class="font-weight7 margin-bottom2 text-uppercase text-dark">
-                    Bénéficiaires
+                    {{ __('candidature.beneficiaires.title') }}
                     </h3>
                   
                     @php
@@ -980,7 +679,7 @@ l'emploi
                         <h5 class="font-weight5 margin-top2 margin-bottom">{{ $cat['titre'] }}</h5>
                         <p class="margin-bottom1" style="line-height: 20px;">{{ $cat['description'] }}</p>
                         <br/>
-                         <a href="{{ route("appel.formulaire") }}" class="button6 sty3">S'inscrire</a>
+                         <a href="{{ route("appel.formulaire") }}" class="button6 sty3">{{ __("candidature.buttons.inscrire") }}</a>
                       </div>
                     @endforeach
 

@@ -2,6 +2,8 @@
 
 return [
 
+    'reseau_investisseurs' => 'Red Internacional de Inversores',
+
     'team' => [
         'titre' => 'Nuestro equipo',
         'titre1' => 'Nuestros asesores',
@@ -27,6 +29,25 @@ return [
         Socio Director
         Consejero Delegado - Wazir Advisors',
 
+    ],
+    
+    'direction' => [
+        'anuraag_guglaani' => [
+            'poste' => 'Director de Inversiones Estratégicas',
+            'description' => 'Experto en finanzas internacionales con más de 25 años de experiencia en desarrollo de inversiones transfronterizas.'
+        ],
+        'farooq_cheema' => [
+            'poste' => 'Director Regional - Emiratos Árabes Unidos',
+            'description' => 'Especialista en mercados de Medio Oriente con expertise reconocida en desarrollo comercial internacional.'
+        ],
+        'auguste_deza' => [
+            'poste' => 'Director Regional - África Francófona',
+            'description' => 'Líder experimentado en desarrollo de mercados africanos con profundo conocimiento de los desafíos regionales.'
+        ],
+        'sadja_bob' => [
+            'poste' => 'Director Regional - India',
+            'description' => 'Experto en desarrollo comercial en el mercado indio con sólida experiencia en asociaciones estratégicas.'
+        ]
     ],
 
 

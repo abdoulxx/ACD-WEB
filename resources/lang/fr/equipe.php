@@ -2,6 +2,8 @@
 
 return [
 
+    'reseau_investisseurs' => 'Réseau investisseurs international',
+
     'team' => [
         'titre' => 'Notre équipe',
         'titre1' => 'Nos conseillers',
@@ -27,6 +29,25 @@ return [
         Managing Partner
         CEO - Wazir Advisors',
 
+    ],
+    
+    'direction' => [
+        'anuraag_guglaani' => [
+            'poste' => 'Directeur des Investissements Stratégiques',
+            'description' => 'Expert en finance internationale avec plus de 25 ans d\'expérience dans le développement d\'investissements transfrontaliers.'
+        ],
+        'farooq_cheema' => [
+            'poste' => 'Directeur Régional - Émirats Arabes Unis',
+            'description' => 'Spécialiste des marchés du Moyen-Orient avec une expertise reconnue en développement commercial international.'
+        ],
+        'auguste_deza' => [
+            'poste' => 'Directeur Régional - Afrique Francophone',
+            'description' => 'Leader chevronné dans le développement des marchés africains avec une profonde connaissance des enjeux régionaux.'
+        ],
+        'sadja_bob' => [
+            'poste' => 'Directeur Régional - Inde',
+            'description' => 'Expert en développement commercial sur le marché indien avec une solide expérience dans les partenariats stratégiques.'
+        ]
     ],
 
 
