@@ -1,0 +1,1442 @@
+/*
+==================================================
+    IMPACT FÉMININ - STYLES SPÉCIFIQUES
+==================================================
+Palette de couleurs:
+- Principal: #814cb0
+- Boutons: #ab42b3
+==================================================
+*/
+
+:root {
+    --impact-primary: #814cb0;
+    --impact-button: #ab42b3;
+    --impact-white: #ffffff;
+    --impact-light: #f8f9fa;
+    --impact-dark: #2c3e50;
+    --impact-gradient: linear-gradient(135deg, #814cb0 0%, #ab42b3 100%);
+}
+
+/* ===== SECTION 1 - HERO SECTION ===== */
+.impact-hero {
+    background: var(--impact-gradient);
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.impact-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(129, 76, 176, 0.1);
+    z-index: 1;
+}
+
+.impact-main-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+
+/* Section contenu */
+.impact-content-section {
+    background: #f8f9fa;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.impact-content-section::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: -200px; /* Sort du côté droit */
+    width: 500px;
+    height: 500px;
+    background: transparent; /* Pas de remplissage */
+    border: 50px solid rgba(149, 155, 165, 0.4); /* Contour gris encore plus épais */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.impact-content-section::after {
+    display: none; /* On supprime l'ancienne décoration */
+}
+
+.impact-image-container {
+    position: relative;
+    z-index: 2;
+}
+
+.impact-main-image {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(129, 76, 176, 0.2);
+    border: 4px solid var(--impact-primary);
+}
+
+.impact-text-content {
+    position: relative;
+    z-index: 2;
+    padding-left: 40px;
+}
+
+.impact-section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--impact-primary);
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+.impact-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.impact-candidate-btn {
+    background: var(--impact-button);
+    border: none;
+    padding: 18px 40px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(171, 66, 179, 0.3);
+}
+
+.impact-candidate-btn:hover {
+    background: #9a3ba0;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(171, 66, 179, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+/* ===== SECTION 2 - APPEL À CANDIDATURE ===== */
+.impact-cta-section {
+    background: var(--impact-gradient);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.impact-cta-text {
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 0;
+    font-weight: 400;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.impact-cta-btn {
+    background: transparent;
+    border: 2px solid white;
+    padding: 18px 40px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+.impact-cta-btn:hover {
+    background: white;
+    color: var(--impact-primary);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+/* ===== SECTION 3 - POURQUOI IMPACT FÉMININ ===== */
+.impact-why-section {
+    background: #f8f9fa;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.impact-why-section::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: -200px; /* Sort du côté gauche */
+    width: 500px;
+    height: 500px;
+    background: transparent; /* Pas de remplissage */
+    border: 50px solid rgba(149, 155, 165, 0.4); /* Contour gris épais */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.impact-why-section::after {
+    display: none; /* On supprime l'ancienne décoration */
+
+    background: rgba(129, 76, 176, 0.05);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.impact-why-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--impact-primary);
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.impact-why-description {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== SECTION 4 - PRIX D'IMPACT FÉMININ ===== */
+.impact-awards-section {
+    background: var(--impact-gradient);
+    padding: 100px 0;
+    color: white;
+}
+
+.impact-awards-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.impact-awards-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+.impact-award-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    padding: 0;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.impact-award-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.award-header {
+    padding: 25px 20px 20px 20px;
+    text-align: center;
+    border-bottom: none;
+}
+
+.award-title {
+    background: white;
+    color: var(--impact-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 15px 25px;
+    border-radius: 25px;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.award-content {
+    padding: 20px 25px 30px 25px;
+}
+
+.award-description {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.award-section {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.conditions-list,
+.criteria-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.conditions-list li,
+.criteria-list li {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.impact-awards-btn {
+    background: transparent;
+    border: 2px solid white;
+    padding: 18px 50px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+}
+
+.impact-awards-btn:hover {
+    background: white;
+    color: var(--impact-primary);
+    transform: translateY(-3px);
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+}
+
+/* Animations */
+.impact-fade-in {
+    animation: impactFadeIn 1s ease-out;
+}
+
+.impact-slide-up {
+    animation: impactSlideUp 1s ease-out 0.3s both;
+}
+
+.impact-slide-right {
+    animation: impactSlideRight 1s ease-out 0.6s both;
+}
+
+@keyframes impactFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes impactSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes impactSlideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .impact-main-title {
+        font-size: 2.5rem;
+    }
+    
+    .impact-content-section {
+        padding: 60px 0;
+    }
+    
+    .impact-content-section::before {
+        width: 300px; /* Plus petit sur tablette */
+        height: 300px;
+        right: -150px;
+        top: 30%;
+        border-width: 12px; /* Contour encore plus épais sur tablette */
+    }
+    
+    .impact-text-content {
+        padding-left: 20px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .impact-section-title {
+        font-size: 1.8rem;
+    }
+    
+    .impact-description {
+        font-size: 1rem;
+    }
+    
+    .impact-candidate-btn {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+    
+    .impact-main-image {
+        max-width: 100%;
+    }
+    
+    .impact-cta-section {
+        padding: 60px 0;
+    }
+    
+    .impact-cta-text {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+    
+    .impact-cta-btn {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+    
+    .impact-why-section {
+        padding: 80px 0;
+    }
+    
+    .impact-why-title {
+        font-size: 2rem;
+        padding: 0 20px;
+    }
+    
+    .impact-why-description {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+    
+    /* Responsive pour tous les demi-cercles ajoutés */
+    .impact-why-section::before,
+    .impact-themes-section::before,
+    .impact-programme-section::before,
+    .impact-programme-section::after,
+    .impact-partners-section::before,
+    .impact-partners-section::after {
+        width: 350px !important;
+        height: 350px !important;
+        border-width: 35px !important;
+    }
+    
+    .impact-why-section::before,
+    .impact-programme-section::before,
+    .impact-partners-section::before {
+        left: -175px !important;
+    }
+    
+    .impact-themes-section::before,
+    .impact-programme-section::after,
+    .impact-partners-section::after {
+        right: -175px !important;
+    }
+    
+    .impact-awards-section {
+        padding: 80px 0;
+    }
+    
+    .impact-awards-title {
+        font-size: 2.2rem;
+        padding: 0 20px;
+    }
+    
+    .impact-awards-subtitle {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    
+    .impact-award-card {
+        margin-bottom: 30px;
+    }
+    
+    .award-content {
+        padding: 20px 15px;
+    }
+    
+    .impact-awards-btn {
+        padding: 15px 35px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .impact-main-title {
+        font-size: 2rem;
+        padding: 0 20px;
+    }
+    
+    .impact-content-section::before {
+        width: 200px; /* Encore plus petit sur mobile */
+        height: 200px;
+        right: -100px;
+        top: 40%;
+        border-width: 10px; /* Contour encore plus épais sur mobile */
+    }
+    
+    .impact-section-title {
+        font-size: 1.5rem;
+    }
+    
+    .impact-text-content {
+        padding-left: 0;
+    }
+    
+    .impact-cta-text {
+        font-size: 1rem;
+    }
+    
+    .impact-why-title {
+        font-size: 1.8rem;
+    }
+    
+    /* Responsive mobile pour tous les demi-cercles */
+    .impact-why-section::before,
+    .impact-themes-section::before,
+    .impact-programme-section::before,
+    .impact-programme-section::after,
+    .impact-partners-section::before,
+    .impact-partners-section::after {
+        width: 250px !important;
+        height: 250px !important;
+        border-width: 25px !important;
+    }
+    
+    .impact-why-section::before,
+    .impact-programme-section::before,
+    .impact-partners-section::before {
+        left: -125px !important;
+    }
+    
+    .impact-themes-section::before,
+    .impact-programme-section::after,
+    .impact-partners-section::after {
+        right: -125px !important;
+    }
+    
+    .impact-why-description {
+        font-size: 1rem;
+    }
+    
+    .impact-why-description br {
+        display: none;
+    }
+    
+    .impact-awards-title {
+        font-size: 1.8rem;
+    }
+    
+    .impact-awards-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .award-title {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+    
+    .award-description {
+        font-size: 0.9rem;
+    }
+    
+    .conditions-list li,
+    .criteria-list li {
+        font-size: 0.85rem;
+    }
+}
+
+/* Décoration géométrique */
+.impact-decoration {
+    position: absolute;
+    z-index: 1;
+}
+
+.impact-decoration-1 {
+    top: 10%;
+    right: 10%;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.impact-decoration-2 {
+    bottom: 20%;
+    left: 5%;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    animation: float 4s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* ===== SECTION 5 - THÉMATIQUES ABORDÉES ===== */
+.impact-themes-section {
+    background: linear-gradient(135deg, rgba(129, 76, 176, 0.08) 0%, rgba(171, 66, 179, 0.03) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.impact-themes-section::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -200px; /* Sort du côté droit */
+    width: 500px;
+    height: 500px;
+    background: transparent; /* Pas de remplissage */
+    border: 50px solid rgba(149, 155, 165, 0.4); /* Contour gris épais */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.themes-main-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--impact-primary);
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.theme-card {
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(129, 76, 176, 0.15);
+    transition: all 0.4s ease;
+    height: 600px;
+    border: 3px solid var(--impact-primary);
+}
+
+.theme-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(129, 76, 176, 0.25);
+}
+
+.theme-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.theme-card:hover .theme-image {
+    transform: scale(1.05);
+}
+
+.theme-overlay {
+    position: absolute;
+    bottom: 2px;
+    left: 15px;
+    right: 15px;
+    padding: 20px;
+    border-radius: 0 0 37px 37px;
+}
+
+.theme-content {
+    text-align: center;
+}
+
+.theme-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--impact-primary);
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.theme-description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.impact-reserve-btn {
+    background: var(--impact-primary);
+    color: white;
+    padding: 18px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(129, 76, 176, 0.3);
+}
+
+.impact-reserve-btn:hover {
+    background: var(--impact-secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(129, 76, 176, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive pour les thématiques */
+@media (max-width: 768px) {
+    .themes-main-title {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .theme-card {
+        height: 450px;
+        border-width: 2px;
+    }
+    
+    .theme-overlay {
+        bottom: 5px;
+        left: 10px;
+        right: 10px;
+        padding: 20px;
+        border-radius: 0 0 35px 35px;
+    }
+    
+    .theme-title {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+    
+    .theme-description {
+        font-size: 0.9rem;
+    }
+    
+    .impact-reserve-btn {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+}
+
+/* ===== SECTION 6 - APPEL À LA CANDIDATURE ===== */
+.impact-candidature-section {
+    background: var(--impact-gradient);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.candidature-main-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.candidature-subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto 4rem auto;
+}
+
+.candidature-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    padding: 0;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    transition: all 0.4s ease;
+    overflow: hidden;
+    min-height: 320px;
+}
+
+.candidature-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.candidature-header {
+    padding: 30px 25px 20px 25px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.candidature-card-title {
+    background: white;
+    color: var(--impact-primary);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 15px 25px;
+    border-radius: 25px;
+    display: inline-block;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.candidature-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.candidature-question {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.candidature-description {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.impact-candidature-btn {
+    background: white;
+    color: var(--impact-primary);
+    padding: 20px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+    border: 3px solid white;
+}
+
+.impact-candidature-btn:hover {
+    background: transparent;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+}
+
+/* Responsive pour la section candidature */
+@media (max-width: 768px) {
+    .impact-candidature-section {
+        padding: 80px 0;
+    }
+    
+    .candidature-main-title {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .candidature-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+        padding: 0 20px;
+    }
+    
+    .candidature-card {
+        min-height: 280px;
+        margin-bottom: 25px;
+    }
+    
+    .candidature-header {
+        padding: 25px 20px 15px 20px;
+    }
+    
+    .candidature-card-title {
+        font-size: 1.1rem;
+        padding: 12px 20px;
+    }
+    
+    .candidature-content {
+        padding: 20px;
+    }
+    
+    .candidature-question {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    
+    .candidature-description {
+        font-size: 0.95rem;
+    }
+    
+    .impact-candidature-btn {
+        padding: 16px 40px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .candidature-main-title {
+        font-size: 1.8rem;
+        padding: 0 20px;
+    }
+    
+    .candidature-subtitle {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+    
+    .candidature-card {
+        min-height: 260px;
+    }
+    
+    .candidature-card-title {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+    
+    .candidature-question {
+        font-size: 0.95rem;
+    }
+    
+    .candidature-description {
+        font-size: 0.9rem;
+    }
+    
+    .impact-candidature-btn {
+        padding: 14px 30px;
+        font-size: 1rem;
+    }
+}
+
+/* ===== SECTION 7 - PROGRAMME OFFICIEL ===== */
+.impact-programme-section {
+    background: linear-gradient(135deg, rgba(129, 76, 176, 0.08) 0%, rgba(171, 66, 179, 0.03) 100%);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.impact-programme-section::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: -200px; /* Sort du côté gauche */
+    width: 500px;
+    height: 500px;
+    background: transparent; /* Pas de remplissage */
+    border: 50px solid rgba(149, 155, 165, 0.4); /* Contour gris épais */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.impact-programme-section::after {
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    right: -200px; /* Sort du côté droit */
+    width: 500px;
+    height: 500px;
+    background: transparent; /* Pas de remplissage */
+    border: 50px solid rgba(149, 155, 165, 0.4); /* Contour gris épais */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.programme-main-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--impact-primary);
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.programme-card {
+    background: transparent;
+    border-radius: 25px;
+    padding: 0;
+    height: 100%;
+    box-shadow: none;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    border: 2px solid var(--impact-primary);
+    min-height: 200px;
+}
+
+.programme-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(129, 76, 176, 0.3);
+    border-color: var(--impact-primary);
+}
+
+.programme-header {
+    padding: 25px;
+    text-align: left;
+    position: relative;
+}
+
+.programme-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--impact-primary);
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.programme-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.programme-time {
+    background: transparent;
+    color: var(--impact-primary);
+    padding: 0;
+    border-radius: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.programme-details {
+    padding: 0 25px 25px 25px;
+    border-top: 1px solid rgba(129, 76, 176, 0.1);
+    margin-top: 15px;
+    text-align: left;
+}
+
+.programme-details p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 15px 0 0 0;
+}
+
+/* Effet spécial pour les cartes avec détails */
+.programme-card:has(.programme-details) {
+    min-height: 280px;
+}
+
+.programme-card:has(.programme-details) .programme-header {
+    background: linear-gradient(135deg, rgba(129, 76, 176, 0.05) 0%, rgba(171, 66, 179, 0.02) 100%);
+}
+
+/* Responsive pour la section programme */
+@media (max-width: 768px) {
+    .impact-programme-section {
+        padding: 80px 0;
+    }
+    
+    .programme-main-title {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .programme-card {
+        margin-bottom: 25px;
+        min-height: 180px;
+    }
+    
+    .programme-card:has(.programme-details) {
+        min-height: 250px;
+    }
+    
+    .programme-header {
+        padding: 20px;
+    }
+    
+    .programme-title {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+    
+    .programme-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+    }
+    
+    .programme-time {
+        padding: 6px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .programme-details {
+        padding: 0 20px 20px 20px;
+    }
+    
+    .programme-details p {
+        font-size: 0.85rem;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .programme-main-title {
+        font-size: 1.8rem;
+        padding: 0 20px;
+    }
+    
+    .programme-card {
+        min-height: 160px;
+    }
+    
+    .programme-card:has(.programme-details) {
+        min-height: 220px;
+    }
+    
+    .programme-header {
+        padding: 18px;
+    }
+    
+    .programme-title {
+        font-size: 1.1rem;
+    }
+    
+    .programme-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .programme-time {
+        padding: 5px 14px;
+        font-size: 0.85rem;
+    }
+    
+    .programme-details {
+        padding: 0 18px 18px 18px;
+    }
+    
+    .programme-details p {
+        font-size: 0.8rem;
+    }
+}
+
+.impact-programme-btn {
+    background: var(--impact-primary);
+    color: white;
+    padding: 18px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(129, 76, 176, 0.3);
+}
+
+.impact-programme-btn:hover {
+    background: var(--impact-button);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(129, 76, 176, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+/* ===== SECTION 8 - INTERVENANTS & PANÉLISTES ===== */
+.impact-speakers-section {
+    background: var(--impact-gradient);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.speakers-main-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.speaker-card {
+    background: white;
+    border-radius: 25px;
+    padding: 0;
+    height: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.speaker-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.speaker-image-container {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+
+.speaker-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.speaker-card:hover .speaker-image {
+    transform: scale(1.1);
+}
+
+.speaker-info {
+    padding: 25px;
+    text-align: center;
+}
+
+.speaker-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--impact-primary);
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.speaker-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.speaker-company {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 0;
+    font-style: italic;
+}
+
+.impact-speakers-btn {
+    background: transparent;
+    color: white;
+    padding: 18px 40px;
+    border: 3px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.impact-speakers-btn:hover {
+    background: white;
+    color: var(--impact-primary);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+
+/* Responsive pour les intervenants */
+@media (max-width: 768px) {
+    .impact-speakers-section {
+        padding: 80px 0;
+    }
+    
+    .speakers-main-title {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .speaker-card {
+        min-height: 350px;
+        margin-bottom: 25px;
+    }
+    
+    .speaker-image-container {
+        height: 220px;
+    }
+    
+    .speaker-info {
+        padding: 20px;
+    }
+    
+    .speaker-name {
+        font-size: 1.2rem;
+    }
+    
+    .speaker-title {
+        font-size: 0.95rem;
+    }
+    
+    .speaker-company {
+        font-size: 0.85rem;
+    }
+    
+    .impact-speakers-btn {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .speakers-main-title {
+        font-size: 1.8rem;
+        padding: 0 20px;
+    }
+    
+    .speaker-card {
+        min-height: 320px;
+    }
+    
+    .speaker-image-container {
+        height: 180px;
+    }
+    
+    .speaker-info {
+        padding: 15px;
+    }
+    
+    .speaker-name {
+        font-size: 1.1rem;
+    }
+    
+    .speaker-title {
+        font-size: 0.9rem;
+    }
+    
+    .speaker-company {
+        font-size: 0.8rem;
+    }
+}
+
+/* ===== SECTION 9 - PARTENAIRES ===== */
+.impact-partners-section {
+    background: white;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.impact-partners-section::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: -200px; /* Sort du côté gauche */
+    width: 500px;
+    height: 500px;
+    background: transparent; /* Pas de remplissage */
+    border: 50px solid rgba(149, 155, 165, 0.4); /* Contour gris épais */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.impact-partners-section::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    right: -200px; /* Sort du côté droit */
+    width: 500px;
+    height: 500px;
+    background: transparent; /* Pas de remplissage */
+    border: 50px solid rgba(149, 155, 165, 0.4); /* Contour gris épais */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.partners-main-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--impact-primary);
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.partner-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.partner-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.partner-logo:hover .partner-image {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive pour les partenaires */
+@media (max-width: 768px) {
+    .impact-partners-section {
+        padding: 80px 0;
+    }
+    
+    .partners-main-title {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .partner-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .partners-main-title {
+        font-size: 1.8rem;
+        padding: 0 20px;
+    }
+    
+    .partner-image {
+        width: 80px;
+        height: 80px;
+    }
+}
