@@ -225,7 +225,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center mb-5">
-                    <h2 class="themes-main-title impact-slide-up" data-aos="fade-up" data-aos-duration="1000">Thématiques Abordées</h2>
+                    <h2 class="themes-main-title" data-aos="fade-up" data-aos-duration="1000">Thématiques Abordées</h2>
                 </div>
             </div>
         </div>
@@ -234,7 +234,7 @@
         <div class="row g-4 justify-content-center">
             <!-- Thématique 1 : Entrepreneuriat Féminin -->
             <div class="col-lg-5 col-md-6">
-                <div class="theme-card impact-slide-up" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                <div class="theme-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                     <img src="{{ asset('assets/images/impact-feminin/image2.png') }}" alt="Entrepreneuriat Féminin" class="theme-image">
                     <div class="theme-overlay">
                         <div class="theme-content">
@@ -249,7 +249,7 @@
             
             <!-- Thématique 2 : Leadership Féminin -->
             <div class="col-lg-5 col-md-6">
-                <div class="theme-card impact-slide-up" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                <div class="theme-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
                     <img src="{{ asset('assets/images/impact-feminin/image3.png') }}" alt="Leadership Féminin" class="theme-image">
                     <div class="theme-overlay">
                         <div class="theme-content">
@@ -267,7 +267,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center mt-5">
-                    <a href="#" class="impact-reserve-btn impact-slide-up" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <a href="#" class="impact-reserve-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                         Je réserve ma place
                     </a>
                 </div>
@@ -283,8 +283,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center mb-4">
-                    <h2 class="candidature-main-title impact-slide-up" data-aos="fade-up" data-aos-duration="1000">Appel à la Candidature</h2>
-                    <p class="candidature-subtitle impact-slide-up" data-aos="fade-up" data-aos-delay="300">
+                    <h2 class="candidature-main-title" data-aos="fade-up" data-aos-duration="1000">Appel à la Candidature</h2>
+                    <p class="candidature-subtitle" data-aos="fade-up" data-aos-delay="300">
                         Que vous soyez femme entrepreneure, partenaire engagé ou marque visionnaire, il existe une place pour vous dans cet événement unique.<br>
                         Faites partie de celles et ceux qui écrivent l'histoire.
                     </p>
@@ -296,7 +296,7 @@
         <div class="row g-4 justify-content-center mb-5">
             <!-- Devenir Participant -->
             <div class="col-lg-4 col-md-6">
-                <div class="candidature-card impact-slide-up" data-aos="zoom-in" data-aos-delay="100">
+                <div class="candidature-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="candidature-header">
                         <h3 class="candidature-card-title">Devenir Participant</h3>
                     </div>
@@ -313,7 +313,7 @@
             
             <!-- Devenir Sponsor -->
             <div class="col-lg-4 col-md-6">
-                <div class="candidature-card impact-slide-up" data-aos="zoom-in" data-aos-delay="300">
+                <div class="candidature-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="candidature-header">
                         <h3 class="candidature-card-title">Devenir Sponsor</h3>
                     </div>
@@ -330,7 +330,7 @@
             
             <!-- Devenir Exposant -->
             <div class="col-lg-4 col-md-6">
-                <div class="candidature-card impact-slide-up" data-aos="zoom-in" data-aos-delay="500">
+                <div class="candidature-card" data-aos="zoom-in" data-aos-delay="500">
                     <div class="candidature-header">
                         <h3 class="candidature-card-title">Devenir Exposant</h3>
                     </div>
@@ -350,7 +350,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center">
-                    <a href="#" class="impact-candidature-btn impact-slide-up">
+                    <a href="#" class="impact-candidature-btn">
                         Je réserve ma place
                     </a>
                 </div>
@@ -366,7 +366,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center mb-5">
-                    <h2 class="programme-main-title impact-slide-up" data-aos="fade-up" data-aos-duration="1000">PROGRAMME OFFICIEL</h2>
+                    <h2 class="programme-main-title" data-aos="fade-up" data-aos-duration="1000">PROGRAMME OFFICIEL</h2>
                 </div>
             </div>
         </div>
@@ -375,7 +375,7 @@
         <div class="row g-4">
             <!-- Accueil & Installation -->
             <div class="col-lg-6 col-md-6">
-                <div class="programme-card impact-slide-up" data-aos="fade-left" data-aos-delay="100">
+                <div class="programme-card" data-aos="fade-left" data-aos-delay="100">
                     <div class="programme-header">
                         <h3 class="programme-title">Accueil & Installation</h3>
                         <p class="programme-subtitle">Enregistrement et distribution des badges.</p>
@@ -386,7 +386,7 @@
             
             <!-- Mot de bienvenue -->
             <div class="col-lg-6 col-md-6">
-                <div class="programme-card impact-slide-up" data-aos="fade-right" data-aos-delay="200">
+                <div class="programme-card" data-aos="fade-right" data-aos-delay="200">
                     <div class="programme-header">
                         <h3 class="programme-title">Mot de bienvenue</h3>
                         <p class="programme-subtitle">Ouverture officielle de la cérémonie.</p>
@@ -397,7 +397,7 @@
             
             <!-- Panel -->
             <div class="col-lg-6 col-md-6">
-                <div class="programme-card impact-slide-up" data-aos="fade-left" data-aos-delay="300">
+                <div class="programme-card" data-aos="fade-left" data-aos-delay="300">
                     <div class="programme-header">
                         <h3 class="programme-title">Panel</h3>
                         <p class="programme-subtitle">« L'Entrepreneuriat féminin au service de l'impact social ».</p>
@@ -411,7 +411,7 @@
             
             <!-- Atelier Interactif -->
             <div class="col-lg-6 col-md-6">
-                <div class="programme-card impact-slide-up" data-aos="fade-right" data-aos-delay="400">
+                <div class="programme-card" data-aos="fade-right" data-aos-delay="400">
                     <div class="programme-header">
                         <h3 class="programme-title">Atelier Interactif</h3>
                         <p class="programme-subtitle">« Structurer son entreprise à impact ».</p>
@@ -425,7 +425,7 @@
             
             <!-- Remise des Prix -->
             <div class="col-lg-6 col-md-6">
-                <div class="programme-card impact-slide-up" data-aos="fade-left" data-aos-delay="500">
+                <div class="programme-card" data-aos="fade-left" data-aos-delay="500">
                     <div class="programme-header">
                         <h3 class="programme-title">Remise des Prix</h3>
                         <p class="programme-subtitle">Cérémonie de remise des prix d'Impact Féminin.</p>
@@ -444,7 +444,7 @@
             
             <!-- Cocktail de Clôture -->
             <div class="col-lg-6 col-md-6">
-                <div class="programme-card impact-slide-up" data-aos="fade-right" data-aos-delay="600">
+                <div class="programme-card" data-aos="fade-right" data-aos-delay="600">
                     <div class="programme-header">
                         <h3 class="programme-title">Cocktail de Clôture</h3>
                         <p class="programme-subtitle">Moment privilégié pour les échanges, le networking, les photos et plus encore.</p>
@@ -461,7 +461,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center mt-5">
-                    <a href="#" class="impact-programme-btn impact-slide-up">
+                    <a href="#" class="impact-programme-btn">
                         Je réserve ma place
                     </a>
                 </div>
@@ -477,7 +477,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center mb-5">
-                    <h2 class="speakers-main-title impact-slide-up" data-aos="fade-up" data-aos-duration="1000">Intervenants & Panélistes</h2>
+                    <h2 class="speakers-main-title" data-aos="fade-up" data-aos-duration="1000">Intervenants & Panélistes</h2>
                 </div>
             </div>
         </div>
@@ -486,7 +486,7 @@
         <div class="row g-4 justify-content-center mb-5">
             <!-- Intervenant 1 -->
             <div class="col-lg-3 col-md-6">
-                <div class="speaker-card impact-slide-up" data-aos="fade-up" data-aos-delay="100">
+                <div class="speaker-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="speaker-image-container">
                         <img src="{{ asset('assets/images/impact-feminin/speaker.jpg') }}" alt="Intervenante 1" class="speaker-image">
                     </div>
@@ -500,7 +500,7 @@
             
             <!-- Intervenant 2 -->
             <div class="col-lg-3 col-md-6">
-                <div class="speaker-card impact-slide-up" data-aos="fade-up" data-aos-delay="200">
+                <div class="speaker-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="speaker-image-container">
                         <img src="{{ asset('assets/images/impact-feminin/speaker.jpg') }}" alt="Intervenante 2" class="speaker-image">
                     </div>
@@ -514,7 +514,7 @@
             
             <!-- Intervenant 3 -->
             <div class="col-lg-3 col-md-6">
-                <div class="speaker-card impact-slide-up" data-aos="fade-up" data-aos-delay="300">
+                <div class="speaker-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="speaker-image-container">
                         <img src="{{ asset('assets/images/impact-feminin/speaker.jpg') }}" alt="Intervenante 3" class="speaker-image">
                     </div>
@@ -528,7 +528,7 @@
             
             <!-- Intervenant 4 -->
             <div class="col-lg-3 col-md-6">
-                <div class="speaker-card impact-slide-up" data-aos="fade-up" data-aos-delay="400">
+                <div class="speaker-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="speaker-image-container">
                         <img src="{{ asset('assets/images/impact-feminin/speaker.jpg') }}" alt="Intervenante 4" class="speaker-image">
                     </div>
@@ -545,7 +545,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center">
-                    <a href="#" class="impact-speakers-btn impact-slide-up" data-aos="fade-up" data-aos-delay="500">
+                    <a href="#" class="impact-speakers-btn" data-aos="fade-up" data-aos-delay="500">
                         Je réserve ma place
                     </a>
                 </div>
@@ -561,7 +561,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center mb-5">
-                    <h2 class="partners-main-title impact-slide-up" data-aos="fade-up" data-aos-duration="1000">Partenaires</h2>
+                    <h2 class="partners-main-title" data-aos="fade-up" data-aos-duration="1000">Partenaires</h2>
                 </div>
             </div>
         </div>
@@ -570,34 +570,34 @@
         <div class="row justify-content-center">
             <!-- Première rangée -->
             <div class="col-lg-2 col-md-3 col-4 mb-4">
-                <div class="partner-logo impact-slide-up" data-aos="zoom-in" data-aos-delay="100">
+                <div class="partner-logo" data-aos="zoom-in" data-aos-delay="100">
                     <img src="{{ asset('assets/images/impact-feminin/logo.png') }}" alt="Partenaire" class="partner-image">
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-4 mb-4">
-                <div class="partner-logo impact-slide-up" data-aos="zoom-in" data-aos-delay="200">
+                <div class="partner-logo" data-aos="zoom-in" data-aos-delay="200">
                     <img src="{{ asset('assets/images/impact-feminin/logo.png') }}" alt="Partenaire" class="partner-image">
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-4 mb-4">
-                <div class="partner-logo impact-slide-up" data-aos="zoom-in" data-aos-delay="300">
+                <div class="partner-logo" data-aos="zoom-in" data-aos-delay="300">
                     <img src="{{ asset('assets/images/impact-feminin/logo.png') }}" alt="Partenaire" class="partner-image">
                 </div>
             </div>
             
             <!-- Deuxième rangée -->
             <div class="col-lg-2 col-md-3 col-4 mb-4">
-                <div class="partner-logo impact-slide-up" data-aos="zoom-in" data-aos-delay="400">
+                <div class="partner-logo" data-aos="zoom-in" data-aos-delay="400">
                     <img src="{{ asset('assets/images/impact-feminin/logo.png') }}" alt="Partenaire" class="partner-image">
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-4 mb-4">
-                <div class="partner-logo impact-slide-up" data-aos="zoom-in" data-aos-delay="500">
+                <div class="partner-logo" data-aos="zoom-in" data-aos-delay="500">
                     <img src="{{ asset('assets/images/impact-feminin/logo.png') }}" alt="Partenaire" class="partner-image">
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-4 mb-4">
-                <div class="partner-logo impact-slide-up" data-aos="zoom-in" data-aos-delay="600">
+                <div class="partner-logo" data-aos="zoom-in" data-aos-delay="600">
                     <img src="{{ asset('assets/images/impact-feminin/logo.png') }}" alt="Partenaire" class="partner-image">
                 </div>
             </div>
@@ -608,26 +608,7 @@
 <!-- Script pour les animations au scroll -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Animation au scroll
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate__animated', 'animate__fadeInUp');
-            }
-        });
-    }, observerOptions);
-
-    // Observer tous les éléments avec animation
-    document.querySelectorAll('.impact-slide-up, .impact-slide-right').forEach(el => {
-        observer.observe(el);
-    });
-
-    // Smooth scroll pour les liens
+    // Smooth scroll pour les liens d'ancrage
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -641,18 +622,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Initialiser AOS
+    // Initialiser la bibliothèque d'animation AOS
     AOS.init({
-        duration: 800,
-        once: false,
-        offset: 20,
-        easing: 'ease-out-cubic',
-        disable: false,
-        mirror: true
+        duration: 800,         // Durée de l'animation
+        once: false,           // L'animation se répète à chaque défilement
+        offset: 50,            // Décalage pour déclencher l'animation (en px)
+        easing: 'ease-out-cubic', // Courbe de vitesse de l'animation
+        mirror: false          // L'animation ne se joue qu'une fois dans chaque direction
     });
-
-    // Debug AOS - optionnel
-    console.log('AOS éléments détectés:', document.querySelectorAll('[data-aos]').length);
 });
 </script>
 

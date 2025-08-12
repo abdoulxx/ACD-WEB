@@ -14,7 +14,7 @@ Palette de couleurs:
     --impact-white: #ffffff;
     --impact-light: #f8f9fa;
     --impact-dark: #2c3e50;
-    --impact-gradient: linear-gradient(135deg, #814cb0 0%, #ab42b3 100%);
+    --impact-gradient: linear-gradient(to right, #E640A2, #6A2BBF);
 }
 
 /* ===== SECTION 1 - HERO SECTION ===== */
@@ -107,7 +107,7 @@ Palette de couleurs:
 }
 
 .impact-candidate-btn {
-    background: var(--impact-button);
+    background: #B75FBE;
     border: none;
     padding: 18px 40px;
     border-radius: 50px;
@@ -121,11 +121,11 @@ Palette de couleurs:
 }
 
 .impact-candidate-btn:hover {
-    background: #9a3ba0;
     transform: translateY(-3px);
     box-shadow: 0 12px 35px rgba(171, 66, 179, 0.4);
     color: white;
     text-decoration: none;
+    filter: brightness(95%);
 }
 
 /* ===== SECTION 2 - APPEL À CANDIDATURE ===== */
@@ -146,8 +146,8 @@ Palette de couleurs:
 }
 
 .impact-cta-btn {
-    background: transparent;
-    border: 2px solid white;
+    background: #B75FBE;
+    border: none;
     padding: 18px 40px;
     border-radius: 50px;
     color: white;
@@ -160,10 +160,10 @@ Palette de couleurs:
 }
 
 .impact-cta-btn:hover {
-    background: white;
-    color: var(--impact-primary);
     transform: translateY(-2px);
     text-decoration: none;
+    filter: brightness(95%);
+    color: white;
 }
 
 /* ===== SECTION 3 - POURQUOI IMPACT FÉMININ ===== */
@@ -312,8 +312,8 @@ Palette de couleurs:
 }
 
 .impact-awards-btn {
-    background: transparent;
-    border: 2px solid white;
+    background: #B75FBE;
+    border: none;
     padding: 18px 50px;
     border-radius: 50px;
     color: white;
@@ -326,11 +326,11 @@ Palette de couleurs:
 }
 
 .impact-awards-btn:hover {
-    background: white;
-    color: var(--impact-primary);
     transform: translateY(-3px);
     text-decoration: none;
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+    filter: brightness(95%);
+    color: white;
 }
 
 /* Animations */
@@ -704,7 +704,8 @@ Palette de couleurs:
 }
 
 .impact-reserve-btn {
-    background: var(--impact-primary);
+    background: #B75FBE;
+    border: none;
     color: white;
     padding: 18px 40px;
     border-radius: 50px;
@@ -717,11 +718,11 @@ Palette de couleurs:
 }
 
 .impact-reserve-btn:hover {
-    background: var(--impact-secondary);
     transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(129, 76, 176, 0.4);
     color: white;
     text-decoration: none;
+    filter: brightness(95%);
 }
 
 /* Responsive pour les thématiques */
@@ -843,8 +844,8 @@ Palette de couleurs:
 }
 
 .impact-candidature-btn {
-    background: white;
-    color: var(--impact-primary);
+    background: #B75FBE;
+    color: white;
     padding: 20px 50px;
     border-radius: 50px;
     text-decoration: none;
@@ -853,15 +854,15 @@ Palette de couleurs:
     display: inline-block;
     transition: all 0.3s ease;
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
-    border: 3px solid white;
+    border: none;
 }
 
 .impact-candidature-btn:hover {
-    background: transparent;
-    color: white;
     transform: translateY(-3px);
     box-shadow: 0 15px 40px rgba(255, 255, 255, 0.4);
     text-decoration: none;
+    filter: brightness(95%);
+    color: white;
 }
 
 /* Responsive pour la section candidature */
@@ -1155,7 +1156,8 @@ Palette de couleurs:
 }
 
 .impact-programme-btn {
-    background: var(--impact-primary);
+    background: #B75FBE;
+    border: none;
     color: white;
     padding: 18px 40px;
     border-radius: 50px;
@@ -1168,11 +1170,11 @@ Palette de couleurs:
 }
 
 .impact-programme-btn:hover {
-    background: var(--impact-button);
     transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(129, 76, 176, 0.4);
     color: white;
     text-decoration: none;
+    filter: brightness(95%);
 }
 
 /* ===== SECTION 8 - INTERVENANTS & PANÉLISTES ===== */
@@ -1254,10 +1256,10 @@ Palette de couleurs:
 }
 
 .impact-speakers-btn {
-    background: transparent;
+    background: #B75FBE;
     color: white;
     padding: 18px 40px;
-    border: 3px solid white;
+    border: none;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
@@ -1267,11 +1269,11 @@ Palette de couleurs:
 }
 
 .impact-speakers-btn:hover {
-    background: white;
-    color: var(--impact-primary);
     transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(255, 255, 255, 0.3);
     text-decoration: none;
+    filter: brightness(95%);
+    color: white;
 }
 
 /* Responsive pour les intervenants */
