@@ -1,6 +1,5 @@
-
 @extends("layouts.app")
-@section('title', 'Impact Féminin - Événement en cours')
+@section('title', __('event.meta_title'))
 @section("content")
 
 <!-- Inclure le CSS spécifique Impact Féminin -->
@@ -20,7 +19,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">
-                <h1 class="impact-main-title" data-aos="fade-up" data-aos-duration="1000">IMPACT FÉMININ 2025</h1>
+                <h1 class="impact-main-title" data-aos="fade-up" data-aos-duration="1000">{{ __('event.hero_title') }}</h1>
             </div>
         </div>
     </div>
@@ -43,17 +42,16 @@
             <div class="col-lg-6 col-md-6">
                 <div class="impact-text-content">
                     <h2 class="impact-section-title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                        Célébrons le leadership, la vision et la réussite des femmes entrepreneures
+                        {{ __('event.intro_title') }}
                     </h2>
                     
                     <p class="impact-description" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
-                        Le 19 novembre, nous célébrons le courage, la vision et l'audace des femmes entrepreneures qui transforment l'Afrique et le monde.<br>
-                        Votre histoire mérite d'être entendue.
+                        {!! __('event.intro_description') !!}
                     </p>
                     
                     <div class="mt-4">
                         <a href="#inscription" class="impact-candidate-btn">
-                            Je candidate
+                            {{ __('event.intro_button') }}
                         </a>
                     </div>
             </div>
@@ -67,12 +65,12 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto text-center">
                 <p class="impact-cta-text" data-aos="fade-up" data-aos-duration="1000">
-                    Participez à une série exclusive de rencontres internationales réunissant investisseurs, chefs d'entreprises, porteurs de projets, institutions publiques et partenaires étrangers autour d'opportunités stratégiques multisectorielles.
+                    {{ __('event.cta_text') }}
                 </p>
                 
                 <div class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     <a href="#inscription" class="impact-cta-btn">
-                        Je candidate
+                        {{ __('event.intro_button') }}
                     </a>
                 </div>
             </div>
@@ -85,10 +83,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto text-center">
-                <h2 class="impact-why-title" data-aos="fade-up" data-aos-duration="1000">Pourquoi Impact Féminin ?</h2>
+                <h2 class="impact-why-title" data-aos="fade-up" data-aos-duration="1000">{{ __('event.why_title') }}</h2>
                 <p class="impact-why-description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    Impact Féminin est une célébration annuelle qui met en lumière<br>
-                    les femmes entrepreneures ayant marqué leur secteur par leur détermination, leur vision et leur résilience
+                    {!! __('event.why_description') !!}
                 </p>
             </div>
         </div>
@@ -101,9 +98,9 @@
         <!-- Titre et description -->
         <div class="row mb-5">
             <div class="col-12 text-center">
-                <h2 class="impact-awards-title" data-aos="fade-up" data-aos-duration="1000">Prix d'Impact Féminin</h2>
+                <h2 class="impact-awards-title" data-aos="fade-up" data-aos-duration="1000">{{ __('event.awards_title') }}</h2>
                 <p class="impact-awards-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    Mettre en lumière l'audace, la résilience et la vision des femmes qui non seulement bâtissent l'économie, mais génèrent également un impact ESG significatif sur la communauté après la création de leur entreprise, dont la durée d'existence est comprise entre 3 et 10 ans et plus.
+                    {{ __('event.awards_subtitle') }}
                 </p>
             </div>
         </div>
@@ -114,28 +111,28 @@
             <div class="col-lg-4 col-md-12">
                 <div class="impact-award-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                     <div class="award-header">
-                        <h3 class="award-title">Prix Éclosion Féminin</h3>
+                        <h3 class="award-title">{{ __('event.award1_title') }}</h3>
                     </div>
                     <div class="award-content">
                         <p class="award-description">
-                            Ce prix met en lumière les femmes entrepreneures qui ont lancé une entreprise jeune et prometteuse
+                            {{ __('event.award1_description') }}
                         </p>
                         
                         <div class="award-section">
-                            <h4 class="section-title">●Conditions</h4>
+                            <h4 class="section-title">{{ __('event.award_conditions') }}</h4>
                             <ul class="conditions-list">
-                                <li>- Durée d'existence : 3 à 5 ans</li>
-                                <li>- Nombre minimum d'employés : 2</li>
+                                <li>{{ __('event.award1_condition1') }}</li>
+                                <li>{{ __('event.award1_condition2') }}</li>
                             </ul>
                         </div>
                         
                         <div class="award-section">
-                            <h4 class="section-title">●Critères valorisés</h4>
+                            <h4 class="section-title">{{ __('event.award_criteria') }}</h4>
                             <ul class="criteria-list">
-                                <li>- Une croissance régulière depuis la création</li>
-                                <li>- La première structuration réussie de l'équipe</li>
-                                <li>- L'établissement de partenariats ou de clients significatifs</li>
-                                <li>- La capacité à innover ou à se différencier sur le marché</li>
+                                <li>{{ __('event.award1_criterion1') }}</li>
+                                <li>{{ __('event.award1_criterion2') }}</li>
+                                <li>{{ __('event.award1_criterion3') }}</li>
+                                <li>{{ __('event.award1_criterion4') }}</li>
                             </ul>
                         </div>
                     </div>
@@ -146,28 +143,28 @@
             <div class="col-lg-4 col-md-12">
                 <div class="impact-award-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     <div class="award-header">
-                        <h3 class="award-title">Prix Résilience Féminin</h3>
+                        <h3 class="award-title">{{ __('event.award2_title') }}</h3>
                     </div>
                     <div class="award-content">
                         <p class="award-description">
-                            Ce prix honore les femmes dirigeantes qui ont traversé des étapes critiques du développement et de la consolidation. Il célèbre leur persévérance, leur stabilité et leur adaptabilité dans la construction d'une base solide pour une croissance durable.
+                            {{ __('event.award2_description') }}
                         </p>
                         
                         <div class="award-section">
-                            <h4 class="section-title">●Conditions</h4>
+                            <h4 class="section-title">{{ __('event.award_conditions') }}</h4>
                             <ul class="conditions-list">
-                                <li>- Durée d'existence : 6 à 9 ans</li>
-                                <li>- Nombre minimum d'employés : 5</li>
+                                <li>{{ __('event.award2_condition1') }}</li>
+                                <li>{{ __('event.award2_condition2') }}</li>
                             </ul>
                         </div>
                         
                         <div class="award-section">
-                            <h4 class="section-title">●Critères valorisés</h4>
+                            <h4 class="section-title">{{ __('event.award_criteria') }}</h4>
                             <ul class="criteria-list">
-                                <li>- Une gestion relationnelle saine</li>
-                                <li>- Le développement de l'équipe et la structuration interne</li>
-                                <li>- La capacité à surmonter les crises ou à pivoter avec succès</li>
-                                <li>- Des impacts positifs mesurables sur le marché ou la communauté</li>
+                                <li>{{ __('event.award2_criterion1') }}</li>
+                                <li>{{ __('event.award2_criterion2') }}</li>
+                                <li>{{ __('event.award2_criterion3') }}</li>
+                                <li>{{ __('event.award2_criterion4') }}</li>
                             </ul>
                         </div>
                     </div>
@@ -178,28 +175,28 @@
             <div class="col-lg-4 col-md-12">
                 <div class="impact-award-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                     <div class="award-header">
-                        <h3 class="award-title">Prix Visionnaire Féminin</h3>
+                        <h3 class="award-title">{{ __('event.award3_title') }}</h3>
                     </div>
                     <div class="award-content">
                         <p class="award-description">
-                            Ce prix récompense les femmes entrepreneures qui ont bâti une entreprise pérenne, influente et résonnent parmi vers l'avenir avec une vision stratégique, l'impact sociétal et l'héritage entrepreneurial des dirigeantes les plus expérimentées
+                            {{ __('event.award3_description') }}
                         </p>
                         
                         <div class="award-section">
-                            <h4 class="section-title">●Conditions</h4>
+                            <h4 class="section-title">{{ __('event.award_conditions') }}</h4>
                             <ul class="conditions-list">
-                                <li>- Durée d'existence : 10 ans et plus</li>
-                                <li>- Nombre minimum d'employés : 6 et plus</li>
+                                <li>{{ __('event.award3_condition1') }}</li>
+                                <li>{{ __('event.award3_condition2') }}</li>
                             </ul>
                         </div>
                         
                         <div class="award-section">
-                            <h4 class="section-title">●Critères valorisés</h4>
+                            <h4 class="section-title">{{ __('event.award_criteria') }}</h4>
                             <ul class="criteria-list">
-                                <li>- La pérennité de l'entreprise sur plus d'une décennie</li>
-                                <li>- Un leadership reconnu dans le secteur</li>
-                                <li>- La création d'emplois et une contribution significative à l'économie</li>
-                                <li>- L'engagement avéré dans l'innovation, le développement durable ou le mentorat</li>
+                                <li>{{ __('event.award3_criterion1') }}</li>
+                                <li>{{ __('event.award3_criterion2') }}</li>
+                                <li>{{ __('event.award3_criterion3') }}</li>
+                                <li>{{ __('event.award3_criterion4') }}</li>
                             </ul>
                         </div>
                     </div>
@@ -211,7 +208,7 @@
         <div class="row">
             <div class="col-12 text-center">
                 <a href="#inscription" class="impact-awards-btn">
-                    Je candidate
+                    {{ __('event.intro_button') }}
                 </a>
             </div>
         </div>
@@ -225,7 +222,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center mb-5">
-                    <h2 class="themes-main-title" data-aos="fade-up" data-aos-duration="1000">Thématiques Abordées</h2>
+                    <h2 class="themes-main-title" data-aos="fade-up" data-aos-duration="1000">{{ __('event.themes_title') }}</h2>
                 </div>
             </div>
         </div>
@@ -238,9 +235,9 @@
                     <img src="{{ asset('assets/images/impact-feminin/image2.png') }}" alt="Entrepreneuriat Féminin" class="theme-image">
                     <div class="theme-overlay">
                         <div class="theme-content">
-                            <h3 class="theme-title">L'Entrepreneuriat Féminin comme Levier de Transformation Sociale</h3>
+                            <h3 class="theme-title">{{ __('event.theme1_title') }}</h3>
                             <p class="theme-description">
-                                Découvrez comment les femmes chefs d'entreprise contribuent activement à la réduction des inégalités et à l'autonomisation des communautés.
+                                {{ __('event.theme1_description') }}
                             </p>
                         </div>
                     </div>
@@ -253,9 +250,9 @@
                     <img src="{{ asset('assets/images/impact-feminin/image3.png') }}" alt="Leadership Féminin" class="theme-image">
                     <div class="theme-overlay">
                         <div class="theme-content">
-                            <h3 class="theme-title">Leadership Féminin : Audace, Éthique et Durabilité</h3>
+                            <h3 class="theme-title">{{ __('event.theme2_title') }}</h3>
                             <p class="theme-description">
-                                Explorez les styles de leadership uniques que les femmes mettent en œuvre pour bâtir un monde plus équitable et résilient.
+                                {{ __('event.theme2_description') }}
                             </p>
                         </div>
                     </div>
@@ -268,7 +265,7 @@
             <div class="col-12">
                 <div class="text-center mt-5">
                     <a href="#" class="impact-reserve-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                        Je réserve ma place
+                        {{ __('event.reserve_button') }}
                     </a>
                 </div>
             </div>
@@ -283,10 +280,9 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center mb-4">
-                    <h2 class="candidature-main-title" data-aos="fade-up" data-aos-duration="1000">Appel à la Candidature</h2>
+                    <h2 class="candidature-main-title" data-aos="fade-up" data-aos-duration="1000">{{ __('event.application_title') }}</h2>
                     <p class="candidature-subtitle" data-aos="fade-up" data-aos-delay="300">
-                        Que vous soyez femme entrepreneure, partenaire engagé ou marque visionnaire, il existe une place pour vous dans cet événement unique.<br>
-                        Faites partie de celles et ceux qui écrivent l'histoire.
+                        {!! __('event.application_subtitle') !!}
                     </p>
                 </div>
             </div>
@@ -298,14 +294,14 @@
             <div class="col-lg-4 col-md-6">
                 <div class="candidature-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="candidature-header">
-                        <h3 class="candidature-card-title">Devenir Participant</h3>
+                        <h3 class="candidature-card-title">{{ __('event.role1_title') }}</h3>
                     </div>
                     <div class="candidature-content">
                         <p class="candidature-question">
-                            Vous êtes une femme entrepreneure et vous souhaitez partager votre parcours ?
+                            {{ __('event.role1_question') }}
                         </p>
                         <p class="candidature-description">
-                            Candidatez pour l'une de nos 3 distinctions et donnez à votre histoire la visibilité qu'elle mérite.
+                            {{ __('event.role1_description') }}
                         </p>
                     </div>
                 </div>
@@ -315,14 +311,14 @@
             <div class="col-lg-4 col-md-6">
                 <div class="candidature-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="candidature-header">
-                        <h3 class="candidature-card-title">Devenir Sponsor</h3>
+                        <h3 class="candidature-card-title">{{ __('event.role2_title') }}</h3>
                     </div>
                     <div class="candidature-content">
                         <p class="candidature-question">
-                            Associez votre marque à l'excellence féminine.
+                            {{ __('event.role2_question') }}
                         </p>
                         <p class="candidature-description">
-                            En tant que sponsor, vous soutenez l'autonomisation des femmes tout en offrant à votre marque une visibilité prestigieuse auprès d'un public influent et engagé.
+                            {{ __('event.role2_description') }}
                         </p>
                     </div>
                 </div>
@@ -332,14 +328,14 @@
             <div class="col-lg-4 col-md-6">
                 <div class="candidature-card" data-aos="zoom-in" data-aos-delay="500">
                     <div class="candidature-header">
-                        <h3 class="candidature-card-title">Devenir Exposant</h3>
+                        <h3 class="candidature-card-title">{{ __('event.role3_title') }}</h3>
                     </div>
                     <div class="candidature-content">
                         <p class="candidature-question">
-                            Exposez vos produits et innovations devant un public qualifié.
+                            {{ __('event.role3_question') }}
                         </p>
                         <p class="candidature-description">
-                            Profitez de notre espace d'exposition pour présenter vos produits ou services, rencontrer des prospects de qualité et nouer des partenariats stratégiques.
+                            {{ __('event.role3_description') }}
                         </p>
                     </div>
                 </div>
@@ -351,7 +347,7 @@
             <div class="col-12">
                 <div class="text-center">
                     <a href="#" class="impact-candidature-btn">
-                        Je réserve ma place
+                        {{ __('event.reserve_button') }}
                     </a>
                 </div>
             </div>
@@ -366,7 +362,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center mb-5">
-                    <h2 class="programme-main-title" data-aos="fade-up" data-aos-duration="1000">PROGRAMME OFFICIEL</h2>
+                    <h2 class="programme-main-title" data-aos="fade-up" data-aos-duration="1000">{{ __('event.program_title') }}</h2>
                 </div>
             </div>
         </div>
@@ -377,9 +373,9 @@
             <div class="col-lg-6 col-md-6">
                 <div class="programme-card" data-aos="fade-left" data-aos-delay="100">
                     <div class="programme-header">
-                        <h3 class="programme-title">Accueil & Installation</h3>
-                        <p class="programme-subtitle">Enregistrement et distribution des badges.</p>
-                        <span class="programme-time">19h00 - 19h30</span>
+                        <h3 class="programme-title">{{ __('event.event1_title') }}</h3>
+                        <p class="programme-subtitle">{{ __('event.event1_subtitle') }}</p>
+                        <span class="programme-time">{{ __('event.event1_time') }}</span>
                     </div>
                 </div>
             </div>
@@ -388,9 +384,9 @@
             <div class="col-lg-6 col-md-6">
                 <div class="programme-card" data-aos="fade-right" data-aos-delay="200">
                     <div class="programme-header">
-                        <h3 class="programme-title">Mot de bienvenue</h3>
-                        <p class="programme-subtitle">Ouverture officielle de la cérémonie.</p>
-                        <span class="programme-time">19h30 - 20h00</span>
+                        <h3 class="programme-title">{{ __('event.event2_title') }}</h3>
+                        <p class="programme-subtitle">{{ __('event.event2_subtitle') }}</p>
+                        <span class="programme-time">{{ __('event.event2_time') }}</span>
                     </div>
                 </div>
             </div>
@@ -399,12 +395,12 @@
             <div class="col-lg-6 col-md-6">
                 <div class="programme-card" data-aos="fade-left" data-aos-delay="300">
                     <div class="programme-header">
-                        <h3 class="programme-title">Panel</h3>
-                        <p class="programme-subtitle">« L'Entrepreneuriat féminin au service de l'impact social ».</p>
-                        <span class="programme-time">20h00 - 20h30</span>
+                        <h3 class="programme-title">{{ __('event.event3_title') }}</h3>
+                        <p class="programme-subtitle">{{ __('event.event3_subtitle') }}</p>
+                        <span class="programme-time">{{ __('event.event3_time') }}</span>
                     </div>
                     <div class="programme-details">
-                        <p>Témoignages inspirants de femmes qui transforment des vies grâce à leurs entreprises. Participation d'entrepreneuses représentantes d'ONG, incubateurs. Modératrice : journaliste ou coach expérimentée.</p>
+                        <p>{{ __('event.event3_details') }}</p>
                     </div>
                 </div>
             </div>
@@ -413,12 +409,12 @@
             <div class="col-lg-6 col-md-6">
                 <div class="programme-card" data-aos="fade-right" data-aos-delay="400">
                     <div class="programme-header">
-                        <h3 class="programme-title">Atelier Interactif</h3>
-                        <p class="programme-subtitle">« Structurer son entreprise à impact ».</p>
-                        <span class="programme-time">20h30 - 21h00</span>
+                        <h3 class="programme-title">{{ __('event.event4_title') }}</h3>
+                        <p class="programme-subtitle">{{ __('event.event4_subtitle') }}</p>
+                        <span class="programme-time">{{ __('event.event4_time') }}</span>
                     </div>
                     <div class="programme-details">
-                        <p>Session pratique sur les modèles économiques durables et les indicateurs d'impact. Animé par : un consultant ou expert en entrepreneuriat social. Structure : exercices interactifs d'impact.</p>
+                        <p>{{ __('event.event4_details') }}</p>
                     </div>
                 </div>
             </div>
@@ -427,17 +423,14 @@
             <div class="col-lg-6 col-md-6">
                 <div class="programme-card" data-aos="fade-left" data-aos-delay="500">
                     <div class="programme-header">
-                        <h3 class="programme-title">Remise des Prix</h3>
-                        <p class="programme-subtitle">Cérémonie de remise des prix d'Impact Féminin.</p>
-                        <span class="programme-time">21h00 - 21h40</span>
+                        <h3 class="programme-title">{{ __('event.event5_title') }}</h3>
+                        <p class="programme-subtitle">{{ __('event.event5_subtitle') }}</p>
+                        <span class="programme-time">{{ __('event.event5_time') }}</span>
                     </div>
                     <div class="programme-details">
-                        <p>Présentation des 3 catégories de prix :<br>
-                        Prix Éclosion Féminin (entreprises de 3 à 5 ans)<br>
-                        Prix Résilience Féminin (entreprises de 6 à 9 ans)<br>
-                        Prix Visionnaire Féminin (entreprises de 10 ans et plus)</p>
+                        <p>{!! __('event.event5_details') !!}</p>
                         
-                        <p>Remise officielle des trophées et certificats, Séance photo de groupe et remerciements.</p>
+                        <p>{{ __('event.event5_details2') }}</p>
                     </div>
                 </div>
             </div>
@@ -446,12 +439,12 @@
             <div class="col-lg-6 col-md-6">
                 <div class="programme-card" data-aos="fade-right" data-aos-delay="600">
                     <div class="programme-header">
-                        <h3 class="programme-title">Cocktail de Clôture</h3>
-                        <p class="programme-subtitle">Moment privilégié pour les échanges, le networking, les photos et plus encore.</p>
-                        <span class="programme-time">21h40 - 22h30</span>
+                        <h3 class="programme-title">{{ __('event.event6_title') }}</h3>
+                        <p class="programme-subtitle">{{ __('event.event6_subtitle') }}</p>
+                        <span class="programme-time">{{ __('event.event6_time') }}</span>
                     </div>
                     <div class="programme-details">
-                        <p>Inclut également des interviews presse.</p>
+                        <p>{{ __('event.event6_details') }}</p>
                     </div>
                 </div>
             </div>
@@ -462,7 +455,7 @@
             <div class="col-12">
                 <div class="text-center mt-5">
                     <a href="#" class="impact-programme-btn">
-                        Je réserve ma place
+                        {{ __('event.reserve_button') }}
                     </a>
                 </div>
             </div>
@@ -477,7 +470,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center mb-5">
-                    <h2 class="speakers-main-title" data-aos="fade-up" data-aos-duration="1000">Intervenants & Panélistes</h2>
+                    <h2 class="speakers-main-title" data-aos="fade-up" data-aos-duration="1000">{{ __('event.speakers_title') }}</h2>
                 </div>
             </div>
         </div>
@@ -491,9 +484,9 @@
                         <img src="{{ asset('assets/images/impact-feminin/speaker.jpg') }}" alt="Intervenante 1" class="speaker-image">
                     </div>
                     <div class="speaker-info">
-                        <h4 class="speaker-name">Nom de l'Intervenante</h4>
-                        <p class="speaker-title">Titre / Fonction</p>
-                        <p class="speaker-company">Entreprise</p>
+                        <h4 class="speaker-name">{{ __('event.speaker_name') }}</h4>
+                        <p class="speaker-title">{{ __('event.speaker_role') }}</p>
+                        <p class="speaker-company">{{ __('event.speaker_company') }}</p>
                     </div>
                 </div>
             </div>
@@ -505,9 +498,9 @@
                         <img src="{{ asset('assets/images/impact-feminin/speaker.jpg') }}" alt="Intervenante 2" class="speaker-image">
                     </div>
                     <div class="speaker-info">
-                        <h4 class="speaker-name">Nom de l'Intervenante</h4>
-                        <p class="speaker-title">Titre / Fonction</p>
-                        <p class="speaker-company">Entreprise</p>
+                        <h4 class="speaker-name">{{ __('event.speaker_name') }}</h4>
+                        <p class="speaker-title">{{ __('event.speaker_role') }}</p>
+                        <p class="speaker-company">{{ __('event.speaker_company') }}</p>
                     </div>
                 </div>
             </div>
@@ -519,9 +512,9 @@
                         <img src="{{ asset('assets/images/impact-feminin/speaker.jpg') }}" alt="Intervenante 3" class="speaker-image">
                     </div>
                     <div class="speaker-info">
-                        <h4 class="speaker-name">Nom de l'Intervenante</h4>
-                        <p class="speaker-title">Titre / Fonction</p>
-                        <p class="speaker-company">Entreprise</p>
+                        <h4 class="speaker-name">{{ __('event.speaker_name') }}</h4>
+                        <p class="speaker-title">{{ __('event.speaker_role') }}</p>
+                        <p class="speaker-company">{{ __('event.speaker_company') }}</p>
                     </div>
                 </div>
             </div>
@@ -533,9 +526,9 @@
                         <img src="{{ asset('assets/images/impact-feminin/speaker.jpg') }}" alt="Intervenante 4" class="speaker-image">
                     </div>
                     <div class="speaker-info">
-                        <h4 class="speaker-name">Nom de l'Intervenante</h4>
-                        <p class="speaker-title">Titre / Fonction</p>
-                        <p class="speaker-company">Entreprise</p>
+                        <h4 class="speaker-name">{{ __('event.speaker_name') }}</h4>
+                        <p class="speaker-title">{{ __('event.speaker_role') }}</p>
+                        <p class="speaker-company">{{ __('event.speaker_company') }}</p>
                     </div>
                 </div>
             </div>
@@ -546,7 +539,7 @@
             <div class="col-12">
                 <div class="text-center">
                     <a href="#" class="impact-speakers-btn" data-aos="fade-up" data-aos-delay="500">
-                        Je réserve ma place
+                        {{ __('event.reserve_button') }}
                     </a>
                 </div>
             </div>
@@ -561,7 +554,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center mb-5">
-                    <h2 class="partners-main-title" data-aos="fade-up" data-aos-duration="1000">Partenaires</h2>
+                    <h2 class="partners-main-title" data-aos="fade-up" data-aos-duration="1000">{{ __('event.partners_title') }}</h2>
                 </div>
             </div>
         </div>

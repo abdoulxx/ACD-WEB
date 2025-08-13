@@ -113,9 +113,6 @@ return [
         'titre3' => 'Expérimenté',
         'content3' => 'Fort d\'une expertise solide dans les voyages d\'affaires internationaux',
 
-        'titre3' => 'Expérimenté',
-        'content3' => 'Fort d\'une expertise solide dans les voyages d\'affaires internationaux',
-
         'titre4' => 'Professionnalisme',
         'content4' => 'Professionnalisme et excellence pour les voyages d\'affaires à l\'international',
 

@@ -305,7 +305,6 @@
     });
   });
 </script>
-// ...existing code...
 
 <script src="{{ asset("assets/js/masterslider/tab.js") }}"></script>
 

@@ -67,6 +67,6 @@ class CandidatureController extends Controller
         Mail::to($data['email_responsable'])->send(new CandidatureSubmitted($data, $pdf));
         Mail::to(['dezditdez@gmail.com', 'bilebossombra@gmail.com'])->send(new CandidatureSubmitted($data, $pdf));
 
-        return back()->with('success', 'Candidature soumise avec succès.');
+        return back()->with('success', __('form_candidature.success_message'));
     }
 }

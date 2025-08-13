@@ -183,71 +183,59 @@
 <!-- Section avec icônes et textes améliorée UX/UI avec espacement -->
 <section class="bg-color2 padding-top-bottom4">
   <div class="container">
-    <div class="row gx-4 gy-4"><!-- gx-4 : gutter horizontal, gy-4 : gutter vertical -->
+    <div class="row gy-4">
 
       <!-- Bloc 1 -->
-      <div class="col-md-4 col-sm-3 col-xs-12 marbo-resp13 nopadding mb-4  animate" data-anim-type="fadeIn" data-anim-delay="100">
-        <div class="source-card p-4 border rounded shadow-sm h-100 d-flex align-items-start">
-          <div class="icon fs-3 me-3" style="color:#FF6A5A;">&#9733;</div>
-          <div>
-            <h6 class="font-weight7 white margin-bottom1">{{ __("accueil.session2.titre1") }}</h6>
-            <p class="less5 left mb-0">{{ __("accueil.session2.content1") }}</p>
-          </div>
+      <div class="col-lg-4 col-md-6 col-12 animate" data-anim-type="fadeIn" data-anim-delay="100">
+        <div class="source-card h-100">
+          <div class="icon" style="color:#FF6A5A;">&#9733;</div>
+          <h6 class="source-title">{{ __("accueil.session2.titre1") }}</h6>
+          <p class="source-text">{{ __("accueil.session2.content1") }}</p>
         </div>
       </div><!-- end col -->
 
       <!-- Bloc 2 -->
-      <div class="col-md-4 col-sm-3 col-xs-12 marbo-resp13 nopadding animate" data-anim-type="fadeIn" data-anim-delay="300">
-        <div class="source-card p-4 border rounded shadow-sm h-100 d-flex align-items-start">
-          <div class="icon fs-3 me-3" style="color:#FF6A5A;">&#128101;</div>
-          <div>
-            <h6 class="font-weight7 margin-bottom1 white">{{ __("accueil.session2.titre2") }}</h6>
-            <p class="less5 left mb-0">{{ __("accueil.session2.content2") }}</p>
-          </div>
+      <div class="col-lg-4 col-md-6 col-12 animate" data-anim-type="fadeIn" data-anim-delay="300">
+        <div class="source-card h-100">
+          <div class="icon" style="color:#FF6A5A;">&#128101;</div>
+          <h6 class="source-title">{{ __("accueil.session2.titre2") }}</h6>
+          <p class="source-text">{{ __("accueil.session2.content2") }}</p>
         </div>
       </div><!-- end col -->
 
       <!-- Bloc 3 -->
-      <div class="col-md-4 col-sm-3 col-xs-12 marbo-resp13 nopadding animate" data-anim-type="fadeIn" data-anim-delay="400">
-        <div class="source-card p-4 border rounded shadow-sm h-100 d-flex align-items-start">
-          <div class="icon fs-3 me-3" style="color:#FF6A5A;">&#128176;</div>
-          <div>
-            <h6 class="font-weight7 margin-bottom1 white">{{ __("accueil.session2.titre3") }}</h6>
-            <p class="less5 left mb-0">{{ __("accueil.session2.content3") }}</p>
-          </div>
+      <div class="col-lg-4 col-md-6 col-12 animate" data-anim-type="fadeIn" data-anim-delay="400">
+        <div class="source-card h-100">
+          <div class="icon" style="color:#FF6A5A;">&#128176;</div>
+          <h6 class="source-title">{{ __("accueil.session2.titre3") }}</h6>
+          <p class="source-text">{{ __("accueil.session2.content3") }}</p>
         </div>
       </div><!-- end col -->
 
       <!-- Bloc 4 -->
-      <div class="col-md-4 col-sm-3 col-xs-12 marbo-resp13 nopadding animate" data-anim-type="fadeIn" data-anim-delay="500">
-        <div class="source-card p-4 border rounded shadow-sm h-100 d-flex align-items-start">
-          <div class="icon fs-3 me-3" style="color:#FF6A5A;">&#128640;</div>
-          <div>
-            <h6 class="font-weight7 margin-bottom1 white">{{ __("accueil.session2.titre4") }}</h6>
-            <p class="less5 left mb-0">{{ __("accueil.session2.content4") }}</p>
-          </div>
+      <div class="col-lg-4 col-md-6 col-12 animate" data-anim-type="fadeIn" data-anim-delay="500">
+        <div class="source-card h-100">
+          <div class="icon" style="color:#FF6A5A;">&#128640;</div>
+          <h6 class="source-title">{{ __("accueil.session2.titre4") }}</h6>
+          <p class="source-text">{{ __("accueil.session2.content4") }}</p>
         </div>
       </div><!-- end col -->
 
       <!-- Bloc 5 -->
-      <div class="col-md-4 col-sm-3 col-xs-12 marbo-resp13 nopadding animate" data-anim-type="fadeIn" data-anim-delay="600">
-        <div class="source-card p-4 border rounded shadow-sm h-100 d-flex align-items-start">
-          <div class="icon fs-3 me-3" style="color:#FF6A5A;">&#128204;</div>
-          <div>
-            <h6 class="font-weight7 margin-bottom1 white">{{ __("accueil.session2.titre5") }}</h6>
-            <p class="less5 left mb-0">{{ __("accueil.session2.content5") }}</p>
-          </div>
+      <div class="col-lg-4 col-md-6 col-12 animate" data-anim-type="fadeIn" data-anim-delay="600">
+        <div class="source-card h-100">
+          <div class="icon" style="color:#FF6A5A;">&#128204;</div>
+          <h6 class="source-title">{{ __("accueil.session2.titre5") }}</h6>
+          <p class="source-text">{{ __("accueil.session2.content5") }}</p>
         </div>
       </div><!-- end col -->
 
       <!-- Bloc 6 -->
-      <div class="col-md-4 col-sm-3 col-xs-12 marbo-resp13 nopadding animate" data-anim-type="fadeIn" data-anim-delay="700">
-        <div class="source-card p-4 border rounded shadow-sm h-100 d-flex align-items-start">
-          <div class="icon fs-3 me-3" style="color:#FF6A5A;">&#128172;</div>
-          <div>
-            <h6 class="font-weight7 margin-bottom1 white">{{ __("accueil.session2.titre6") }}</h6>
-            <p class="less5 left mb-0">{{ __("accueil.session2.content6") }}</p>
-          </div>
+      <div class="col-lg-4 col-md-6 col-12 animate" data-anim-type="fadeIn" data-anim-delay="700">
+        <div class="source-card h-100">
+          <div class="icon" style="color:#FF6A5A;">&#128172;</div>
+          <h6 class="source-title">{{ __("accueil.session2.titre6") }}</h6>
+          <p class="source-text">{{ __("accueil.session2.content6") }}</p>
         </div>
       </div><!-- end col -->
 
