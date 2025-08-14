@@ -24,6 +24,9 @@ return [
 
     'terms_agreement' => "En remplissant ce formulaire, vous acceptez les conditions générales du Prix International d'Excellence.",
     'submit_button' => 'Soumettre ma candidature',
+    'submitting' => 'Envoi en cours...',
+    'processing' => 'Traitement de votre candidature',
+    'please_wait' => 'Veuillez patienter, cela peut prendre quelques instants',
     
     'success_message' => 'Candidature soumise avec succès.',
 ];

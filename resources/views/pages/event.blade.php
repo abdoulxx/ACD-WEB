@@ -50,7 +50,7 @@
                     </p>
                     
                     <div class="mt-4">
-                        <a href="#inscription" class="impact-candidate-btn">
+                        <a href="{{ route('impact_feminin.candidature.create') }}" class="impact-candidate-btn">
                             {{ __('event.intro_button') }}
                         </a>
                     </div>
@@ -69,7 +69,7 @@
                 </p>
                 
                 <div class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <a href="#inscription" class="impact-cta-btn">
+                    <a href="{{ route('impact_feminin.candidature.create') }}" class="impact-cta-btn">
                         {{ __('event.intro_button') }}
                     </a>
                 </div>
@@ -207,7 +207,7 @@
         <!-- Bouton candidature -->
         <div class="row">
             <div class="col-12 text-center">
-                <a href="#inscription" class="impact-awards-btn">
+                <a href="{{ route('impact_feminin.candidature.create') }}" class="impact-awards-btn">
                     {{ __('event.intro_button') }}
                 </a>
             </div>
@@ -264,7 +264,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center mt-5">
-                    <a href="#" class="impact-reserve-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <a href="{{ route('reservation.create') }}" class="impact-reserve-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                         {{ __('event.reserve_button') }}
                     </a>
                 </div>
@@ -346,7 +346,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center">
-                    <a href="#" class="impact-candidature-btn">
+                    <a href="{{ route('reservation.create') }}" class="impact-candidature-btn">
                         {{ __('event.reserve_button') }}
                     </a>
                 </div>
@@ -454,7 +454,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center mt-5">
-                    <a href="#" class="impact-programme-btn">
+                    <a href="{{ route('reservation.create') }}" class="impact-programme-btn">
                         {{ __('event.reserve_button') }}
                     </a>
                 </div>
@@ -538,7 +538,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center">
-                    <a href="#" class="impact-speakers-btn" data-aos="fade-up" data-aos-delay="500">
+                    <a href="{{ route('reservation.create') }}" class="impact-speakers-btn" data-aos="fade-up" data-aos-delay="500">
                         {{ __('event.reserve_button') }}
                     </a>
                 </div>

@@ -24,6 +24,9 @@ return [
 
     'terms_agreement' => "By filling out this form, you accept the general terms and conditions of the International Prize for Excellence.",
     'submit_button' => 'Submit my application',
+    'submitting' => 'Submitting...',
+    'processing' => 'Processing your application',
+    'please_wait' => 'Please wait, this may take a few moments',
 
     'success_message' => 'Application submitted successfully.',
 ];

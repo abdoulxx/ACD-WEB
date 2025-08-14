@@ -22,8 +22,11 @@ return [
     'label_logo' => 'Logotipo HD:',
     'label_id_document' => 'Documento de identidad del responsable:',
 
-    'terms_agreement' => "Al rellenar este formulario, usted acepta los términos y condiciones generales del Premio Internacional a la Excelencia.",
-    'submit_button' => 'Enviar mi solicitud',
+    'terms_agreement' => "Al completar este formulario, acepta los términos y condiciones generales del Premio Internacional de Excelencia.",
+    'submit_button' => 'Enviar mi candidatura',
+    'submitting' => 'Enviando...',
+    'processing' => 'Procesando su candidatura',
+    'please_wait' => 'Por favor espere, esto puede tomar unos momentos',
 
-    'success_message' => 'Solicitud enviada con éxito.',
+    'success_message' => 'Candidatura enviada con éxito.',
 ];

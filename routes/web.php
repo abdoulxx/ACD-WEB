@@ -104,6 +104,23 @@ Route::group([
     Route::post('/appel-a-la-candidature/inscription', [CandidatureController::class, 'storeAppelCandidature'])->name('appel.store');
 
 
+    /*
+    |--------------------------------------------------------------------------
+    | Appel à la candidature - Impact Féminin
+    |--------------------------------------------------------------------------
+    */
+    Route::get('/impact-feminin/candidature', [App\Http\Controllers\ImpactFemininController::class, 'create'])->name('impact_feminin.candidature.create');
+    Route::post('/impact-feminin/candidature', [App\Http\Controllers\ImpactFemininController::class, 'store'])->name('impact_feminin.candidature.store');
+
+    /*
+    |--------------------------------------------------------------------------
+    | Réservation de place - Impact Féminin
+    |--------------------------------------------------------------------------
+    */
+    Route::get('/reservation', [App\Http\Controllers\ReservationController::class, 'create'])->name('reservation.create');
+    Route::post('/reservation', [App\Http\Controllers\ReservationController::class, 'store'])->name('reservation.store');
+
+
 
     /*
     |--------------------------------------------------------------------------

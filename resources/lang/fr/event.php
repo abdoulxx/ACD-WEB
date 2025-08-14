@@ -31,8 +31,8 @@ return [
     'award2_title' => 'Prix Résilience Féminin',
     'award2_description' => "Ce prix honore les femmes dirigeantes qui ont traversé des étapes critiques du développement et de la consolidation. Il célèbre leur persévérance, leur stabilité et leur adaptabilité dans la construction d'une base solide pour une croissance durable.",
     'award2_condition1' => "- Durée d'existence : 6 à 9 ans",
-    'award2_condition2' => "- Nombre minimum d'employés : 5",
-    'award2_criterion1' => '- Une gestion relationnelle saine',
+        'award2_condition2' => "- Nombre minimum d'employés : 4",
+    'award2_criterion1' => '- Une gestion financière et opérationnelle saine',
     'award2_criterion2' => "- Le développement de l'équipe et la structuration interne",
     'award2_criterion3' => "- La capacité à surmonter les crises ou à pivoter avec succès",
     'award2_criterion4' => "- Des impacts positifs mesurables sur le marché ou la communauté",
@@ -91,7 +91,7 @@ return [
     'event6_details' => 'Inclut également des interviews presse.',
 
     'speakers_title' => 'Intervenants & Panélistes',
-    'speaker_name' => "Nom de l\'Intervenante",
+    'speaker_name' => "Nom de l'Intervenante",
     'speaker_role' => 'Titre / Fonction',
     'speaker_company' => 'Entreprise',
 
