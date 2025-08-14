@@ -36,6 +36,53 @@ class ImpactFemininController extends Controller
     }
 
     /**
+     * Show the form for editing the specified candidature.
+     */
+    public function edit($id)
+    {
+        $candidature = DB::table('impact_feminin_candidatures')->where('id', $id)->first();
+        
+        if (!$candidature) {
+            return redirect()->route('admin.impact-feminin.index')
+                ->with('error', 'Candidature Impact Féminin non trouvée.');
+        }
+        
+        return view('admin.impact-feminin.edit', compact('candidature'));
+    }
+
+    /**
+     * Update the specified candidature in storage.
+     */
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'nom' => 'required|string|max:255',
+            'prenom' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+        ]);
+
+        $updated = DB::table('impact_feminin_candidatures')
+            ->where('id', $id)
+            ->update([
+                'nom' => $request->nom,
+                'prenom' => $request->prenom,
+                'email' => $request->email,
+                'telephone' => $request->telephone,
+                'societe' => $request->societe,
+                'poste' => $request->poste,
+                'prix_choisi' => $request->prix_choisi,
+                'updated_at' => now(),
+            ]);
+
+        if ($updated) {
+            return redirect()->route('admin.impact-feminin.index')
+                ->with('success', 'Candidature Impact Féminin mise à jour avec succès.');
+        }
+
+        return back()->with('error', 'Erreur lors de la mise à jour.');
+    }
+
+    /**
      * Remove the specified candidature from storage.
      */
     public function destroy($id)

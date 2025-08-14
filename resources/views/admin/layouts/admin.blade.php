@@ -52,6 +52,115 @@
             padding: 0;
         }
         
+        /* Notification Styles */
+        .notification-toast {
+            background: #fff;
+            border-left: 4px solid #22c55e;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            min-width: 300px;
+            position: relative;
+            animation: slideInRight 0.3s ease-out;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .notification-toast.success {
+            border-left-color: #22c55e;
+        }
+        
+        .notification-toast.error {
+            border-left-color: #ef4444;
+        }
+        
+        .notification-toast.warning {
+            border-left-color: #f59e0b;
+        }
+        
+        .notification-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .notification-icon.success {
+            background: #22c55e;
+        }
+        
+        .notification-icon.error {
+            background: #ef4444;
+        }
+        
+        .notification-icon.warning {
+            background: #f59e0b;
+        }
+        
+        .notification-content {
+            flex: 1;
+        }
+        
+        .notification-title {
+            font-weight: 600;
+            color: #1f2937;
+            margin: 0 0 4px 0;
+            font-size: 14px;
+        }
+        
+        .notification-message {
+            color: #6b7280;
+            margin: 0;
+            font-size: 13px;
+        }
+        
+        .notification-close {
+            background: none;
+            border: none;
+            color: #9ca3af;
+            cursor: pointer;
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .notification-close:hover {
+            color: #6b7280;
+        }
+        
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideOutRight {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+            padding: 0;
+        }
+        
         /* Hide default elements */
         .fixed-plugin {
             display: none !important;
@@ -80,71 +189,64 @@
     <div class="content-wrapper">
         @yield('content')
     </div>
+    
+    <!-- Notifications Toast -->
+    <div id="notification-container" style="position: fixed; top: 20px; right: 20px; z-index: 9999;"></div>
 </main>
-<div class="fixed-plugin">
-    <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
-        <i class="material-icons py-2">settings</i>
-    </a>
-    <div class="card shadow-lg">
-        <div class="card-header pb-0 pt-3">
-            <div class="float-start">
-                <h5 class="mt-3 mb-0">Personnalisé l'interface</h5>
-                <p>See our dashboard options.</p>
-            </div>
-            <div class="float-end mt-4">
-                <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
-                    <i class="material-icons">clear</i>
-                </button>
-            </div>
-            <!-- End Toggle Button -->
-        </div>
-        <hr class="horizontal dark my-1">
-        <div class="card-body pt-sm-3 pt-0">
-            <!-- Sidebar Backgrounds -->
-            <div>
-                <h6 class="mb-0">Sidebar Colors</h6>
-            </div>
-            <a href="javascript:void(0)" class="switch-trigger background-color">
-                <div class="badge-colors my-2 text-start">
-                    <span class="badge filter bg-gradient-primary active" data-color="primary" onclick="sidebarColor(this)"></span>
-                    <span class="badge filter bg-gradient-dark" data-color="dark" onclick="sidebarColor(this)"></span>
-                    <span class="badge filter bg-gradient-info" data-color="info" onclick="sidebarColor(this)"></span>
-                    <span class="badge filter bg-gradient-success" data-color="success" onclick="sidebarColor(this)"></span>
-                    <span class="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span>
-                    <span class="badge filter bg-gradient-danger" data-color="danger" onclick="sidebarColor(this)"></span>
-                </div>
-            </a>
-            <!-- Sidenav Type -->
-            <div class="mt-3">
-                <h6 class="mb-0">Sidenav Type</h6>
-                <p class="text-sm">Choose between 2 different sidenav types.</p>
-            </div>
-            <div class="d-flex">
-                <button class="btn bg-gradient-dark px-3 mb-2 active" data-class="bg-gradient-dark" onclick="sidebarType(this)">Dark</button>
-                <button class="btn bg-gradient-dark px-3 mb-2 ms-2" data-class="bg-transparent" onclick="sidebarType(this)">Transparent</button>
-                <button class="btn bg-gradient-dark px-3 mb-2 ms-2" data-class="bg-white" onclick="sidebarType(this)">White</button>
-            </div>
-            <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
-            <!-- Navbar Fixed -->
-            <div class="mt-3 d-flex">
-                <h6 class="mb-0">Navbar Fixed</h6>
-                <div class="form-check form-switch ps-0 ms-auto my-auto">
-                    <input class="form-check-input mt-1 ms-auto" type="checkbox" id="navbarFixed" onclick="navbarFixed(this)">
-                </div>
-            </div>
-            <hr class="horizontal dark my-3">
-            <div class="mt-2 d-flex">
-                <h6 class="mb-0">Light / Dark</h6>
-                <div class="form-check form-switch ps-0 ms-auto my-auto">
-                    <input class="form-check-input mt-1 ms-auto" type="checkbox" id="dark-version" onclick="darkMode(this)">
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 
 <!--- Footer --->
 @include('admin.partials.footer')
+
+<script>
+// Système de notifications
+function showNotification(type, title, message, duration = 5000) {
+    const container = document.getElementById('notification-container');
+    
+    const notification = document.createElement('div');
+    notification.className = `notification-toast ${type}`;
+    
+    notification.innerHTML = `
+        <div class="notification-icon ${type}">
+            ${type === 'success' ? '✓' : type === 'error' ? '✕' : '⚠'}
+        </div>
+        <div class="notification-content">
+            <div class="notification-title">${title}</div>
+            <div class="notification-message">${message}</div>
+        </div>
+        <button class="notification-close" onclick="closeNotification(this)">
+            <i class="material-icons" style="font-size: 16px;">close</i>
+        </button>
+    `;
+    
+    container.appendChild(notification);
+    
+    // Auto-remove after duration
+    setTimeout(() => {
+        closeNotification(notification.querySelector('.notification-close'));
+    }, duration);
+}
+
+function closeNotification(closeBtn) {
+    const notification = closeBtn.closest('.notification-toast');
+    notification.style.animation = 'slideOutRight 0.3s ease-out';
+    setTimeout(() => {
+        notification.remove();
+    }, 300);
+}
+
+// Check for Laravel session messages
+@if(session('success'))
+    showNotification('success', 'Succès', '{{ session('success') }}');
+@endif
+
+@if(session('error'))
+    showNotification('error', 'Erreur', '{{ session('error') }}');
+@endif
+
+@if(session('warning'))
+    showNotification('warning', 'Attention', '{{ session('warning') }}');
+@endif
+</script>
+
 </html>

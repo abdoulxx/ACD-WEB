@@ -103,7 +103,10 @@
                                         <a href="{{ route('admin.candidatures.show', $candidature->id) }}" class="action-btn view" title="Voir les détails">
                                             <i class="material-icons">visibility</i>
                                         </a>
-                                        <form action="{{ route('admin.candidatures.destroy', $candidature->id) }}" method="POST" style="display: inline;" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer cette candidature ?')">
+                                        <a href="{{ route('admin.candidatures.edit', $candidature->id) }}" class="action-btn edit" title="Modifier">
+                                            <i class="material-icons">edit</i>
+                                        </a>
+                                        <form action="{{ route('admin.candidatures.destroy', $candidature->id) }}" method="POST" style="display: inline;" class="delete-form" data-item="candidature">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="action-btn delete" title="Supprimer">
@@ -404,6 +407,16 @@
     transform: scale(1.05);
 }
 
+.action-btn.edit {
+    background: #f0fdf4;
+    color: #16a34a;
+}
+
+.action-btn.edit:hover {
+    background: #dcfce7;
+    transform: scale(1.05);
+}
+
 .action-btn.delete {
     background: #fef2f2;
     color: #dc2626;
@@ -474,6 +487,24 @@ document.getElementById('searchInput').addEventListener('input', function(e) {
     rows.forEach(row => {
         const text = row.textContent.toLowerCase();
         row.style.display = text.includes(searchTerm) ? '' : 'none';
+    });
+});
+
+// Gestion de la suppression avec notification
+document.addEventListener('DOMContentLoaded', function() {
+    const deleteForms = document.querySelectorAll('.delete-form');
+    
+    deleteForms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const itemType = this.dataset.item;
+            
+            if (confirm(`Êtes-vous sûr de vouloir supprimer cette ${itemType} ?`)) {
+                // Soumettre le formulaire directement sans notification JavaScript
+                this.submit();
+            }
+        });
     });
 });
 </script>

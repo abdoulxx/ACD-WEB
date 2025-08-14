@@ -36,6 +36,54 @@ class ReservationController extends Controller
     }
 
     /**
+     * Show the form for editing the specified reservation.
+     */
+    public function edit($id)
+    {
+        $reservation = DB::table('reservations')->where('id', $id)->first();
+        
+        if (!$reservation) {
+            return redirect()->route('admin.reservations.index')
+                ->with('error', 'Réservation non trouvée.');
+        }
+        
+        return view('admin.reservations.edit', compact('reservation'));
+    }
+
+    /**
+     * Update the specified reservation in storage.
+     */
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'nom' => 'required|string|max:255',
+            'prenom' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'type_reservation' => 'required|in:sponsor,exposant,participant',
+        ]);
+
+        $updated = DB::table('reservations')
+            ->where('id', $id)
+            ->update([
+                'nom' => $request->nom,
+                'prenom' => $request->prenom,
+                'email' => $request->email,
+                'telephone' => $request->telephone,
+                'societe' => $request->societe,
+                'poste' => $request->poste,
+                'type_reservation' => $request->type_reservation,
+                'updated_at' => now(),
+            ]);
+
+        if ($updated) {
+            return redirect()->route('admin.reservations.index')
+                ->with('success', 'Réservation mise à jour avec succès.');
+        }
+
+        return back()->with('error', 'Erreur lors de la mise à jour.');
+    }
+
+    /**
      * Remove the specified reservation from storage.
      */
     public function destroy($id)

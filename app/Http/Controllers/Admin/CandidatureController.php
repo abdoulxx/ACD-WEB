@@ -36,6 +36,56 @@ class CandidatureController extends Controller
     }
 
     /**
+     * Show the form for editing the specified candidature.
+     */
+    public function edit($id)
+    {
+        $candidature = DB::table('candidatures')->where('id', $id)->first();
+        
+        if (!$candidature) {
+            return redirect()->route('admin.candidatures.index')
+                ->with('error', 'Candidature non trouvée.');
+        }
+        
+        return view('admin.candidatures.edit', compact('candidature'));
+    }
+
+    /**
+     * Update the specified candidature in storage.
+     */
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'nom_entreprise' => 'required|string|max:255',
+            'email_responsable' => 'required|email|max:255',
+            'nom_responsable' => 'required|string|max:255',
+        ]);
+
+        $updated = DB::table('candidatures')
+            ->where('id', $id)
+            ->update([
+                'nom_entreprise' => $request->nom_entreprise,
+                'statut_juridique' => $request->statut_juridique,
+                'numero_rccm' => $request->numero_rccm,
+                'pays_ville_siege' => $request->pays_ville_siege,
+                'nom_responsable' => $request->nom_responsable,
+                'fonction_responsable' => $request->fonction_responsable,
+                'email_responsable' => $request->email_responsable,
+                'telephone_responsable' => $request->telephone_responsable,
+                'produits_services' => $request->produits_services,
+                'chiffre_affaires' => $request->chiffre_affaires,
+                'updated_at' => now(),
+            ]);
+
+        if ($updated) {
+            return redirect()->route('admin.candidatures.index')
+                ->with('success', 'Candidature mise à jour avec succès.');
+        }
+
+        return back()->with('error', 'Erreur lors de la mise à jour.');
+    }
+
+    /**
      * Remove the specified candidature from storage.
      */
     public function destroy($id)
