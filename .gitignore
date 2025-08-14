@@ -17,6 +17,8 @@ SERVEUR
 /.env.*
 !.env.example
 .env
+.env.exemple
+.env.local
 .env.backup
 .env.production
 
