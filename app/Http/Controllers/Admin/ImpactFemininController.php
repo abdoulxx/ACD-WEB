@@ -45,4 +45,91 @@ class ImpactFemininController extends Controller
         return redirect()->route('admin.impact-feminin.index')
             ->with('success', 'Candidature Impact Féminin supprimée avec succès.');
     }
+
+    /**
+     * Export impact feminin candidatures to CSV.
+     */
+    public function export()
+    {
+        $candidatures = DB::table('impact_feminin_candidatures')
+            ->orderBy('created_at', 'desc')
+            ->get();
+
+        $filename = 'candidatures_impact_feminin_' . date('Y-m-d_H-i-s') . '.csv';
+        
+        $headers = [
+            'Content-Type' => 'text/csv; charset=UTF-8',
+            'Content-Disposition' => 'attachment; filename="' . $filename . '"',
+            'Cache-Control' => 'must-revalidate, post-check=0, pre-check=0',
+            'Expires' => '0',
+            'Pragma' => 'public',
+        ];
+
+        $callback = function() use ($candidatures) {
+            $file = fopen('php://output', 'w');
+            
+            // BOM pour l'UTF-8
+            fprintf($file, chr(0xEF).chr(0xBB).chr(0xBF));
+            
+            // En-têtes CSV
+            fputcsv($file, [
+                'ID',
+                'Nom',
+                'Prénom',
+                'Email',
+                'Téléphone',
+                'Pays',
+                'Ville',
+                'Entreprise/Organisation',
+                'Poste',
+                'Secteur d\'Activité',
+                'Années d\'Expérience',
+                'Type de Nomination',
+                'Nom du Nominé',
+                'Relation avec Nominé',
+                'Réalisations Marquantes',
+                'Impact Social/Économique',
+                'Innovation/Créativité',
+                'Leadership',
+                'Engagement Communautaire',
+                'Défis Surmontés',
+                'Vision Future',
+                'Autres Informations',
+                'Date de Soumission'
+            ], ';');
+
+            // Données
+            foreach ($candidatures as $candidature) {
+                fputcsv($file, [
+                    $candidature->id,
+                    $candidature->nom ?? '',
+                    $candidature->prenom ?? '',
+                    $candidature->email ?? '',
+                    $candidature->telephone ?? '',
+                    $candidature->pays ?? '',
+                    $candidature->ville ?? '',
+                    $candidature->entreprise_organisation ?? '',
+                    $candidature->poste ?? '',
+                    $candidature->secteur_activite ?? '',
+                    $candidature->annees_experience ?? '',
+                    $candidature->type_nomination ?? '',
+                    $candidature->nom_nomine ?? '',
+                    $candidature->relation_nomine ?? '',
+                    $candidature->realisations_marquantes ?? '',
+                    $candidature->impact_social_economique ?? '',
+                    $candidature->innovation_creativite ?? '',
+                    $candidature->leadership ?? '',
+                    $candidature->engagement_communautaire ?? '',
+                    $candidature->defis_surmontes ?? '',
+                    $candidature->vision_future ?? '',
+                    $candidature->autres_informations ?? '',
+                    $candidature->created_at ? date('d/m/Y H:i', strtotime($candidature->created_at)) : ''
+                ], ';');
+            }
+
+            fclose($file);
+        };
+
+        return response()->stream($callback, 200, $headers);
+    }
 }

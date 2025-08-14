@@ -176,7 +176,10 @@ Route::prefix('admin')->group(function () {
         Route::resource('home', \App\Http\Controllers\Admin\HomeController::class);
         Route::resource('contact', \App\Http\Controllers\Admin\ContactController::class);
         Route::resource('candidatures', \App\Http\Controllers\Admin\CandidatureController::class);
+        Route::get('candidatures-export', [\App\Http\Controllers\Admin\CandidatureController::class, 'export'])->name('candidatures.export');
         Route::resource('impact-feminin', \App\Http\Controllers\Admin\ImpactFemininController::class);
+        Route::get('impact-feminin-export', [\App\Http\Controllers\Admin\ImpactFemininController::class, 'export'])->name('impact-feminin.export');
         Route::resource('reservations', \App\Http\Controllers\Admin\ReservationController::class);
+        Route::get('reservations-export', [\App\Http\Controllers\Admin\ReservationController::class, 'export'])->name('reservations.export');
     });
 });

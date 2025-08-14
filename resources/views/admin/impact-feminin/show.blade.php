@@ -106,47 +106,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Actions Card -->
-        <div class="detail-card actions-card">
-            <div class="card-header">
-                <h3 class="card-title">
-                    <i class="material-icons">settings</i>
-                    Actions
-                </h3>
-            </div>
-            <div class="card-content">
-                <div class="action-buttons">
-                    <a href="mailto:{{ $candidature->email ?? '' }}" class="action-button primary">
-                        <i class="material-icons">email</i>
-                        <div class="action-content">
-                            <span class="action-title">Envoyer un email</span>
-                            <span class="action-desc">Contacter la candidate</span>
-                        </div>
-                    </a>
-                    
-                    <button onclick="printDetails()" class="action-button secondary">
-                        <i class="material-icons">print</i>
-                        <div class="action-content">
-                            <span class="action-title">Imprimer</span>
-                            <span class="action-desc">Générer un PDF</span>
-                        </div>
-                    </button>
-                    
-                    <form action="{{ route('admin.impact-feminin.destroy', $candidature->id) }}" method="POST" style="width: 100%;" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer cette candidature ?')">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="action-button danger">
-                            <i class="material-icons">delete</i>
-                            <div class="action-content">
-                                <span class="action-title">Supprimer</span>
-                                <span class="action-desc">Supprimer définitivement</span>
-                            </div>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -225,9 +184,8 @@
 }
 
 .details-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
+    display: block;
+    width: 100%;
 }
 
 .detail-card {
@@ -354,79 +312,6 @@
     font-style: italic;
 }
 
-.action-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.action-button {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    text-decoration: none;
-    width: 100%;
-    background: white;
-}
-
-.action-button.primary {
-    background: linear-gradient(135deg, #11998e, #38ef7d);
-    color: white;
-}
-
-.action-button.primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(17, 153, 142, 0.3);
-}
-
-.action-button.secondary {
-    background: #f1f5f9;
-    color: #475569;
-    border: 1px solid #e2e8f0;
-}
-
-.action-button.secondary:hover {
-    background: #e2e8f0;
-    transform: translateY(-1px);
-}
-
-.action-button.danger {
-    background: #fef2f2;
-    color: #dc2626;
-    border: 1px solid #fecaca;
-}
-
-.action-button.danger:hover {
-    background: #fee2e2;
-    transform: translateY(-1px);
-}
-
-.action-button i {
-    font-size: 20px;
-}
-
-.action-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 1;
-}
-
-.action-title {
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.action-desc {
-    font-size: 0.8rem;
-    opacity: 0.7;
-}
-
 @media (max-width: 768px) {
     .modern-admin-page {
         padding: 1rem;
@@ -438,21 +323,11 @@
         gap: 1rem;
     }
     
-    .details-container {
-        grid-template-columns: 1fr;
-    }
-    
     .info-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
 }
 </style>
-
-<script>
-function printDetails() {
-    window.print();
-}
-</script>
 
 @endsection

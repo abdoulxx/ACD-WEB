@@ -82,6 +82,41 @@
     <!-- Modern navbar styles -->
     <link rel="stylesheet" href="{{ asset("assets/css/modern-navbar.css") }}">
     
+    <!-- Custom button styles -->
+    <style>
+        .btn-rencontre-2026-white {
+            font-family: 'Roboto', sans-serif;
+            background: #FFFFFF !important;
+            border: 2px solid #FF0000;
+            color: #FF0000 !important;
+            margin: 0 0 0 10px;
+            padding: 8px 27px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            box-shadow: none;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-rencontre-2026-white:hover {
+            background: #FF0000 !important;
+            border: 2px solid #FF0000;
+            color: #FFFFFF !important;
+            opacity: 1 !important;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .btn-rencontre-2026-white:focus,
+        .btn-rencontre-2026-white:active {
+            background: #FF0000 !important;
+            border: 2px solid #FF0000;
+            color: #FFFFFF !important;
+            box-shadow: none;
+        }
+    </style>
+    
 </head>
 <body>
 <div class="site-wrapper">
@@ -180,13 +215,12 @@
           </a>
         </li>
         -->
-        <!-- Rencontre 2026 button 
+        <!-- Rencontre 2026 button -->
         <li class="nav-item">
-          <a href="https://plaquette.acdcorporateservices.com/" target="_blank" class="btn btn-rencontre-2026 text-white text-uppercase fw-bold px-4 py-2 rounded-pill">
+          <a href="https://plaquette.acdcorporateservices.com/" target="_blank" class="btn btn-rencontre-2026-white text-uppercase fw-bold px-4 py-2 rounded-pill">
             Rencontre 2026
           </a>
         </li>
-        -->
       </ul>
     </div>
   </div>

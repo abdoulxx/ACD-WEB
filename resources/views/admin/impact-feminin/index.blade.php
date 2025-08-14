@@ -441,8 +441,8 @@
 
 <script>
 function exportData() {
-    // Fonctionnalité d'export à implémenter
-    alert('Fonctionnalité d\'export en cours de développement');
+    // Redirection vers la route d'export CSV
+    window.location.href = '{{ route("admin.impact-feminin.export") }}';
 }
 
 // Recherche en temps réel
