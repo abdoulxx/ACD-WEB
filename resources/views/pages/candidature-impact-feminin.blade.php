@@ -45,27 +45,8 @@
     .submit-btn:hover {
         filter: brightness(90%);
     }
-    .awards-list {
-        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-        padding: 20px;
-        border-radius: 10px;
-        border-left: 4px solid #B75FBE;
-    }
-    .awards-list p {
-        color: #495057;
-        font-size: 1.1rem;
-    }
     .display-4 {
         color: #B75FBE !important;
-    }
-    .text-primary {
-        color: #814cb0 !important;
-    }
-    .text-secondary {
-        color: #6c757d !important;
-    }
-    .text-info {
-        color: #17a2b8 !important;
     }
 </style>
 
@@ -80,26 +61,6 @@
         <div class="row">
             <div class="col-12 text-center mb-5">
                 <h1 class="impact-main-title" data-aos="fade-up" data-aos-duration="1000">{{ __('impact_feminin_form.header_title') }}</h1>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Section informations candidature -->
-<section class="impact-info-section py-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-10 text-center">
-                <h2 class="h3 text-primary mb-3" data-aos="fade-up" data-aos-duration="1000">{{ __('impact_feminin_form.header_subtitle1') }}</h2>
-                <h3 class="h4 text-secondary mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">{{ __('impact_feminin_form.header_subtitle2') }}</h3>
-                
-                <h4 class="h5 text-info mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">{{ __('impact_feminin_form.header_subtitle3') }}</h4>
-                
-                <div class="awards-list mx-auto" style="max-width: 500px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                    <p class="mb-2"><strong>{{ __('impact_feminin_form.award_name_eclosion') }}</strong></p>
-                    <p class="mb-2"><strong>{{ __('impact_feminin_form.award_name_resilience') }}</strong></p>
-                    <p class="mb-0"><strong>{{ __('impact_feminin_form.award_name_visionnaire') }}</strong></p>
-                </div>
             </div>
         </div>
     </div>

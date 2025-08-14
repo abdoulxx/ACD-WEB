@@ -23,6 +23,9 @@ Palette de couleurs:
     padding: 60px 0;
     position: relative;
     overflow: hidden;
+    display: flex; /* Flexbox pour centrage parfait */
+    align-items: center; /* Centrage vertical */
+    justify-content: center; /* Centrage horizontal */
 }
 
 .impact-hero::before {
@@ -44,15 +47,29 @@ Palette de couleurs:
     letter-spacing: 2px;
     position: relative;
     z-index: 2;
-    margin: 0;
+    margin: 0 auto; /* Centrage parfait */
+    width: 100%; /* Assurer la largeur complète */
+    padding: 0; /* Supprimer tout padding qui pourrait décaler */
 }
 
 /* Section contenu */
 .impact-content-section {
     background: #f8f9fa;
-    padding: 80px 0;
+    padding: 60px 0 40px 0; /* Plus d'espace en haut (60px) pour égaler l'espacement du bas */
     position: relative;
     overflow: hidden;
+}
+
+/* Réduction de l'espacement entre colonnes pour correspondre à la référence */
+.impact-content-section .row {
+    --bs-gutter-x: 0; /* Suppression complète des gutters Bootstrap */
+    margin: 0;
+}
+
+.impact-content-section .col-lg-6,
+.impact-content-section .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .impact-content-section::before {
@@ -63,7 +80,7 @@ Palette de couleurs:
     width: 500px;
     height: 500px;
     background: transparent; /* Pas de remplissage */
-    border: 50px solid rgba(149, 155, 165, 0.4); /* Contour gris encore plus épais */
+    border: 50px solid rgba(149, 155, 165, 0.20); /* Opacité réduite pour plus de discrétion */
     border-radius: 50%;
     z-index: 1;
 }
@@ -75,6 +92,8 @@ Palette de couleurs:
 .impact-image-container {
     position: relative;
     z-index: 2;
+    padding-left: 15px; /* Alignement avec le logo ACD */
+    padding-right: 0; /* Suppression du padding droit pour coller au texte */
 }
 
 .impact-main-image {
@@ -88,7 +107,8 @@ Palette de couleurs:
 .impact-text-content {
     position: relative;
     z-index: 2;
-    padding-left: 40px;
+    padding-left: 0; /* Suppression complète de l'espacement */
+    margin-left: -20px; /* Chevauchement léger pour coller au design */
 }
 
 .impact-section-title {
@@ -182,7 +202,7 @@ Palette de couleurs:
     width: 500px;
     height: 500px;
     background: transparent; /* Pas de remplissage */
-    border: 50px solid rgba(149, 155, 165, 0.4); /* Contour gris épais */
+    border: 50px solid rgba(149, 155, 165, 0.20); /* Opacité réduite comme la première section */
     border-radius: 50%;
     z-index: 1;
 }
@@ -383,10 +403,12 @@ Palette de couleurs:
 @media (max-width: 768px) {
     .impact-main-title {
         font-size: 2.5rem;
+        margin: 0 auto; /* Centrage parfait sur tablette */
+        padding: 0; /* Pas de padding qui décale */
     }
     
     .impact-content-section {
-        padding: 60px 0;
+        padding: 45px 0 30px 0; /* Espacement asymétrique sur tablette - plus en haut */
     }
     
     .impact-content-section::before {
@@ -395,10 +417,12 @@ Palette de couleurs:
         right: -150px;
         top: 30%;
         border-width: 12px; /* Contour encore plus épais sur tablette */
+        border-color: rgba(149, 155, 165, 0.15); /* Opacité réduite sur tablette aussi */
     }
     
     .impact-text-content {
-        padding-left: 20px;
+        padding-left: 0; /* Suppression complète sur tablette */
+        margin-left: 0; /* Pas de chevauchement sur tablette */
         text-align: center;
         margin-top: 40px;
     }
@@ -418,6 +442,10 @@ Palette de couleurs:
     
     .impact-main-image {
         max-width: 100%;
+    }
+    
+    .impact-image-container {
+        padding-left: 15px; /* Maintenir l'alignement avec le logo sur tablette */
     }
     
     .impact-cta-section {
@@ -503,7 +531,9 @@ Palette de couleurs:
 @media (max-width: 576px) {
     .impact-main-title {
         font-size: 2rem;
-        padding: 0 20px;
+        padding: 0 20px; /* Padding latéral seulement sur mobile */
+        margin: 0 auto; /* Centrage parfait sur mobile */
+        text-align: center; /* Assurer le centrage */
     }
     
     .impact-content-section::before {
@@ -512,6 +542,7 @@ Palette de couleurs:
         right: -100px;
         top: 40%;
         border-width: 10px; /* Contour encore plus épais sur mobile */
+        border-color: rgba(149, 155, 165, 0.15); /* Opacité réduite sur mobile aussi */
     }
     
     .impact-section-title {
@@ -520,6 +551,11 @@ Palette de couleurs:
     
     .impact-text-content {
         padding-left: 0;
+    }
+    
+    .impact-image-container {
+        padding-left: 0; /* Centrer l'image sur mobile */
+        text-align: center;
     }
     
     .impact-cta-text {
@@ -635,7 +671,7 @@ Palette de couleurs:
     width: 500px;
     height: 500px;
     background: transparent; /* Pas de remplissage */
-    border: 50px solid rgba(149, 155, 165, 0.4); /* Contour gris épais */
+    border: 50px solid rgba(149, 155, 165, 0.20); /* Opacité réduite comme la première section */
     border-radius: 50%;
     z-index: 1;
 }
@@ -965,7 +1001,7 @@ Palette de couleurs:
     width: 500px;
     height: 500px;
     background: transparent; /* Pas de remplissage */
-    border: 50px solid rgba(149, 155, 165, 0.4); /* Contour gris épais */
+    border: 50px solid rgba(149, 155, 165, 0.20); /* Opacité réduite comme la première section */
     border-radius: 50%;
     z-index: 1;
 }
@@ -978,7 +1014,7 @@ Palette de couleurs:
     width: 500px;
     height: 500px;
     background: transparent; /* Pas de remplissage */
-    border: 50px solid rgba(149, 155, 165, 0.4); /* Contour gris épais */
+    border: 50px solid rgba(149, 155, 165, 0.20); /* Opacité réduite comme la première section */
     border-radius: 50%;
     z-index: 1;
 }
@@ -1365,7 +1401,7 @@ Palette de couleurs:
     width: 500px;
     height: 500px;
     background: transparent; /* Pas de remplissage */
-    border: 50px solid rgba(149, 155, 165, 0.4); /* Contour gris épais */
+    border: 50px solid rgba(149, 155, 165, 0.20); /* Opacité réduite comme la première section */
     border-radius: 50%;
     z-index: 1;
 }
@@ -1378,7 +1414,7 @@ Palette de couleurs:
     width: 500px;
     height: 500px;
     background: transparent; /* Pas de remplissage */
-    border: 50px solid rgba(149, 155, 165, 0.4); /* Contour gris épais */
+    border: 50px solid rgba(149, 155, 165, 0.20); /* Opacité réduite comme la première section */
     border-radius: 50%;
     z-index: 1;
 }

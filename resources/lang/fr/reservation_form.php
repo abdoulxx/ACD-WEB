@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Réserver ma place - Impact Féminin',
-    'form_title' => 'Formulaire de Réservation - Impact Féminin',
+    'title' => 'FORMULAIRE DE RÉSERVATION',
+    'header_title' => 'FORMULAIRE DE RÉSERVATION',
     'first_name' => 'Prénom',
     'last_name' => 'Nom',
     'email' => 'E-mail',
@@ -17,12 +17,4 @@ return [
     'submit_button' => 'Réserver ma place',
     'sending_button' => 'Envoi en cours...',
     'success_message' => 'Votre réservation a été enregistrée avec succès !',
-
-    'header_title' => 'Formulaire de Réservation - Impact Féminin',
-    'header_subtitle1' => 'RENSEIGNEZ LE FORMULAIRE',
-    'header_subtitle2' => 'POUR RÉSERVER VOTRE PLACE',
-    'header_subtitle3' => 'CHOISISSEZ VOTRE TYPE DE PARTICIPATION :',
-    'option_participant' => '<strong>Participant</strong> - Assistance complète à l\'événement',
-    'option_sponsor' => '<strong>Sponsor</strong> - Partenaire financier avec visibilité',
-    'option_exhibitor' => '<strong>Exposant</strong> - Stand d\'exposition et networking',
 ];

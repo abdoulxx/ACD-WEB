@@ -54,6 +54,7 @@
                             {{ __('event.intro_button') }}
                         </a>
                     </div>
+                </div>
             </div>
         </div>
     </div>
