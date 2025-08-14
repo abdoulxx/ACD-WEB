@@ -2,24 +2,18 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Forum;
-use App\Models\EventAVenir;
+use App\Models\Contact;
+use App\Models\User;
 use Illuminate\Http\Request;
-use App\Models\EvenementEnCour;
 use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display the admin dashboard.
      */
     public function index()
     {
-
-        return view('admin.home', [
-
-            'forums' => Forum::orderby('created_at', 'desc')->paginate(25),
-            'encours' => EvenementEnCour::orderby('created_at', 'desc')->paginate(3)
-        ]);
+        return view('admin.home');
     }
 }

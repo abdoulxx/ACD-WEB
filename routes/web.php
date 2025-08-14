@@ -173,14 +173,10 @@ Route::prefix('admin')->group(function () {
 
     // Routes protégées par le middleware auth
     Route::middleware('auth')->name('admin.')->group(function () {
-        Route::resource('forum', \App\Http\Controllers\Admin\ForumController::class);
         Route::resource('home', \App\Http\Controllers\Admin\HomeController::class);
-        Route::resource('prix', \App\Http\Controllers\Admin\PrixController::class);
         Route::resource('contact', \App\Http\Controllers\Admin\ContactController::class);
-        Route::resource('formation', \App\Http\Controllers\Admin\FormationController::class);
-        Route::resource('formateur', \App\Http\Controllers\Admin\FormateurController::class);
-        Route::resource('moderateur', \App\Http\Controllers\Admin\ModerateurController::class);
-        Route::resource('event-en-cours', \App\Http\Controllers\Admin\EventEnCoursController::class);
-        Route::resource('event-a-venir', \App\Http\Controllers\Admin\EventAVenirController::class);
+        Route::resource('candidatures', \App\Http\Controllers\Admin\CandidatureController::class);
+        Route::resource('impact-feminin', \App\Http\Controllers\Admin\ImpactFemininController::class);
+        Route::resource('reservations', \App\Http\Controllers\Admin\ReservationController::class);
     });
 });

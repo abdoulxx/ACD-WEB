@@ -21,6 +21,42 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <!-- CSS Files -->
     <link id="pagestyle" href="{{ asset('admin/assets/css/material-dashboard.css?v=3.1.0') }}" rel="stylesheet" />
+    
+    <style>
+        .modern-admin-layout {
+            margin: 0;
+            padding: 0;
+            background: #f8fafc;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        .main-content {
+            margin-left: 280px;
+            min-height: 100vh;
+            transition: margin-left 0.3s ease;
+        }
+        
+        .content-wrapper {
+            padding: 0;
+            min-height: calc(100vh - 80px);
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                margin-left: 0;
+            }
+        }
+        
+        /* Override default styles */
+        .container-fluid {
+            padding: 0;
+        }
+        
+        /* Hide default elements */
+        .fixed-plugin {
+            display: none !important;
+        }
+    </style>
     <!-- Nepcha Analytics (nepcha.com) -->
     <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
     <script defer data-site="https://www.cia-invest.com/" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
@@ -30,40 +66,19 @@
 
 </head>
 
-<body class="g-sidenav-show  bg-gray-200">
+<body class="modern-admin-layout">
 
-<!-- Liste des menus de navigation --->
+<!-- Navigation Sidebar -->
 @include('admin.partials.navigation')
 
-
-<main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+<!-- Main Content Area -->
+<main class="main-content">
     <!-- Navbar -->
-   @include('admin.partials.navbar')
+    @include('admin.partials.navbar')
     <!-- End Navbar -->
 
-    <div class="container-fluid py-4">
-
-    @yield('content')
-
-
-
-        <footer class="footer py-4  ">
-            <div class="container-fluid">
-                <div class="row align-items-center justify-content-lg-between">
-                    <div class="col-lg-6 mb-lg-0 mb-4">
-                        <div class="copyright text-center text-sm text-muted text-lg-start">
-                            © <script>
-                                document.write(new Date().getFullYear())
-                            </script>,
-                            Développé par le team ACD
-                            <a href="{{ route('admin.home.index') }}" class="font-weight-bold" target="_blank">Administration</a>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </footer>
+    <div class="content-wrapper">
+        @yield('content')
     </div>
 </main>
 <div class="fixed-plugin">
