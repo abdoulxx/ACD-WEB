@@ -186,12 +186,13 @@ Palette de couleurs:
     color: white;
 }
 
-/* ===== SECTION 3 - POURQUOI IMPACT FÉMININ ===== */
+/* ===== SECTION 2 - POURQUOI IMPACT FÉMININ ===== */
 .impact-why-section {
-    background: #f8f9fa;
+    background: var(--impact-gradient);
     padding: 100px 0;
     position: relative;
     overflow: hidden;
+    color: white;
 }
 
 .impact-why-section::before {
@@ -202,7 +203,7 @@ Palette de couleurs:
     width: 500px;
     height: 500px;
     background: transparent; /* Pas de remplissage */
-    border: 50px solid rgba(149, 155, 165, 0.20); /* Opacité réduite comme la première section */
+    border: 50px solid rgba(255, 255, 255, 0.15); /* Bordure blanche pour contraste sur fond violet */
     border-radius: 50%;
     z-index: 1;
 }
@@ -218,7 +219,7 @@ Palette de couleurs:
 .impact-why-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--impact-primary);
+    color: white;
     margin-bottom: 30px;
     position: relative;
     z-index: 2;
@@ -226,31 +227,48 @@ Palette de couleurs:
 
 .impact-why-description {
     font-size: 1.2rem;
-    color: #666;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.7;
     margin: 0;
     position: relative;
     z-index: 2;
 }
 
-/* ===== SECTION 4 - PRIX D'IMPACT FÉMININ ===== */
+/* ===== SECTION 3 - PRIX D'IMPACT FÉMININ ===== */
 .impact-awards-section {
-    background: var(--impact-gradient);
+    background: white;
     padding: 100px 0;
-    color: white;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.impact-awards-section::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: -200px; /* Décoration à droite pour varier */
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    border: 50px solid rgba(149, 155, 165, 0.15);
+    border-radius: 50%;
+    z-index: 1;
 }
 
 .impact-awards-title {
     font-size: 2.8rem;
     font-weight: 700;
-    color: white;
-    margin-bottom: 30px;
+    color: var(--impact-primary);
+    margin-bottom: 20px;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 .impact-awards-subtitle {
     font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: #666;
     line-height: 1.6;
     max-width: 900px;
     margin: 0 auto 60px auto;
@@ -258,20 +276,20 @@ Palette de couleurs:
 }
 
 .impact-award-card {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(129, 76, 176, 0.05);
+    border: 1px solid rgba(129, 76, 176, 0.1);
     border-radius: 40px;
     padding: 0;
     height: 100%;
-    backdrop-filter: blur(10px);
     transition: all 0.3s ease;
     overflow: hidden;
+    box-shadow: 0 8px 25px rgba(129, 76, 176, 0.1);
 }
 
 .impact-award-card:hover {
     transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    background: rgba(129, 76, 176, 0.08);
+    box-shadow: 0 20px 40px rgba(129, 76, 176, 0.15);
 }
 
 .award-header {
@@ -298,7 +316,7 @@ Palette de couleurs:
 
 .award-description {
     font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: #555;
     line-height: 1.5;
     margin-bottom: 25px;
     text-align: center;
@@ -312,7 +330,7 @@ Palette de couleurs:
 .section-title {
     font-size: 1rem;
     font-weight: 600;
-    color: white;
+    color: var(--impact-primary);
     margin-bottom: 12px;
 }
 
@@ -326,7 +344,7 @@ Palette de couleurs:
 .conditions-list li,
 .criteria-list li {
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: #666;
     margin-bottom: 6px;
     line-height: 1.4;
 }
@@ -396,6 +414,223 @@ Palette de couleurs:
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+/* ==========================
+   SYSTÈME LOGOS ENTREPRISES MODERNES
+========================== */
+
+.impact-partners-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    position: relative;
+}
+
+.companies-logos-grid {
+    margin-top: 50px;
+}
+
+.company-logo-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(183, 95, 190, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.company-logo-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(183, 95, 190, 0.1), transparent);
+    transition: left 0.6s;
+}
+
+.company-logo-card:hover::before {
+    left: 100%;
+}
+
+.company-logo-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(183, 95, 190, 0.15);
+    border-color: rgba(183, 95, 190, 0.3);
+}
+
+.logo-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-logo-img {
+    max-width: 100%;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(20%) opacity(0.9);
+    transition: all 0.3s ease;
+}
+
+.company-logo-card:hover .company-logo-img {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.05);
+}
+
+.logo-overlay {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #B75FBE, #8B4A94);
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+    opacity: 0;
+    border-radius: 0 0 15px 15px;
+}
+
+.company-logo-card:hover .logo-overlay {
+    bottom: 0;
+    opacity: 1;
+}
+
+.company-name {
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* États d'affichage des logos */
+.hidden-company {
+    display: none !important;
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Bouton moderne pour plus de logos */
+.btn-modern-outline {
+    background: transparent;
+    border: 2px solid #B75FBE;
+    color: #B75FBE;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-modern-outline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #B75FBE, #8B4A94);
+    transition: left 0.4s ease;
+    z-index: -1;
+}
+
+.btn-modern-outline:hover {
+    color: white;
+    border-color: #B75FBE;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(183, 95, 190, 0.3);
+}
+
+.btn-modern-outline:hover::before {
+    left: 0;
+}
+
+/* Responsive adaptations */
+@media (max-width: 1199px) {
+    .company-logo-card {
+        height: 140px;
+        padding: 20px;
+    }
+    
+    .company-logo-img {
+        max-height: 70px;
+    }
+}
+
+@media (max-width: 991px) {
+    .company-logo-card {
+        height: 130px;
+        padding: 18px;
+    }
+    
+    .company-logo-img {
+        max-height: 65px;
+    }
+    
+    .company-name {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .impact-partners-section {
+        padding: 60px 0;
+    }
+    
+    .company-logo-card {
+        height: 120px;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    
+    .company-logo-img {
+        max-height: 60px;
+    }
+    
+    .btn-modern-outline {
+        padding: 12px 30px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .company-logo-card {
+        height: 100px;
+        padding: 12px;
+    }
+    
+    .company-logo-img {
+        max-height: 50px;
+    }
+    
+    .company-name {
+        font-size: 0.65rem;
     }
 }
 
@@ -653,6 +888,214 @@ Palette de couleurs:
     }
     50% {
         transform: translateY(-20px);
+    }
+}
+
+/* ===== SECTION 4.5 - NOMINEES IMPACT FÉMININ ===== */
+.impact-nominees-section {
+    background: var(--impact-gradient);
+    padding: 100px 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.impact-nominees-section::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: -200px;
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    border: 50px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.nominees-main-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.nominees-subtitle {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+}
+
+.nominee-card {
+    background: transparent;
+    border: none;
+    padding: 0;
+    height: 100%;
+    transition: all 0.4s ease;
+    text-align: center;
+    min-height: 280px;
+    position: relative;
+    z-index: 2;
+}
+
+.nominee-card:hover {
+    transform: translateY(-10px);
+}
+
+.nominee-image-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px auto;
+    position: relative;
+    border: 3px solid var(--impact-primary);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(129, 76, 176, 0.2);
+}
+
+.nominee-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.nominee-card:hover .nominee-image {
+    transform: scale(1.05);
+}
+
+.nominee-info {
+    padding: 0;
+    text-align: center;
+    background: transparent;
+}
+
+.nominee-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--impact-primary);
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.nominee-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 3px;
+    line-height: 1.3;
+}
+
+.nominee-company {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.nominee-role {
+    font-size: 0.75rem;
+    color: #888;
+    margin: 0;
+    line-height: 1.3;
+    font-style: italic;
+}
+
+/* Responsive pour les nominees */
+@media (max-width: 768px) {
+    .impact-nominees-section {
+        padding: 80px 0;
+    }
+    
+    .nominees-main-title {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .nominees-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+    
+    .nominee-card {
+        min-height: 240px;
+        margin-bottom: 20px;
+    }
+    
+    .nominee-image-container {
+        width: 100px;
+        height: 100px;
+        border-width: 2px;
+        margin-bottom: 12px;
+    }
+    
+    .nominee-name {
+        font-size: 0.9rem;
+        margin-bottom: 4px;
+    }
+    
+    .nominee-title {
+        font-size: 0.75rem;
+        margin-bottom: 2px;
+    }
+    
+    .nominee-company {
+        font-size: 0.75rem;
+        margin-bottom: 2px;
+    }
+    
+    .nominee-role {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .nominees-main-title {
+        font-size: 1.8rem;
+        padding: 0 20px;
+    }
+    
+    .nominees-subtitle {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+    
+    .nominee-card {
+        min-height: 200px;
+    }
+    
+    .nominee-image-container {
+        width: 80px;
+        height: 80px;
+        border-width: 2px;
+        margin-bottom: 10px;
+    }
+    
+    .nominee-name {
+        font-size: 0.8rem;
+    }
+    
+    .nominee-title {
+        font-size: 0.7rem;
+    }
+    
+    .nominee-company {
+        font-size: 0.7rem;
+    }
+    
+    .nominee-role {
+        font-size: 0.65rem;
     }
 }
 
@@ -1385,9 +1828,9 @@ Palette de couleurs:
     }
 }
 
-/* ===== SECTION 9 - PARTENAIRES ===== */
+/* ===== SECTION 8 - ENTREPRISES NOMINEES ===== */
 .impact-partners-section {
-    background: white;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     padding: 100px 0;
     position: relative;
     overflow: hidden;
@@ -1401,7 +1844,7 @@ Palette de couleurs:
     width: 500px;
     height: 500px;
     background: transparent; /* Pas de remplissage */
-    border: 50px solid rgba(149, 155, 165, 0.20); /* Opacité réduite comme la première section */
+    border: 50px solid rgba(149, 155, 165, 0.20); /* Bordure grise pour fond blanc */
     border-radius: 50%;
     z-index: 1;
 }
@@ -1414,7 +1857,7 @@ Palette de couleurs:
     width: 500px;
     height: 500px;
     background: transparent; /* Pas de remplissage */
-    border: 50px solid rgba(149, 155, 165, 0.20); /* Opacité réduite comme la première section */
+    border: 50px solid rgba(149, 155, 165, 0.20); /* Bordure grise pour fond blanc */
     border-radius: 50%;
     z-index: 1;
 }
@@ -1450,7 +1893,7 @@ Palette de couleurs:
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive pour les partenaires */
+/* Responsive pour les entreprises nominees */
 @media (max-width: 768px) {
     .impact-partners-section {
         padding: 80px 0;
@@ -1477,4 +1920,102 @@ Palette de couleurs:
         width: 80px;
         height: 80px;
     }
+}
+
+/* ==========================
+   AJUSTEMENTS POUR CONTRASTE SUR FONDS COLORÉS
+========================== */
+
+/* Boutons secondaires sur fonds violets */
+.impact-why-section .btn-modern-secondary,
+.impact-nominees-section .btn-modern-secondary {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.impact-why-section .btn-modern-secondary:hover,
+.impact-nominees-section .btn-modern-secondary:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: white;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+/* Messages de succès sur fonds violets */
+.impact-why-section #allShownText,
+.impact-nominees-section #allShownText,
+.impact-why-section #allCompaniesShown,
+.impact-nominees-section #allCompaniesShown {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.impact-why-section .text-success,
+.impact-nominees-section .text-success {
+    color: #90EE90 !important; /* Vert clair pour visibilité sur violet */
+}
+
+/* Boutons "Voir plus" sur fonds violets */
+.impact-why-section .btn-outline-primary,
+.impact-nominees-section .btn-outline-primary,
+.impact-why-section .btn-modern-outline,
+.impact-nominees-section .btn-modern-outline {
+    border-color: rgba(255, 255, 255, 0.7);
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.impact-why-section .btn-outline-primary:hover,
+.impact-nominees-section .btn-outline-primary:hover,
+.impact-why-section .btn-modern-outline:hover,
+.impact-nominees-section .btn-modern-outline:hover {
+    background: white;
+    border-color: white;
+    color: var(--impact-primary);
+}
+
+/* Textes des nominees - couleurs adaptées au fond violet */
+.impact-nominees-section .nominee-name {
+    color: white;
+    font-weight: 700;
+}
+
+.impact-nominees-section .nominee-title {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.impact-nominees-section .nominee-company {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.impact-nominees-section .nominee-role {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Boutons spécifiques des nominees sur fond violet */
+.impact-nominees-section #showMoreBtn {
+    border: 2px solid rgba(255, 255, 255, 0.8) !important;
+    color: white !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+}
+
+.impact-nominees-section #showMoreBtn:hover {
+    background: white !important;
+    color: var(--impact-primary) !important;
+    border-color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Message "toutes affichées" sur fond violet */
+.impact-nominees-section #allShownText {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.impact-nominees-section #allShownText .text-success {
+    color: #90EE90 !important;
 }

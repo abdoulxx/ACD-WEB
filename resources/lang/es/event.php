@@ -95,5 +95,8 @@ return [
     'speaker_role' => 'Título / Cargo',
     'speaker_company' => 'Empresa',
 
+    'nominees_title' => 'Nominadas Impact Féminin',
+    'nominees_description' => '¡Descubre a las mujeres empresarias excepcionales que están transformando África a través de su visión, determinación e impacto social!',
+
     'partners_title' => 'Socios',
 ];

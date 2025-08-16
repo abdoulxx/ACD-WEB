@@ -95,5 +95,8 @@ return [
     'speaker_role' => 'Title / Position',
     'speaker_company' => 'Company',
 
+    'nominees_title' => 'Impact Féminin Nominees',
+    'nominees_description' => 'Discover the exceptional women entrepreneurs who are transforming Africa through their vision, determination and social impact!',
+
     'partners_title' => 'Partners',
 ];
