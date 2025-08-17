@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             buttonContainer.className = 'row mt-4';
             buttonContainer.innerHTML = `
                 <div class="col-12 text-center">
-                    <button id="showMoreBtn" class="btn btn-outline-primary px-4 py-2" style="border: 2px solid var(--impact-primary); color: var(--impact-primary); background: transparent; border-radius: 25px; transition: all 0.3s ease;">
+                    <button id="showMoreBtn" class="btn btn-outline-primary px-4 py-2" style="border: 2px solid var(--impact-primary); background: transparent; border-radius: 25px; transition: all 0.3s ease;">
                         <i class="fas fa-plus me-2"></i>Voir plus de nominees (${hiddenNominees})
                     </button>
                     <p id="allShownText" class="mt-3 text-muted" style="display: none;">

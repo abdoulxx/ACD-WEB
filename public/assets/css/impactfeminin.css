@@ -1998,24 +1998,12 @@ Palette de couleurs:
 /* Boutons spécifiques des nominees sur fond violet */
 .impact-nominees-section #showMoreBtn {
     border: 2px solid rgba(255, 255, 255, 0.8) !important;
-    color: white !important;
-    background: rgba(255, 255, 255, 0.1) !important;
-    backdrop-filter: blur(10px);
 }
 
-.impact-nominees-section #showMoreBtn:hover {
-    background: white !important;
-    color: var(--impact-primary) !important;
-    border-color: white !important;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3) !important;
-}
-
-/* Message "toutes affichées" sur fond violet */
-.impact-nominees-section #allShownText {
-    color: rgba(255, 255, 255, 0.9) !important;
-}
-
-.impact-nominees-section #allShownText .text-success {
-    color: #90EE90 !important;
+/* HOTFIX: Force logo visibility on mobile to prevent animation bugs */
+@media (max-width: 767px) {
+  .impact-partners-section .company-logo-card {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
