@@ -102,6 +102,9 @@ Route::group([
     |--------------------------------------------------------------------------
     */
     Route::get('/rencontres-b2b-internationales-2026', [RencontreController::class, 'index'])->name('pages.rencontre2026');
+    Route::get('/rencontres-b2b-internationales-2026/inscription', function () {
+        return view('pages.rencontre-2026-formulaire');
+    })->name('rencontre2026.formulaire');
     Route::post('/inscription-rencontre-2026', [InscriptionController::class, 'store'])->name('inscription.store');
 
     /*

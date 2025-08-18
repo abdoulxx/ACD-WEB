@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\RencontreInscription2026;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\UserRencontreMail;
+use App\Mail\AdminRencontreMail;
 
 class InscriptionController extends Controller
 {
@@ -21,7 +25,7 @@ class InscriptionController extends Controller
             'fonction' => 'nullable|string|max:255',
             'pack_choisi' => 'required|string|in:standard,premium',
             'destinations' => 'required|array',
-            'destinations.*' => 'string|in:ci,ma,fr',
+            'destinations.*' => 'string',
             'telephone' => 'required|string|max:20',
             'whatsapp' => 'nullable|string|max:20',
             'email' => 'required|email|max:255',
@@ -33,10 +37,16 @@ class InscriptionController extends Controller
                         ->withInput();
         }
 
-        // Logique de sauvegarde des données (à implémenter)
-        // Par exemple: 
-        // Inscription::create($request->validated());
+        $validatedData = $validator->validated();
 
-        return redirect()->back()->with('show_success_modal', true);
+        // Sauvegarde des données
+        $inscription = RencontreInscription2026::create($validatedData);
+
+        // Envoi des e-mails
+        $adminEmail = 'acdnotif@gmail.com'; // Remplacez par votre email si nécessaire
+        Mail::to($inscription->email)->send(new UserRencontreMail($inscription));
+        Mail::to($adminEmail)->send(new AdminRencontreMail($inscription));
+
+        return redirect()->back()->with('success', 'Votre inscription a été enregistrée avec succès !');
     }
 }

@@ -4,14 +4,11 @@
 
 @section('content')
 
-    <!-- Assets for this page -->
-    <link href="https://fonts.bunny.net/css?family=roboto:400,500,700&display=swap" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- Page-specific CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     <link href="{{ asset('assets/css/rencontre-2026.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 
     <main>
         <!-- Section d'intro immersive -->
@@ -30,7 +27,7 @@
                     {!! __('page.hero_description') !!}
                 </p>
                 <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                    <a href="#" class="btn btn-reserver acd-btn-hero" data-bs-toggle="modal" data-bs-target="#inscriptionModal">{{ __('page.hero_register_btn') }}</a>
+                    <a href="{{ route('rencontre2026.formulaire') }}" class="btn btn-reserver acd-btn-hero">{{ __('page.hero_register_btn') }}</a>
                 </div>
             </div>
         </section>
@@ -49,10 +46,7 @@
                             <div class="acd-dest-card-visual flex-fill text-center" 
                                  style="background-image: url('{{ asset('assets/images-pro/images/' . $destination['image']) }}');"
                                  data-aos="zoom-in" 
-                                 data-aos-delay="{{ 100 * $loop->index }}" 
-                                 data-bs-toggle="modal" 
-                                 data-bs-target="#inscriptionModal" 
-                                 data-destination="{{ $destination['data_destination'] }}">
+                                 data-aos-delay="{{ 100 * $loop->index }}" >
                                 <div class="acd-dest-card-overlay">
                                     <div class="acd-dest-month">{{ $destination['month'] }}</div>
                                     <div class="acd-dest-country">{{ $destination['country'] }}</div>
@@ -102,7 +96,7 @@
                                     <h3 class="pack-title mt-4">{{ __('page.pricing_pack_premium_title') }}</h3>
                                     <div class="pack-price">{{ __('page.pricing_pack_premium_price') }} <span class="pack-currency">{{ __('page.pricing_currency') }}</span></div>
                                     <p class="reservation-fee mt-3 mb-4">{!! str_replace(':amount', __('page.pricing_reservation_amount'), __('page.pricing_reservation_fee')) !!}</p>
-                                    <a href="#" class="btn btn-reserver fw-bold" data-bs-toggle="modal" data-bs-target="#inscriptionModal">{{ __('page.pricing_reserve_btn') }}</a>
+                                    <a href="{{ route('rencontre2026.formulaire') }}" class="btn btn-reserver fw-bold">{{ __('page.pricing_reserve_btn') }}</a>
                                 </div>
                                 <div class="col-lg-6 tarif-includes mt-4 mt-lg-0">
                                     <h4 class="includes-title mb-3">{{ __('page.pricing_includes_title') }}</h4>
@@ -264,180 +258,25 @@
                 </div>
             </div>
         </section>
-
-        <!-- Modal d'inscription -->
-        <div class="modal fade" id="inscriptionModal" tabindex="-1" aria-labelledby="inscriptionModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="inscriptionModalLabel">{{ __('page.modal_title') }}</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-loader-overlay">
-                            <div class="progress mb-3">
-                                <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p>{{ __('page.modal_sending') }}</p>
-                        </div>
-
-                        @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
-
-                        <form action="{{ route('inscription.store') }}" method="POST">
-                            @csrf
-                            <div class="mb-3">
-                                <label for="nom_prenom" class="form-label">{{ __('page.modal_form_labels.name') }}</label>
-                                <input type="text" class="form-control @error('nom_prenom') is-invalid @enderror" id="nom_prenom" name="nom_prenom" value="{{ old('nom_prenom') }}" required>
-                                @error('nom_prenom')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
-                            </div>
-                            <div class="mb-3">
-                                <label for="entreprise" class="form-label">{{ __('page.modal_form_labels.company') }}</label>
-                                <input type="text" class="form-control" id="entreprise" name="entreprise" value="{{ old('entreprise') }}">
-                            </div>
-                            <div class="mb-3">
-                            <label for="fonction" class="form-label">{{ __('page.modal_form_labels.position') }}</label>
-                            <input type="text" class="form-control" id="fonction" name="fonction" value="{{ old('fonction') }}">
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">{{ __('page.modal_form_labels.pack_choice') }}</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pack_choisi" id="pack_standard" value="standard" checked>
-                                <label class="form-check-label" for="pack_standard">
-                                    {{ __('page.pricing_pack_voyage_title') }}
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pack_choisi" id="pack_premium" value="premium">
-                                <label class="form-check-label" for="pack_premium">
-                                    {{ __('page.pricing_pack_premium_title') }}
-                                </label>
-                            </div>
-                        </div>
-                            <div class="mb-3">
-                                <label class="form-label">{{ __('page.modal_form_labels.countries') }}</label>
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        {{ __('page.modal_countries_select') }}
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        @foreach(__('page.destinations') as $destination)
-                                            <li><a class="dropdown-item" href="#"><input class="form-check-input me-2" name="destinations[]" type="checkbox" value="{{ $destination['data_destination'] }}" id="dest-{{ strtolower($destination['data_destination']) }}">{{ $destination['country'] }}</a></li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                                 @error('destinations')
-                                    <div class="text-danger mt-1">{{ $message }}</div>
-                                @enderror
-                            </div>
-                            <div class="mb-3">
-                                <label for="telephone" class="form-label">{{ __('page.modal_form_labels.phone') }}</label>
-                                <input type="tel" class="form-control @error('telephone') is-invalid @enderror" id="telephone" name="telephone" value="{{ old('telephone') }}" required>
-                                 @error('telephone')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
-                            </div>
-                            <div class="mb-3">
-                                <label for="whatsapp" class="form-label">{{ __('page.modal_form_labels.whatsapp') }}</label>
-                                <input type="tel" class="form-control" id="whatsapp" name="whatsapp" value="{{ old('whatsapp') }}">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">{{ __('page.modal_form_labels.email') }}</label>
-                                <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email') }}" required>
-                                 @error('email')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100">{{ __('page.modal_send_btn') }}</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal de succès -->
-        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content text-center p-4">
-                    <div class="modal-body">
-                        <div class="mb-3">
-                            <i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i>
-                        </div>
-                        <h5 class="modal-title mb-3" id="successModalLabel">{{ __('page.success_title') }}</h5>
-                        <p>{{ __('page.success_message') }}</p>
-                        <button type="button" class="btn btn-outline-secondary mt-3" data-bs-dismiss="modal">{{ __('page.success_close') }}</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
 
-    
-    
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- GLightbox JS -->
-    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-    
-    <script>
-        AOS.init({ once: true });
-
-        const lightbox = GLightbox({
-            selector: '.glightbox'
-        });
-
-        const inscriptionModal = document.getElementById('inscriptionModal');
-        inscriptionModal.addEventListener('show.bs.modal', function (event) {
-            // Bouton qui a déclenché la modale
-            const button = event.relatedTarget;
-            // Extraire l'info de l'attribut data-destination
-            const destination = button.getAttribute('data-destination');
-
-            // Réinitialiser toutes les cases à cocher
-            const checkboxes = inscriptionModal.querySelectorAll('.form-check-input');
-            checkboxes.forEach(checkbox => {
-                checkbox.checked = false;
-            });
-
-            // Si une destination a été passée, cocher la case correspondante
-            if (destination) {
-                const checkbox = inscriptionModal.querySelector(`[value="${destination}"]`);
-                if (checkbox) {
-                    checkbox.checked = true;
-                }
-            }
-        });
-
-        const form = document.querySelector('#inscriptionModal form');
-        if (form) {
-            form.addEventListener('submit', function() {
-                const loader = inscriptionModal.querySelector('.form-loader-overlay');
-                const progressBar = loader.querySelector('.progress-bar');
-                
-                loader.style.display = 'flex';
-                progressBar.style.width = '0%';
-
-                setTimeout(() => {
-                    progressBar.style.width = '100%';
-                }, 100);
-            });
-        }
-
-        @if(session('show_success_modal'))
-            var successModal = new bootstrap.Modal(document.getElementById('successModal'));
-            successModal.show();
-        @endif
-    </script>
-
 @endsection
+
+@push('scripts')
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({ once: true });
+
+    const lightbox = GLightbox({
+        selector: '.glightbox'
+    });
+
+    @if(session('show_success_modal'))
+        // This logic would be on the form page now, but leaving it here doesn't hurt.
+        var successModal = new bootstrap.Modal(document.getElementById('successModal'));
+        successModal.show();
+    @endif
+});
+</script>
+@endpush
