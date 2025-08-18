@@ -24,6 +24,14 @@
                 <div class="col-12 text-center mb-5">
                     <h1 class="impact-main-title" data-aos="fade-up" data-aos-duration="1000">{{ __('event.hero_title') }}
                     </h1>
+                    <div style="color: white; margin-top: 20px;">
+                        <p style="font-size: 1.5rem; font-weight: 600; margin-bottom: 5px;">
+                            19 Novembre 2025 | 19h30 - 22h30
+                        </p>
+                        <p style="font-size: 1.2rem;">
+                            NOVOTEL PLATEAU
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -230,7 +238,7 @@
                 <!-- LIGNE 1 -->
                 <!-- Nominee 1 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}"
                                 alt="MAITRE KACOU ANGELINA ANDRESS" class="nominee-image">
@@ -245,7 +253,7 @@
 
                 <!-- Nominee 2 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}"
                                 alt="MAITRE YAPO NINA ROSELINE" class="nominee-image">
@@ -260,7 +268,7 @@
 
                 <!-- Nominee 3 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}"
                                 alt="MAITRE AMOIKON BEUGRE GLADYS" class="nominee-image">
@@ -275,7 +283,7 @@
 
                 <!-- Nominee 4 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="MAITRE TOURE HAWA"
                                 class="nominee-image">
@@ -290,7 +298,7 @@
 
                 <!-- Nominee 5 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}"
                                 alt="MAITRE KONE EPSE CAMARA HABIBATA" class="nominee-image">
@@ -305,7 +313,7 @@
 
                 <!-- Nominee 6 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="MAITRE COULIBALY AWA"
                                 class="nominee-image">
@@ -321,7 +329,7 @@
                 <!-- LIGNE 2 -->
                 <!-- Nominee 7 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="MME OUATTARA MAMAN"
                                 class="nominee-image">
@@ -336,7 +344,7 @@
 
                 <!-- Nominee 8 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="PEHE EPSE TAHOU"
                                 class="nominee-image">
@@ -351,7 +359,7 @@
 
                 <!-- Nominee 9 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}"
                                 alt="MADAME N'DOUFFOU MARIE-SYLVIE" class="nominee-image">
@@ -366,7 +374,7 @@
 
                 <!-- Nominee 10 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}"
                                 alt="MADAME PATRICIA GUERRIER" class="nominee-image">
@@ -381,7 +389,7 @@
 
                 <!-- Nominee 11 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="550">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}"
                                 alt="MADAME VICTORINE KOUADIO" class="nominee-image">
@@ -396,7 +404,7 @@
 
                 <!-- Nominee 12 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="MME BAYO BINTOU"
                                 class="nominee-image">
@@ -411,8 +419,8 @@
 
                 <!-- LIGNE 3 - MASQUÉE INITIALEMENT -->
                 <!-- Nominee 13 -->
-                <div class="col-lg-2 col-md-4 col-6 hidden-nominees" data-line="3">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="650">
+                <div class="col-lg-2 col-md-4 col-6" data-line="3">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="MME KANE STEPHANIE"
                                 class="nominee-image">
@@ -426,8 +434,8 @@
                 </div>
 
                 <!-- Nominee 14 -->
-                <div class="col-lg-2 col-md-4 col-6 hidden-nominees" data-line="3">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="700">
+                <div class="col-lg-2 col-md-4 col-6" data-line="3">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="MADAME YEO ELISABETH"
                                 class="nominee-image">
@@ -441,8 +449,8 @@
                 </div>
 
                 <!-- Nominee 15 -->
-                <div class="col-lg-2 col-md-4 col-6 hidden-nominees" data-line="3">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="750">
+                <div class="col-lg-2 col-md-4 col-6" data-line="3">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}"
                                 alt="MADAME NINTIN YABA SYNTHIA" class="nominee-image">
@@ -456,8 +464,8 @@
                 </div>
 
                 <!-- Nominee 16 -->
-                <div class="col-lg-2 col-md-4 col-6 hidden-nominees" data-line="3">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="800">
+                <div class="col-lg-2 col-md-4 col-6" data-line="3">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="MADAME ASSY EPSE POLA"
                                 class="nominee-image">
@@ -471,8 +479,8 @@
                 </div>
 
                 <!-- Nominee 17 -->
-                <div class="col-lg-2 col-md-4 col-6 hidden-nominees" data-line="3">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="850">
+                <div class="col-lg-2 col-md-4 col-6" data-line="3">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="MADAME HONORINE VEHI"
                                 class="nominee-image">
@@ -486,8 +494,8 @@
                 </div>
 
                 <!-- Nominee 18 -->
-                <div class="col-lg-2 col-md-4 col-6 hidden-nominees" data-line="3">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="900">
+                <div class="col-lg-2 col-md-4 col-6" data-line="3">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="MADAME FLEAN ELODIE"
                                 class="nominee-image">
@@ -500,10 +508,10 @@
                     </div>
                 </div>
 
-                <!-- LIGNE 4 - MASQU�E INITIALEMENT -->
+                <!-- LIGNE 4 - MASQUE INITIALEMENT -->
                 <!-- Nominee 19 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="950">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}"
                                 alt="MADAME TAGRO HONKPA JEANNE" class="nominee-image">
@@ -518,7 +526,7 @@
 
                 <!-- Nominee 20 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="MADAME FATIM KOUYATE"
                                 class="nominee-image">
@@ -533,7 +541,7 @@
 
                 <!-- Nominee 21 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1050">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="MADAME SYLVIE FADIKA"
                                 class="nominee-image">
@@ -548,7 +556,7 @@
 
                 <!-- Nominee 22 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1100">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="MADAME MARINA NEBOUT"
                                 class="nominee-image">
@@ -563,7 +571,7 @@
 
                 <!-- Nominee 23 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1150">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="JEANNE SISSOKO ZEZE"
                                 class="nominee-image">
@@ -578,7 +586,7 @@
 
                 <!-- Nominee 24 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1200">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="DANIELLE LIDEGOUE"
                                 class="nominee-image">
@@ -591,10 +599,10 @@
                     </div>
                 </div>
 
-                <!-- LIGNE 5 - MASQU�E INITIALEMENT -->
+                <!-- LIGNE 5 - MASQUE INITIALEMENT -->
                 <!-- Nominee 25 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1250">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="Aissatou DIOP"
                                 class="nominee-image">
@@ -609,7 +617,7 @@
 
                 <!-- Nominee 26 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1300">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="Mariame CISSE"
                                 class="nominee-image">
@@ -624,7 +632,7 @@
 
                 <!-- Nominee 27 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1350">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="Ramata SIDIBE"
                                 class="nominee-image">
@@ -639,7 +647,7 @@
 
                 <!-- Nominee 28 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1400">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="Fatouma SANGARE"
                                 class="nominee-image">
@@ -654,7 +662,7 @@
 
                 <!-- Nominee 29 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1450">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="Habibatou BARRY"
                                 class="nominee-image">
@@ -669,7 +677,7 @@
 
                 <!-- Nominee 30 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1500">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="Zeynab CONDE"
                                 class="nominee-image">
@@ -682,10 +690,10 @@
                     </div>
                 </div>
 
-                <!-- LIGNE 6 - MASQU�E INITIALEMENT -->
+                <!-- LIGNE 6 - MASQUE INITIALEMENT -->
                 <!-- Nominee 31 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1550">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="Aicha BALDE"
                                 class="nominee-image">
@@ -700,7 +708,7 @@
 
                 <!-- Nominee 32 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1600">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="Adama KONE"
                                 class="nominee-image">
@@ -715,7 +723,7 @@
 
                 <!-- Nominee 33 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1650">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="Aminata SOW"
                                 class="nominee-image">
@@ -730,7 +738,7 @@
 
                 <!-- Nominee 34 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1700">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="Salimata TRAORE"
                                 class="nominee-image">
@@ -745,7 +753,7 @@
 
                 <!-- Nominee 35 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1750">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="Coumba GUEYE"
                                 class="nominee-image">
@@ -760,7 +768,7 @@
 
                 <!-- Nominee 36 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1800">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="Maimouna NDIAYE"
                                 class="nominee-image">
@@ -773,10 +781,10 @@
                     </div>
                 </div>
 
-                <!-- LIGNE 7 - MASQU�E INITIALEMENT -->
+                <!-- LIGNE 7 - MASQUE INITIALEMENT -->
                 <!-- Nominee 37 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1850">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="Djénaba KABA"
                                 class="nominee-image">
@@ -791,7 +799,7 @@
 
                 <!-- Nominee 38 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1900">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="Maryam OUEDRAOGO"
                                 class="nominee-image">
@@ -806,7 +814,7 @@
 
                 <!-- Nominee 39 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="1950">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="MARIAM SYLLA"
                                 class="nominee-image">
@@ -821,7 +829,7 @@
 
                 <!-- Nominee 40 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2000">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="PASCALE ELVIRE TANH"
                                 class="nominee-image">
@@ -836,7 +844,7 @@
 
                 <!-- Nominee 41 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2050">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="ANNICK KOFFI"
                                 class="nominee-image">
@@ -851,7 +859,7 @@
 
                 <!-- Nominee 42 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2100">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}"
                                 alt="JOCELYNE AGNERO EPSE SILUE" class="nominee-image">
@@ -864,10 +872,10 @@
                     </div>
                 </div>
 
-                <!-- LIGNE 8 - MASQU�E INITIALEMENT -->
+                <!-- LIGNE 8 - MASQUE INITIALEMENT -->
                 <!-- Nominee 43 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2150">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="YAO CHANTALE"
                                 class="nominee-image">
@@ -882,7 +890,7 @@
 
                 <!-- Nominee 44 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2200">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}"
                                 alt="KOUAME FLEUR YENI EPSE ABDOU" class="nominee-image">
@@ -897,7 +905,7 @@
 
                 <!-- Nominee 45 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2250">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="JULIE ESSE"
                                 class="nominee-image">
@@ -912,7 +920,7 @@
 
                 <!-- Nominee 46 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2300">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}"
                                 alt="N'GOM EHOUMAN INGRID RAISSA OULY" class="nominee-image">
@@ -927,7 +935,7 @@
 
                 <!-- Nominee 47 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2350">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="TIMINI BINKO AMINATA"
                                 class="nominee-image">
@@ -942,7 +950,7 @@
 
                 <!-- Nominee 48 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2400">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="HAWA SAKHO"
                                 class="nominee-image">
@@ -955,10 +963,10 @@
                     </div>
                 </div>
 
-                <!-- LIGNE 9 - MASQU�E INITIALEMENT -->
+                <!-- LIGNE 9 - MASQUE INITIALEMENT -->
                 <!-- Nominee 49 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2450">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="DOUMBIA FANTA"
                                 class="nominee-image">
@@ -973,7 +981,7 @@
 
                 <!-- Nominee 50 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2500">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="MAIMOUNA SISSOKO"
                                 class="nominee-image">
@@ -988,7 +996,7 @@
 
                 <!-- Nominee 51 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2550">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="LUCIE GBAKAYORO"
                                 class="nominee-image">
@@ -1003,7 +1011,7 @@
 
                 <!-- Nominee 52 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2600">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}"
                                 alt="OUHONOHI JEANETTE EPSE KIPRE" class="nominee-image">
@@ -1018,7 +1026,7 @@
 
                 <!-- Nominee 53 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2650">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="ARAMATOU COULIBALY"
                                 class="nominee-image">
@@ -1033,7 +1041,7 @@
 
                 <!-- Nominee 54 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2700">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="KOUADIO B CLAUDINE"
                                 class="nominee-image">
@@ -1046,10 +1054,10 @@
                     </div>
                 </div>
 
-                <!-- LIGNE 10 - MASQU�E INITIALEMENT -->
+                <!-- LIGNE 10 - MASQUE INITIALEMENT -->
                 <!-- Nominee 55 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2750">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="AIZAN FLORENCE"
                                 class="nominee-image">
@@ -1064,7 +1072,7 @@
 
                 <!-- Nominee 56 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2800">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="EDWIGE G HAMMOND"
                                 class="nominee-image">
@@ -1079,7 +1087,7 @@
 
                 <!-- Nominee 57 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2850">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="OLLIBO ALICE YAGBA"
                                 class="nominee-image">
@@ -1094,7 +1102,7 @@
 
                 <!-- Nominee 58 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2900">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}"
                                 alt="ADEBISI ESSIKAN FATOUMATA" class="nominee-image">
@@ -1109,7 +1117,7 @@
 
                 <!-- Nominee 59 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="2950">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="MOULARE CELINE"
                                 class="nominee-image">
@@ -1124,7 +1132,7 @@
 
                 <!-- Nominee 60 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="3000">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="OUATTARA EDMONDE"
                                 class="nominee-image">
@@ -1137,10 +1145,10 @@
                     </div>
                 </div>
 
-                <!-- LIGNE 11 - MASQU�E INITIALEMENT -->
+                <!-- LIGNE 11 - MASQUE INITIALEMENT -->
                 <!-- Nominee 61 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="3050">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="LAWSON KOHOUE HUGUETTE"
                                 class="nominee-image">
@@ -1155,7 +1163,7 @@
 
                 <!-- Nominee 62 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="3100">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}"
                                 alt="BLA PAULINE EPOUSE MINHOUE" class="nominee-image">
@@ -1170,7 +1178,7 @@
 
                 <!-- Nominee 63 -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="nominee-card" data-aos="fade-up" data-aos-delay="3150">
+                    <div class="nominee-card">
                         <div class="nominee-image-container">
                             <img src="{{ asset('assets/images/impact-feminin/nominee.png') }}" alt="DAGRY YACE MANDY"
                                 class="nominee-image">
@@ -1186,16 +1194,30 @@
         </div>
     </section>
 
-    <!-- Script pour le chargement progressif des nominees -->
-    <script>
-        // Configuration globale pour les chemins d'assets
-        window.assetBaseUrl = '{{ url('/') }}';
-    </script>
-    <script src="{{ asset('assets/js/nominees-loader.js') }}"></script>
+    
 
-    <!-- Script pour l'affichage dynamique des logos d'entreprises -->
-    <script src="{{ asset('assets/js/partners-loader.js') }}"></script>
+    <!-- ===== SECTION TÉLÉCHARGER LE PROGRAMME ===== -->
+    <section class="impact-download-section py-5" style="background: white;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <img src="{{ asset('assets/images/impact-feminin/image2.jpg') }}" alt="Programme Impact Féminin" class="img-fluid" style="max-width: 300px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                </div>
+                <div class="col-lg-6">
+                    <div class="download-content text-center text-lg-start">
+                        <h2 class="download-title" style="color: var(--impact-primary); font-weight: 700; font-size: 2.5rem;">Téléchargez le Programme</h2>
+                        <p class="download-subtitle" style="color: #666; font-size: 1.2rem; margin-bottom: 30px;">Découvrez le programme complet de l'événement, y compris les thématiques détaillées et les horaires des sessions.</p>
+                        <a href="{{ asset('assets/pdf/programme.pdf') }}" class="btn-download" style="background: var(--impact-button); color: white; padding: 15px 35px; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; transition: all 0.3s ease;">
+                            <i class="fas fa-download me-2"></i>
+                            Télécharger le PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    {{--
     <!-- ===== SECTION 4 - THÉMATIQUES ABORDÉES ===== -->
     <section class="impact-themes-section py-5">
         <div class="container">
@@ -1449,6 +1471,7 @@
             </div>
         </div>
     </section>
+    --}}
 
     <!-- ===== SECTION 7 - INTERVENANTS & PANÉLISTES ===== -->
     <section class="impact-speakers-section py-5">
