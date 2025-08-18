@@ -194,5 +194,6 @@ Route::prefix('admin')->group(function () {
         Route::get('impact-feminin-export', [\App\Http\Controllers\Admin\ImpactFemininController::class, 'export'])->name('impact-feminin.export');
         Route::resource('reservations', \App\Http\Controllers\Admin\ReservationController::class);
         Route::get('reservations-export', [\App\Http\Controllers\Admin\ReservationController::class, 'export'])->name('reservations.export');
+        Route::resource('rencontre-inscriptions', \App\Http\Controllers\Admin\RencontreInscription2026Controller::class);
     });
 });

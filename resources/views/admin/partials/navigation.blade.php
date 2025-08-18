@@ -89,6 +89,22 @@
             </li>
             
             <li class="nav-item">
+                <a href="{{ route('admin.rencontre-inscriptions.index') }}" class="nav-link {{ Request::is('admin/rencontre-inscriptions*') ? 'active' : '' }}">
+                    <div class="nav-icon">
+                        <i class="material-icons">how_to_reg</i>
+                    </div>
+                    <span class="nav-text">Inscriptions Rencontres 2026</span>
+                    @php
+                        $rencontreCount = \DB::table('rencontre_inscription2026s')->count();
+                    @endphp
+                    @if($rencontreCount > 0)
+                        <div class="notification-badge">{{ $rencontreCount }}</div>
+                    @endif
+                    <div class="nav-indicator"></div>
+                </a>
+            </li>
+            
+            <li class="nav-item">
                 <a href="{{ route('admin.contact.index') }}" class="nav-link {{ Request::is('admin/contact*') ? 'active' : '' }}">
                     <div class="nav-icon">
                         <i class="material-icons">mail</i>

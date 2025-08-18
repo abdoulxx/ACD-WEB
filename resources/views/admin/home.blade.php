@@ -5,18 +5,18 @@
 <div class="dashboard-modern">
     <!-- Quick Stats Cards -->
     <div class="stats-grid">
-        <!-- Messages de Contact -->
-        <div class="stat-card primary">
+        <!-- Inscriptions Rencontres 2026 -->
+        <div class="stat-card dark">
             <div class="stat-icon">
-                <i class="material-icons">mail</i>
+                <i class="material-icons">how_to_reg</i>
             </div>
             <div class="stat-content">
-                <h3 class="stat-number">{{ \App\Models\Contact::count() }}</h3>
-                <p class="stat-label">Messages de Contact</p>
+                <h3 class="stat-number">{{ \App\Models\RencontreInscription2026::count() }}</h3>
+                <p class="stat-label">Inscriptions Rencontres 2026</p>
                 <div class="stat-trend">
                     <span class="trend-indicator positive">
                         <i class="material-icons">trending_up</i>
-                        +{{ \App\Models\Contact::whereDate('created_at', today())->count() }} aujourd'hui
+                        +{{ \App\Models\RencontreInscription2026::whereDate('created_at', today())->count() }} aujourd'hui
                     </span>
                 </div>
             </div>
@@ -133,12 +133,28 @@
                             $item->route = route('admin.reservations.show', $item->id);
                             return $item;
                         });
+
+                    $recentRencontres = \App\Models\RencontreInscription2026::select('id', 'nom_prenom', 'entreprise', 'pack_choisi', 'destinations', 'created_at')
+                        ->orderBy('created_at', 'desc')
+                        ->take(10)
+                        ->get()
+                        ->map(function($item) {
+                            $item->type = 'rencontre';
+                            $item->titre = 'Nouvelle inscription Rencontre 2026';
+                            $item->description = $item->nom_prenom . (' de ' . $item->entreprise ?? '');
+                            $item->meta1 = 'Pack: ' . $item->pack_choisi;
+                            $item->meta2 = count($item->destinations) . ' ' . \Illuminate\Support\Str::plural('destination', count($item->destinations));
+                            $item->meta2_class = 'destinations';
+                            $item->route = route('admin.rencontre-inscriptions.show', $item->id);
+                            return $item;
+                        });
                     
                     // Combiner toutes les activités et trier par date décroissante
                     $allActivities = collect()
                         ->merge($recentCandidatures)
                         ->merge($recentImpactFeminin)
                         ->merge($recentReservations)
+                        ->merge($recentRencontres)
                         ->sortByDesc('created_at')
                         ->take(15); // Limiter à 15 activités les plus récentes
                 @endphp
@@ -151,6 +167,8 @@
                                 <i class="material-icons">workspace_premium</i>
                             @elseif($activity->type == 'impact-feminin')
                                 <i class="material-icons">female</i>
+                            @elseif($activity->type == 'rencontre')
+                                <i class="material-icons">how_to_reg</i>
                             @else
                                 <i class="material-icons">event_seat</i>
                             @endif
@@ -440,6 +458,10 @@
     background: linear-gradient(135deg, #3b82f6, #1d4ed8);
 }
 
+.activity-item.rencontre .activity-icon {
+    background: linear-gradient(135deg, #374151, #1f2937);
+}
+
 .activity-content {
     flex: 1;
 }
@@ -495,6 +517,12 @@
     background: #fef3c7;
     color: #92400e;
     border-color: #fed7aa;
+}
+
+.meta-item.destinations {
+    background: #f1f5f9;
+    color: #475569;
+    border-color: #e2e8f0;
 }
 
 .activity-actions {
