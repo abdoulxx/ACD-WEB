@@ -13,7 +13,9 @@ use App\Http\Controllers\{
     NosLaureatsController,
     PrixExcellenceController,
     MentionsLegalesController,
-    ConditionsUtilisationsController
+    ConditionsUtilisationsController,
+    RencontreController,
+    InscriptionController
 };
 
 /*
@@ -93,6 +95,14 @@ Route::group([
     */
     Route::get('/nous-contacter', [ContactController::class, 'index'])->name('contact.index');
     Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+
+    /*
+    |--------------------------------------------------------------------------
+    | Rencontre 2026
+    |--------------------------------------------------------------------------
+    */
+    Route::get('/rencontres-b2b-internationales-2026', [RencontreController::class, 'index'])->name('pages.rencontre2026');
+    Route::post('/inscription-rencontre-2026', [InscriptionController::class, 'store'])->name('inscription.store');
 
     /*
     |--------------------------------------------------------------------------

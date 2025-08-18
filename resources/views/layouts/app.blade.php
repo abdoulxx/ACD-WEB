@@ -115,9 +115,9 @@
             color: #FFFFFF !important;
             box-shadow: none;
         }
+    }
     </style>
-    
-</head>
+    </head>
 <body>
 <div class="site-wrapper">
 
@@ -217,7 +217,7 @@
         -->
         <!-- Rencontre 2026 button -->
         <li class="nav-item">
-          <a href="https://plaquette.acdcorporateservices.com/" target="_blank" class="btn btn-rencontre-2026-white text-uppercase fw-bold px-4 py-2 rounded-pill">
+          <a href="{{ route('pages.rencontre2026') }}" class="btn btn-rencontre-2026-white text-uppercase fw-bold px-4 py-2 rounded-pill">
             Rencontre 2026
           </a>
         </li>
@@ -488,7 +488,7 @@
 </script>
     
 <script src="//code.tidio.co/hhbmtsbdx2kuuw5fbsuta6g8dmqaqmsi.js" async></script>
-
+@stack('scripts')
 </body>
 
 <!-- Mirrored from codelayers.net/templates/aikra/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jan 2024 14:26:07 GMT -->
