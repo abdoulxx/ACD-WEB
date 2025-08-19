@@ -31,6 +31,9 @@
                         <p style="font-size: 1.2rem;">
                             NOVOTEL PLATEAU
                         </p>
+                        <p style="font-size: 1.5rem; font-weight: 600; margin-bottom: 5px;">
+                            Pack d'entreprise 550.000 FCFA
+                        </p>
                     </div>
                 </div>
             </div>
@@ -100,7 +103,8 @@
             <div class="row mb-5">
                 <div class="col-12 text-center">
                     <h2 class="impact-awards-title" data-aos="fade-up" data-aos-duration="1000">
-                        {{ __('event.awards_title') }}</h2>
+                        {{ __('event.awards_title') }}
+                    </h2>
                     <p class="impact-awards-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                         {{ __('event.awards_subtitle') }}
                     </p>
@@ -224,7 +228,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="text-center mb-5">
-                        <h2 class="nominees-main-title" data-aos="fade-up" data-aos-duration="1000">{{ __('event.nominees_title') }}
+                        <h2 class="nominees-main-title" data-aos="fade-up" data-aos-duration="1000">
+                            {{ __('event.nominees_title') }}
                         </h2>
                         <p class="nominees-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                             {{ __('event.nominees_description') }}
@@ -1194,20 +1199,26 @@
         </div>
     </section>
 
-    
 
     <!-- ===== SECTION TÉLÉCHARGER LE PROGRAMME ===== -->
     <section class="impact-download-section py-5" style="background: white;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 text-center text-lg-start">
-                    <img src="{{ asset('assets/images/impact-feminin/image2.jpg') }}" alt="Programme Impact Féminin" class="img-fluid" style="max-width: 300px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <img src="{{ asset('assets/images/impact-feminin/image2.jpg') }}" alt="Programme Impact Féminin"
+                        class="img-fluid"
+                        style="max-width: 300px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
                 </div>
                 <div class="col-lg-6">
                     <div class="download-content text-center text-lg-start">
-                        <h2 class="download-title" style="color: var(--impact-primary); font-weight: 700; font-size: 2.5rem;">Téléchargez le Programme</h2>
-                        <p class="download-subtitle" style="color: #666; font-size: 1.2rem; margin-bottom: 30px;">Découvrez le programme complet de l'événement, y compris les thématiques détaillées et les horaires des sessions.</p>
-                        <a href="{{ asset('assets/pdf/programme.pdf') }}" class="btn-download" style="background: var(--impact-button); color: white; padding: 15px 35px; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; transition: all 0.3s ease;">
+                        <h2 class="download-title"
+                            style="color: var(--impact-primary); font-weight: 700; font-size: 2.5rem;">Téléchargez le
+                            Programme</h2>
+                        <p class="download-subtitle" style="color: #666; font-size: 1.2rem; margin-bottom: 30px;">Découvrez
+                            le programme complet de l'événement, y compris les thématiques détaillées et les horaires des
+                            sessions.</p>
+                        <a href="{{ asset('assets/pdf/programme.pdf') }}" class="btn-download"
+                            style="background: var(--impact-button); color: white; padding: 15px 35px; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; transition: all 0.3s ease;">
                             <i class="fas fa-download me-2"></i>
                             Télécharger le PDF
                         </a>
@@ -1217,261 +1228,6 @@
         </div>
     </section>
 
-    {{--
-    <!-- ===== SECTION 4 - THÉMATIQUES ABORDÉES ===== -->
-    <section class="impact-themes-section py-5">
-        <div class="container">
-            <!-- Titre de la section -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center mb-5">
-                        <h2 class="themes-main-title" data-aos="fade-up" data-aos-duration="1000">
-                            {{ __('event.themes_title') }}</h2>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Cartes thématiques -->
-            <div class="row g-4 justify-content-center">
-                <!-- Thématique 1 : Entrepreneuriat Féminin -->
-                <div class="col-lg-5 col-md-6">
-                    <div class="theme-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
-                        <img src="{{ asset('assets/images/impact-feminin/image2.png') }}" alt="Entrepreneuriat Féminin"
-                            class="theme-image">
-                        <div class="theme-overlay">
-                            <div class="theme-content">
-                                <h3 class="theme-title">{{ __('event.theme1_title') }}</h3>
-                                <p class="theme-description">
-                                    {{ __('event.theme1_description') }}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Thématique 2 : Leadership Féminin -->
-                <div class="col-lg-5 col-md-6">
-                    <div class="theme-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
-                        <img src="{{ asset('assets/images/impact-feminin/image3.png') }}" alt="Leadership Féminin"
-                            class="theme-image">
-                        <div class="theme-overlay">
-                            <div class="theme-content">
-                                <h3 class="theme-title">{{ __('event.theme2_title') }}</h3>
-                                <p class="theme-description">
-                                    {{ __('event.theme2_description') }}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bouton de réservation -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center mt-5">
-                        <a href="{{ route('reservation.create') }}" class="impact-reserve-btn" data-aos="fade-up"
-                            data-aos-duration="1000" data-aos-delay="600">
-                            {{ __('event.reserve_button') }}
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== SECTION 5 - APPEL À LA CANDIDATURE ===== -->
-    <section class="impact-candidature-section py-5">
-        <div class="container">
-            <!-- Titre de la section -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center mb-4">
-                        <h2 class="candidature-main-title" data-aos="fade-up" data-aos-duration="1000">
-                            {{ __('event.application_title') }}</h2>
-                        <p class="candidature-subtitle" data-aos="fade-up" data-aos-delay="300">
-                            {!! __('event.application_subtitle') !!}
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Cartes de candidature -->
-            <div class="row g-4 justify-content-center mb-5">
-                <!-- Devenir Participant -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="candidature-card" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="candidature-header">
-                            <h3 class="candidature-card-title">{{ __('event.role1_title') }}</h3>
-                        </div>
-                        <div class="candidature-content">
-                            <p class="candidature-question">
-                                {{ __('event.role1_question') }}
-                            </p>
-                            <p class="candidature-description">
-                                {{ __('event.role1_description') }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Devenir Sponsor -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="candidature-card" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="candidature-header">
-                            <h3 class="candidature-card-title">{{ __('event.role2_title') }}</h3>
-                        </div>
-                        <div class="candidature-content">
-                            <p class="candidature-question">
-                                {{ __('event.role2_question') }}
-                            </p>
-                            <p class="candidature-description">
-                                {{ __('event.role2_description') }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Devenir Exposant -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="candidature-card" data-aos="zoom-in" data-aos-delay="500">
-                        <div class="candidature-header">
-                            <h3 class="candidature-card-title">{{ __('event.role3_title') }}</h3>
-                        </div>
-                        <div class="candidature-content">
-                            <p class="candidature-question">
-                                {{ __('event.role3_question') }}
-                            </p>
-                            <p class="candidature-description">
-                                {{ __('event.role3_description') }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bouton de réservation principal -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center">
-                        <a href="{{ route('reservation.create') }}" class="impact-candidature-btn">
-                            {{ __('event.reserve_button') }}
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== SECTION 6 - PROGRAMME OFFICIEL ===== -->
-    <section class="impact-programme-section py-5">
-        <div class="container">
-            <!-- Titre de la section -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center mb-5">
-                        <h2 class="programme-main-title" data-aos="fade-up" data-aos-duration="1000">
-                            {{ __('event.program_title') }}</h2>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Grille du programme -->
-            <div class="row g-4">
-                <!-- Accueil & Installation -->
-                <div class="col-lg-6 col-md-6">
-                    <div class="programme-card" data-aos="fade-left" data-aos-delay="100">
-                        <div class="programme-header">
-                            <h3 class="programme-title">{{ __('event.event1_title') }}</h3>
-                            <p class="programme-subtitle">{{ __('event.event1_subtitle') }}</p>
-                            <span class="programme-time">{{ __('event.event1_time') }}</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mot de bienvenue -->
-                <div class="col-lg-6 col-md-6">
-                    <div class="programme-card" data-aos="fade-right" data-aos-delay="200">
-                        <div class="programme-header">
-                            <h3 class="programme-title">{{ __('event.event2_title') }}</h3>
-                            <p class="programme-subtitle">{{ __('event.event2_subtitle') }}</p>
-                            <span class="programme-time">{{ __('event.event2_time') }}</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Panel -->
-                <div class="col-lg-6 col-md-6">
-                    <div class="programme-card" data-aos="fade-left" data-aos-delay="300">
-                        <div class="programme-header">
-                            <h3 class="programme-title">{{ __('event.event3_title') }}</h3>
-                            <p class="programme-subtitle">{{ __('event.event3_subtitle') }}</p>
-                            <span class="programme-time">{{ __('event.event3_time') }}</span>
-                        </div>
-                        <div class="programme-details">
-                            <p>{{ __('event.event3_details') }}</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Atelier Interactif -->
-                <div class="col-lg-6 col-md-6">
-                    <div class="programme-card" data-aos="fade-right" data-aos-delay="400">
-                        <div class="programme-header">
-                            <h3 class="programme-title">{{ __('event.event4_title') }}</h3>
-                            <p class="programme-subtitle">{{ __('event.event4_subtitle') }}</p>
-                            <span class="programme-time">{{ __('event.event4_time') }}</span>
-                        </div>
-                        <div class="programme-details">
-                            <p>{{ __('event.event4_details') }}</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Remise des Prix -->
-                <div class="col-lg-6 col-md-6">
-                    <div class="programme-card" data-aos="fade-left" data-aos-delay="500">
-                        <div class="programme-header">
-                            <h3 class="programme-title">{{ __('event.event5_title') }}</h3>
-                            <p class="programme-subtitle">{{ __('event.event5_subtitle') }}</p>
-                            <span class="programme-time">{{ __('event.event5_time') }}</span>
-                        </div>
-                        <div class="programme-details">
-                            <p>{!! __('event.event5_details') !!}</p>
-
-                            <p>{{ __('event.event5_details2') }}</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cocktail de Clôture -->
-                <div class="col-lg-6 col-md-6">
-                    <div class="programme-card" data-aos="fade-right" data-aos-delay="600">
-                        <div class="programme-header">
-                            <h3 class="programme-title">{{ __('event.event6_title') }}</h3>
-                            <p class="programme-subtitle">{{ __('event.event6_subtitle') }}</p>
-                            <span class="programme-time">{{ __('event.event6_time') }}</span>
-                        </div>
-                        <div class="programme-details">
-                            <p>{{ __('event.event6_details') }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bouton de réservation -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center mt-5">
-                        <a href="{{ route('reservation.create') }}" class="impact-programme-btn">
-                            {{ __('event.reserve_button') }}
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    --}}
 
     <!-- ===== SECTION 7 - INTERVENANTS & PANÉLISTES ===== -->
     <section class="impact-speakers-section py-5">
@@ -1481,69 +1237,41 @@
                 <div class="col-12">
                     <div class="text-center mb-5">
                         <h2 class="speakers-main-title" data-aos="fade-up" data-aos-duration="1000">
-                            {{ __('event.speakers_title') }}</h2>
+                            {{ __('event.speakers_title') }}
+                        </h2>
                     </div>
                 </div>
             </div>
 
             <!-- Cartes des intervenants -->
             <div class="row g-4 justify-content-center mb-5">
-                <!-- Intervenant 1 -->
+
+                <!-- Modératrice : Marième TOURÉ -->
                 <div class="col-lg-3 col-md-6">
-                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="150">
                         <div class="speaker-image-container">
-                            <img src="{{ asset('assets/images/impact-feminin/nominee2.png') }}" alt="Intervenante 1"
+                            <img src="{{ asset('assets/images/impact-feminin/marieme.png') }}" alt="Marième TOURÉ"
                                 class="speaker-image">
                         </div>
                         <div class="speaker-info">
-                            <h4 class="speaker-name">Dr. Aminata KOUAMÉ</h4>
-                            <p class="speaker-title">Directrice Générale</p>
-                            <p class="speaker-company">InnovTech Africa</p>
+                            <h4 class="speaker-name">Marième TOURÉ</h4>
+                            <p class="speaker-title">Modératrice</p>
+                            <p class="speaker-company">Journaliste / Animatrice RTI</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Intervenant 2 -->
+                <!-- Modérateur : ALI Diarassouba -->
                 <div class="col-lg-3 col-md-6">
                     <div class="speaker-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="speaker-image-container">
-                            <img src="{{ asset('assets/images/impact-feminin/nominee2.png') }}" alt="Intervenante 2"
+                            <img src="{{ asset('assets/images/impact-feminin/ali.png') }}" alt="ALI Diarassouba"
                                 class="speaker-image">
                         </div>
                         <div class="speaker-info">
-                            <h4 class="speaker-name">Fatou DIALLO</h4>
-                            <p class="speaker-title">Fondatrice & CEO</p>
-                            <p class="speaker-company">EcoFin Solutions</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Intervenant 3 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="speaker-image-container">
-                            <img src="{{ asset('assets/images/impact-feminin/nominee2.png') }}" alt="Intervenante 3"
-                                class="speaker-image">
-                        </div>
-                        <div class="speaker-info">
-                            <h4 class="speaker-name">Mme Khadija BENALI</h4>
-                            <p class="speaker-title">Présidente</p>
-                            <p class="speaker-company">Women Leadership Network</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Intervenant 4 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="400">
-                        <div class="speaker-image-container">
-                            <img src="{{ asset('assets/images/impact-feminin/nominee2.png') }}" alt="Intervenante 4"
-                                class="speaker-image">
-                        </div>
-                        <div class="speaker-info">
-                            <h4 class="speaker-name">Pr. Aïcha TRAORÉ</h4>
-                            <p class="speaker-title">Experte en Entrepreneuriat</p>
-                            <p class="speaker-company">Université d'Abidjan</p>
+                            <h4 class="speaker-name">ALI Diarassouba</h4>
+                            <p class="speaker-title">Modérateur</p>
+                            <p class="speaker-company">Journaliste / Directeur de l’information NCI</p>
                         </div>
                     </div>
                 </div>
@@ -1571,7 +1299,8 @@
                 <div class="col-12">
                     <div class="text-center mb-5">
                         <h2 class="partners-main-title" data-aos="fade-up" data-aos-duration="1000">
-                            {{ __('event.partners_title') }}</h2>
+                            {{ __('event.partners_title') }}
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -1581,7 +1310,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/afy.png') }}" alt="A'FY Immobilier" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/afy.png') }}"
+                                alt="A'FY Immobilier" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">A'FY Immobilier</span></div>
                         </div>
                     </div>
@@ -1589,7 +1319,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/agf.png') }}" alt="AGF Entreprises" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/agf.png') }}"
+                                alt="AGF Entreprises" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">AGF Entreprises</span></div>
                         </div>
                     </div>
@@ -1597,7 +1328,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/antilia.png') }}" alt="Antilia Immobilier" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/antilia.png') }}"
+                                alt="Antilia Immobilier" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Antilia Immobilier</span></div>
                         </div>
                     </div>
@@ -1605,7 +1337,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/ayana.png') }}" alt="Ayana Webzine" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/ayana.png') }}"
+                                alt="Ayana Webzine" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Ayana Webzine</span></div>
                         </div>
                     </div>
@@ -1613,7 +1346,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/batidecor.png') }}" alt="Groupe Batidecor" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/batidecor.png') }}"
+                                alt="Groupe Batidecor" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Groupe Batidecor</span></div>
                         </div>
                     </div>
@@ -1621,7 +1355,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/binko.png') }}" alt="Binko et Associés" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/binko.png') }}"
+                                alt="Binko et Associés" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Binko et Associés</span></div>
                         </div>
                     </div>
@@ -1629,7 +1364,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/caline.png') }}" alt="Caaaline Karitesthetic" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/caline.png') }}"
+                                alt="Caaaline Karitesthetic" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Caaaline Karitesthetic</span></div>
                         </div>
                     </div>
@@ -1637,7 +1373,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/carre.png') }}" alt="Carré Premium SARL" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/carre.png') }}"
+                                alt="Carré Premium SARL" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Carré Premium SARL</span></div>
                         </div>
                     </div>
@@ -1645,7 +1382,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/cislo.png') }}" alt="CISLO" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/cislo.png') }}" alt="CISLO"
+                                class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">CISLO</span></div>
                         </div>
                     </div>
@@ -1653,7 +1391,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/corail.png') }}" alt="Corail Immobilier" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/corail.png') }}"
+                                alt="Corail Immobilier" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Corail Immobilier</span></div>
                         </div>
                     </div>
@@ -1661,7 +1400,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/dbalixpress.png') }}" alt="Dabali Xpress" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/dbalixpress.png') }}"
+                                alt="Dabali Xpress" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Dabali Xpress</span></div>
                         </div>
                     </div>
@@ -1669,7 +1409,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/divina.png') }}" alt="Divana" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/divina.png') }}" alt="Divana"
+                                class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Divana</span></div>
                         </div>
                     </div>
@@ -1677,7 +1418,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/djolo.png') }}" alt="Coopérative Djolo" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/djolo.png') }}"
+                                alt="Coopérative Djolo" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Coopérative Djolo</span></div>
                         </div>
                     </div>
@@ -1685,7 +1427,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/etd.png') }}" alt="ETD" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/etd.png') }}" alt="ETD"
+                                class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">ETD</span></div>
                         </div>
                     </div>
@@ -1693,7 +1436,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/farm.png') }}" alt="Farm Invest" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/farm.png') }}"
+                                alt="Farm Invest" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Farm Invest</span></div>
                         </div>
                     </div>
@@ -1701,7 +1445,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/faty.png') }}" alt="Agence Faty Services" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/faty.png') }}"
+                                alt="Agence Faty Services" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Agence Faty Services</span></div>
                         </div>
                     </div>
@@ -1709,7 +1454,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/florence.png') }}" alt="Centre Florence" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/florence.png') }}"
+                                alt="Centre Florence" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Centre Florence</span></div>
                         </div>
                     </div>
@@ -1717,7 +1463,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/gfm3.png') }}" alt="ONG GFM3" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/gfm3.png') }}" alt="ONG GFM3"
+                                class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">ONG GFM3</span></div>
                         </div>
                     </div>
@@ -1725,7 +1472,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/isis.png') }}" alt="ISIS Agence" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/isis.png') }}"
+                                alt="ISIS Agence" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">ISIS Agence</span></div>
                         </div>
                     </div>
@@ -1733,7 +1481,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/konnievenence.png') }}" alt="Konnievence Productions" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/konnievenence.png') }}"
+                                alt="Konnievence Productions" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Konnievence Productions</span></div>
                         </div>
                     </div>
@@ -1741,7 +1490,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/kovibat.png') }}" alt="Kovibat" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/kovibat.png') }}" alt="Kovibat"
+                                class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Kovibat</span></div>
                         </div>
                     </div>
@@ -1749,7 +1499,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/kreno.png') }}" alt="Kreno Consulting" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/kreno.png') }}"
+                                alt="Kreno Consulting" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Kreno Consulting</span></div>
                         </div>
                     </div>
@@ -1757,7 +1508,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/lys.png') }}" alt="Lys de Marie" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/lys.png') }}"
+                                alt="Lys de Marie" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Lys de Marie</span></div>
                         </div>
                     </div>
@@ -1765,7 +1517,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/maisondeco.png') }}" alt="Maison du Décorateur" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/maisondeco.png') }}"
+                                alt="Maison du Décorateur" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Maison du Décorateur</span></div>
                         </div>
                     </div>
@@ -1773,7 +1526,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/mat.png') }}" alt="Agence MAT" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/mat.png') }}" alt="Agence MAT"
+                                class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Agence MAT</span></div>
                         </div>
                     </div>
@@ -1781,7 +1535,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/mpa.png') }}" alt="MPA Cosmetics" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/mpa.png') }}"
+                                alt="MPA Cosmetics" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">MPA Cosmetics</span></div>
                         </div>
                     </div>
@@ -1789,7 +1544,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/nadre.png') }}" alt="Nadre Institut" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/nadre.png') }}"
+                                alt="Nadre Institut" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Nadre Institut</span></div>
                         </div>
                     </div>
@@ -1797,7 +1553,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/nedje.png') }}" alt="Nedje Couture" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/nedje.png') }}"
+                                alt="Nedje Couture" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Nedje Couture</span></div>
                         </div>
                     </div>
@@ -1805,7 +1562,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/nycegroupe.png') }}" alt="NYCE Groupe" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/nycegroupe.png') }}"
+                                alt="NYCE Groupe" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">NYCE Groupe</span></div>
                         </div>
                     </div>
@@ -1813,7 +1571,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/ofaci.png') }}" alt="ONG OFACI" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/ofaci.png') }}" alt="ONG OFACI"
+                                class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">ONG OFACI</span></div>
                         </div>
                     </div>
@@ -1821,7 +1580,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/ohel.png') }}" alt="Ohel International" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/ohel.png') }}"
+                                alt="Ohel International" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Ohel International</span></div>
                         </div>
                     </div>
@@ -1829,7 +1589,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/okhamare.png') }}" alt="Okhamar" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/okhamare.png') }}"
+                                alt="Okhamar" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Okhamar</span></div>
                         </div>
                     </div>
@@ -1837,7 +1598,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/ongbloom.png') }}" alt="ONG Bloom" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/ongbloom.png') }}"
+                                alt="ONG Bloom" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">ONG Bloom</span></div>
                         </div>
                     </div>
@@ -1845,7 +1607,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/onyx.png') }}" alt="Onyx Agence" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/onyx.png') }}"
+                                alt="Onyx Agence" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Onyx Agence</span></div>
                         </div>
                     </div>
@@ -1853,7 +1616,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/opticbelvue.png') }}" alt="Optic Bel Vue" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/opticbelvue.png') }}"
+                                alt="Optic Bel Vue" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Optic Bel Vue</span></div>
                         </div>
                     </div>
@@ -1861,7 +1625,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/pfsvci.png') }}" alt="PFSVCI" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/pfsvci.png') }}" alt="PFSVCI"
+                                class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">PFSVCI</span></div>
                         </div>
                     </div>
@@ -1869,7 +1634,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/quickcash.png') }}" alt="QuickCash" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/quickcash.png') }}"
+                                alt="QuickCash" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">QuickCash</span></div>
                         </div>
                     </div>
@@ -1877,7 +1643,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/rama.png') }}" alt="Rama Cereal" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/rama.png') }}"
+                                alt="Rama Cereal" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Rama Cereal</span></div>
                         </div>
                     </div>
@@ -1885,7 +1652,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/reflet.png') }}" alt="Reflet Consulting" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/reflet.png') }}"
+                                alt="Reflet Consulting" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Reflet Consulting</span></div>
                         </div>
                     </div>
@@ -1893,7 +1661,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/rosebate.png') }}" alt="Rosebate" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/rosebate.png') }}"
+                                alt="Rosebate" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Rosebate</span></div>
                         </div>
                     </div>
@@ -1901,7 +1670,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/roseline.png') }}" alt="Roschesli Création" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/roseline.png') }}"
+                                alt="Roschesli Création" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Roschesli Création</span></div>
                         </div>
                     </div>
@@ -1909,7 +1679,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/sage.png') }}" alt="SAGES-CI" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/sage.png') }}" alt="SAGES-CI"
+                                class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">SAGES-CI</span></div>
                         </div>
                     </div>
@@ -1917,7 +1688,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/shadai.png') }}" alt="El Shaddai Construction" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/shadai.png') }}"
+                                alt="El Shaddai Construction" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">El Shaddai Construction</span></div>
                         </div>
                     </div>
@@ -1925,7 +1697,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/sma.png') }}" alt="SMA BTP" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/sma.png') }}" alt="SMA BTP"
+                                class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">SMA BTP</span></div>
                         </div>
                     </div>
@@ -1933,7 +1706,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/socomap.png') }}" alt="SOCOMAP" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/socomap.png') }}" alt="SOCOMAP"
+                                class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">SOCOMAP</span></div>
                         </div>
                     </div>
@@ -1941,7 +1715,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/tepevent.png') }}" alt="TEP Events" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/tepevent.png') }}"
+                                alt="TEP Events" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">TEP Events</span></div>
                         </div>
                     </div>
@@ -1949,7 +1724,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/tulipe.png') }}" alt="Tulipe Food" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/tulipe.png') }}"
+                                alt="Tulipe Food" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Tulipe Food</span></div>
                         </div>
                     </div>
@@ -1957,7 +1733,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/vfc.png') }}" alt="VFC" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/vfc.png') }}" alt="VFC"
+                                class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">VFC</span></div>
                         </div>
                     </div>
@@ -1965,7 +1742,8 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="company-logo-card">
                         <div class="logo-container">
-                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/yrissa.png') }}" alt="Yrissa Immobilier" class="company-logo-img" loading="lazy">
+                            <img src="{{ asset('assets/images/impact-feminin/logo_entreprise/yrissa.png') }}"
+                                alt="Yrissa Immobilier" class="company-logo-img" loading="lazy">
                             <div class="logo-overlay"><span class="company-name">Yrissa Immobilier</span></div>
                         </div>
                     </div>
