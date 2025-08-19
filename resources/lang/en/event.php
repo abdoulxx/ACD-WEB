@@ -99,4 +99,8 @@ return [
     'nominees_description' => 'Discover the exceptional women entrepreneurs who are transforming Africa through their vision, determination and social impact!',
 
     'partners_title' => 'Partners',
+
+    'download_title' => 'Download the Program',
+    'download_subtitle' => 'Discover the full event program, including detailed themes and session times.',
+    'download_button' => 'Download PDF',
 ];

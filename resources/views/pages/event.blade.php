@@ -31,9 +31,6 @@
                         <p style="font-size: 1.2rem;">
                             NOVOTEL PLATEAU
                         </p>
-                        <p style="font-size: 1.5rem; font-weight: 600; margin-bottom: 5px;">
-                            Pack d'entreprise 550.000 FCFA
-                        </p>
                     </div>
                 </div>
             </div>
@@ -1212,15 +1209,12 @@
                 <div class="col-lg-6">
                     <div class="download-content text-center text-lg-start">
                         <h2 class="download-title"
-                            style="color: var(--impact-primary); font-weight: 700; font-size: 2.5rem;">Téléchargez le
-                            Programme</h2>
-                        <p class="download-subtitle" style="color: #666; font-size: 1.2rem; margin-bottom: 30px;">Découvrez
-                            le programme complet de l'événement, y compris les thématiques détaillées et les horaires des
-                            sessions.</p>
-                        <a href="{{ asset('assets/pdf/programme.pdf') }}" class="btn-download"
+                            style="color: var(--impact-primary); font-weight: 700; font-size: 2.5rem;">{{ __('event.download_title') }}</h2>
+                        <p class="download-subtitle" style="color: #666; font-size: 1.2rem; margin-bottom: 30px;">{{ __('event.download_subtitle') }}</p>
+                        <a href="{{ asset('assets/pdf/Impact_Feminin_2025_Programme.pdf') }}" class="btn-download"
                             style="background: var(--impact-button); color: white; padding: 15px 35px; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; transition: all 0.3s ease;">
                             <i class="fas fa-download me-2"></i>
-                            Télécharger le PDF
+                            {{ __('event.download_button') }}
                         </a>
                     </div>
                 </div>
@@ -1246,20 +1240,7 @@
             <!-- Cartes des intervenants -->
             <div class="row g-4 justify-content-center mb-5">
 
-                <!-- Modératrice : Marième TOURÉ -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="150">
-                        <div class="speaker-image-container">
-                            <img src="{{ asset('assets/images/impact-feminin/marieme.png') }}" alt="Marième TOURÉ"
-                                class="speaker-image">
-                        </div>
-                        <div class="speaker-info">
-                            <h4 class="speaker-name">Marième TOURÉ</h4>
-                            <p class="speaker-title">Modératrice</p>
-                            <p class="speaker-company">Journaliste / Animatrice RTI</p>
-                        </div>
-                    </div>
-                </div>
+
 
                 <!-- Modérateur : ALI Diarassouba -->
                 <div class="col-lg-3 col-md-6">
@@ -1272,6 +1253,21 @@
                             <h4 class="speaker-name">ALI Diarassouba</h4>
                             <p class="speaker-title">Modérateur</p>
                             <p class="speaker-company">Journaliste / Directeur de l’information NCI</p>
+                        </div>
+                    </div>
+                </div>
+
+                                <!-- Modératrice : Marième TOURÉ -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="speaker-image-container">
+                            <img src="{{ asset('assets/images/impact-feminin/marieme.png') }}" alt="Marième TOURÉ"
+                                class="speaker-image">
+                        </div>
+                        <div class="speaker-info">
+                            <h4 class="speaker-name">Marième TOURÉ</h4>
+                            <p class="speaker-title">Modératrice</p>
+                            <p class="speaker-company">Journaliste / Animatrice RTI</p>
                         </div>
                     </div>
                 </div>

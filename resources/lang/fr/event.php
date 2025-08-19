@@ -99,4 +99,8 @@ return [
     'nominees_description' => 'Découvrez les femmes entrepreneures exceptionnelles qui transforment l\'Afrique par leur vision, leur détermination et leur impact social !',
 
     'partners_title' => 'Entreprises nominées',
+
+    'download_title' => 'Téléchargez le Programme',
+    'download_subtitle' => 'Découvrez le programme complet de l\'événement, y compris les thématiques détaillées et les horaires des sessions.',
+    'download_button' => 'Télécharger le PDF',
 ];
