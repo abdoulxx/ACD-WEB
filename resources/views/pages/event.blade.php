@@ -1209,8 +1209,10 @@
                 <div class="col-lg-6">
                     <div class="download-content text-center text-lg-start">
                         <h2 class="download-title"
-                            style="color: var(--impact-primary); font-weight: 700; font-size: 2.5rem;">{{ __('event.download_title') }}</h2>
-                        <p class="download-subtitle" style="color: #666; font-size: 1.2rem; margin-bottom: 30px;">{{ __('event.download_subtitle') }}</p>
+                            style="color: var(--impact-primary); font-weight: 700; font-size: 2.5rem;">
+                            {{ __('event.download_title') }}</h2>
+                        <p class="download-subtitle" style="color: #666; font-size: 1.2rem; margin-bottom: 30px;">
+                            {{ __('event.download_subtitle') }}</p>
                         <a href="{{ asset('assets/pdf/Impact_Feminin_2025_Programme.pdf') }}" class="btn-download"
                             style="background: var(--impact-button); color: white; padding: 15px 35px; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; transition: all 0.3s ease;">
                             <i class="fas fa-download me-2"></i>
@@ -1257,7 +1259,7 @@
                     </div>
                 </div>
 
-                                <!-- Modératrice : Marième TOURÉ -->
+                <!-- Modératrice : Marième TOURÉ -->
                 <div class="col-lg-3 col-md-6">
                     <div class="speaker-card" data-aos="fade-up" data-aos-delay="150">
                         <div class="speaker-image-container">
@@ -1271,21 +1273,148 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Bouton de réservation -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center">
-                        <a href="{{ route('reservation.create') }}" class="impact-speakers-btn" data-aos="fade-up"
-                            data-aos-delay="500">
-                            {{ __('event.reserve_button') }}
-                        </a>
+                <!-- Panéliste : Dr. Anuraag Guglaani -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="250">
+                        <div class="speaker-image-container">
+                            <img src="{{ asset('assets/images/impact-feminin/anuraag.png.jpg') }}"
+                                alt="Dr. Anuraag Guglaani" class="speaker-image">
+                        </div>
+                        <div class="speaker-info">
+                            <h4 class="speaker-name">Dr. Anuraag Guglaani</h4>
+                            <p class="speaker-title">Board Member</p>
+                            <p class="speaker-company">Family business groups investisseur</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panéliste : Augustin Dago SERIKPA -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="speaker-image-container">
+                            <img src="{{ asset('assets/images/impact-feminin/augustin.png') }}" alt="Augustin Dago SERIKPA"
+                                class="speaker-image">
+                        </div>
+                        <div class="speaker-info">
+                            <h4 class="speaker-name">Augustin Dago SERIKPA</h4>
+                            <p class="speaker-title">Vice President FIPME</p>
+                            <p class="speaker-company">&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panéliste : Agnès KRAIDY -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="350">
+                        <div class="speaker-image-container">
+                            <img src="{{ asset('assets/images/impact-feminin/krady.png') }}" alt="Agnès KRAIDY"
+                                class="speaker-image">
+                        </div>
+                        <div class="speaker-info">
+                            <h4 class="speaker-name">Agnès KRAIDY</h4>
+                            <p class="speaker-title">Presidente AIP et REFJPCI</p>
+                            <p class="speaker-company">Ex rédactrice en chef du magazine Femme d'Afrique et Frat Mat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panéliste : Euphrasie Kouassi Yao -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="speaker-image-container">
+                            <img src="{{ asset('assets/images/impact-feminin/kouassi.png') }}" alt="Euphrasie Kouassi Yao"
+                                class="speaker-image">
+                        </div>
+                        <div class="speaker-info">
+                            <h4 class="speaker-name">Euphrasie Kouassi Yao</h4>
+                            <p class="speaker-title">Conseillère spéciale du président et du premier ministre chargée du
+                                genre</p>
+                            <p class="speaker-company">&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panéliste : Patricia Zoundi Yao -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="450">
+                        <div class="speaker-image-container">
+                            <img src="{{ asset('assets/images/impact-feminin/patricia.png') }}" alt="Patricia Zoundi Yao"
+                                class="speaker-image">
+                        </div>
+                        <div class="speaker-info">
+                            <h4 class="speaker-name">Patricia Zoundi Yao</h4>
+                            <p class="speaker-title">fondatrice de Quickcash (fintech) et Canaan Land (agribusiness)</p>
+                            <p class="speaker-company">&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panéliste : Bénédicte Janine Kacou Diagou -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="speaker-image-container">
+                            <img src="{{ asset('assets/images/impact-feminin/benedicte.png') }}"
+                                alt="Bénédicte Janine Kacou Diagou" class="speaker-image">
+                        </div>
+                        <div class="speaker-info">
+                            <h4 class="speaker-name">Bénédicte Janine Kacou Diagou</h4>
+                            <p class="speaker-title">PCA NSA GROUP</p>
+                            <p class="speaker-company">&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Panéliste : Véronique Vonan -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="550">
+                        <div class="speaker-image-container">
+                            <img src="{{ asset('assets/images/impact-feminin/vero.png') }}" alt="Véronique Vonan"
+                                class="speaker-image">
+                        </div>
+                        <div class="speaker-info">
+                            <h4 class="speaker-name">Véronique Vonan</h4>
+                            <p class="speaker-title">Fondatrice du Placali abouré</p>
+                            <p class="speaker-company">&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panéliste : Fatim Cissé -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="speaker-image-container">
+                            <img src="{{ asset('assets/images/impact-feminin/fatim.png') }}" alt="Fatim Cissé"
+                                class="speaker-image">
+                        </div>
+                        <div class="speaker-info">
+                            <h4 class="speaker-name">Fatim Cissé</h4>
+                            <p class="speaker-title">DG DUX Côte d’Ivoire et d’IHS Towers CI</p>
+                            <p class="speaker-company">&nbsp;</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        <!-- Bouton de réservation -->
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <a href="{{ route('reservation.create') }}" class="impact-speakers-btn" data-aos="fade-up"
+                        data-aos-delay="500">
+                        {{ __('event.reserve_button') }}
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
         </div>
     </section>
+
+
 
     <!-- ===== SECTION 8 - ENTREPRISES NOMINEES ===== -->
     <section class="impact-partners-section py-5">
