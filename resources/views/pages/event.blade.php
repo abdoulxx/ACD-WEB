@@ -1192,6 +1192,38 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Nominee 64: Véronique Vonan -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="nominee-card">
+                        <div class="nominee-image-container">
+                            <img src="{{ asset('assets/images/impact-feminin/vero.png') }}" alt="Véronique Vonan"
+                                class="nominee-image">
+                        </div>
+                        <div class="nominee-info">
+                            <h4 class="nominee-name">Véronique Vonan</h4>
+                             <p class="nominee-title">PDG</p>
+                            <p class="nominee-title">Fondatrice du Placali abouré</p>
+                            <p class="nominee-company">&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nominee 65: Fatim Cissé -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="nominee-card">
+                        <div class="nominee-image-container">
+                            <img src="{{ asset('assets/images/impact-feminin/fatim.png') }}" alt="Fatim Cissé"
+                                class="nominee-image">
+                        </div>
+                        <div class="nominee-info">
+                            <h4 class="nominee-name">Fatim Cissé</h4>
+                            <p class="nominee-title">PDG</p>
+                            <p class="nominee-title">DG DUX Côte d’Ivoire et d’IHS Towers CI</p>
+                            <p class="nominee-company">&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1366,35 +1398,7 @@
                 </div>
 
 
-                <!-- Panéliste : Véronique Vonan -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="550">
-                        <div class="speaker-image-container">
-                            <img src="{{ asset('assets/images/impact-feminin/vero.png') }}" alt="Véronique Vonan"
-                                class="speaker-image">
-                        </div>
-                        <div class="speaker-info">
-                            <h4 class="speaker-name">Véronique Vonan</h4>
-                            <p class="speaker-title">Fondatrice du Placali abouré</p>
-                            <p class="speaker-company">&nbsp;</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Panéliste : Fatim Cissé -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="speaker-card" data-aos="fade-up" data-aos-delay="600">
-                        <div class="speaker-image-container">
-                            <img src="{{ asset('assets/images/impact-feminin/fatim.png') }}" alt="Fatim Cissé"
-                                class="speaker-image">
-                        </div>
-                        <div class="speaker-info">
-                            <h4 class="speaker-name">Fatim Cissé</h4>
-                            <p class="speaker-title">DG DUX Côte d’Ivoire et d’IHS Towers CI</p>
-                            <p class="speaker-company">&nbsp;</p>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         <!-- Bouton de réservation -->
         <div class="row">
@@ -1873,6 +1877,8 @@
                         </div>
                     </div>
                 </div>
+
+                
             </div>
         </div>
     </section>
