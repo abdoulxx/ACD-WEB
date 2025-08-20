@@ -1310,7 +1310,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="speaker-card" data-aos="fade-up" data-aos-delay="250">
                         <div class="speaker-image-container">
-                            <img src="{{ asset('assets/images/impact-feminin/anuraag.png.jpg') }}"
+                            <img src="{{ asset('assets/images/impact-feminin/anuraag.png') }}"
                                 alt="Dr. Anuraag Guglaani" class="speaker-image">
                         </div>
                         <div class="speaker-info">
