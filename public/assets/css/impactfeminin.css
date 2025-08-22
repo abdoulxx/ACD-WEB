@@ -2018,3 +2018,273 @@ Palette de couleurs:
     transform: none !important;
   }
 }
+
+/* ===== SECTION PRIVILÈGES - AMÉLIORATION DES CARTES ===== */
+.impact-privileges-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.impact-privileges-section::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: -200px;
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    border: 50px solid rgba(149, 155, 165, 0.15);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.impact-privileges-section .impact-section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--impact-primary);
+    margin-bottom: 60px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Cartes privilèges améliorées */
+.impact-privileges-section .impact-award-card {
+    background: white;
+    border: none;
+    border-radius: 25px;
+    padding: 0;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(129, 76, 176, 0.08);
+    position: relative;
+    min-height: 300px;
+    border-left: 4px solid transparent;
+}
+
+.impact-privileges-section .impact-award-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(129, 76, 176, 0.2);
+    border-left: 4px solid var(--impact-primary);
+}
+
+.impact-privileges-section .impact-award-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: var(--impact-gradient);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.impact-privileges-section .impact-award-card:hover::before {
+    opacity: 1;
+}
+
+/* En-têtes des cartes privilèges */
+.impact-privileges-section .award-header {
+    padding: 30px 25px 20px 25px;
+    text-align: left;
+    border-bottom: 1px solid rgba(129, 76, 176, 0.1);
+    background: linear-gradient(135deg, rgba(129, 76, 176, 0.03) 0%, rgba(255, 255, 255, 0.8) 100%);
+    position: relative;
+}
+
+.impact-privileges-section .award-title {
+    background: transparent;
+    color: var(--impact-primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    display: block;
+    box-shadow: none;
+    line-height: 1.4;
+}
+
+/* Icônes Font Awesome des privilèges */
+.impact-privileges-section .award-title i {
+    color: var(--impact-primary);
+    margin-right: 12px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 4px rgba(129, 76, 176, 0.2);
+}
+
+.impact-privileges-section .impact-award-card:hover .award-title i {
+    color: #B75FBE;
+    transform: scale(1.1);
+    text-shadow: 0 4px 8px rgba(129, 76, 176, 0.3);
+}
+
+/* Contenu des cartes privilèges */
+.impact-privileges-section .award-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.impact-privileges-section .award-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.impact-privileges-section .criteria-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.impact-privileges-section .criteria-list li {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+}
+
+.impact-privileges-section .criteria-list li::before {
+    content: '✨';
+    position: absolute;
+    left: 0;
+    color: var(--impact-primary);
+    font-size: 0.8em;
+}
+
+/* Animation au survol pour les privilèges */
+.impact-privileges-section .impact-award-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(129, 76, 176, 0.05), transparent);
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.impact-privileges-section .impact-award-card:hover::after {
+    opacity: 1;
+    animation: shimmer 1.5s ease-in-out;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+}
+
+/* Responsive pour les privilèges */
+@media (max-width: 1199px) {
+    .impact-privileges-section .impact-award-card {
+        min-height: 280px;
+    }
+    
+    .impact-privileges-section .award-title {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .impact-privileges-section {
+        padding: 80px 0;
+    }
+    
+    .impact-privileges-section::before {
+        width: 350px;
+        height: 350px;
+        right: -175px;
+        border-width: 35px;
+    }
+    
+    .impact-privileges-section .impact-section-title {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+    
+    .impact-privileges-section .impact-award-card {
+        min-height: 260px;
+        margin-bottom: 25px;
+    }
+    
+    .impact-privileges-section .award-header {
+        padding: 25px 20px 15px 20px;
+    }
+    
+    .impact-privileges-section .award-title {
+        font-size: 1.05rem;
+    }
+    
+    .impact-privileges-section .award-content {
+        padding: 20px;
+    }
+    
+    .impact-privileges-section .award-description {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+    }
+    
+    .impact-privileges-section .criteria-list li {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 576px) {
+    .impact-privileges-section::before {
+        width: 250px;
+        height: 250px;
+        right: -125px;
+        border-width: 25px;
+    }
+    
+    .impact-privileges-section .impact-section-title {
+        font-size: 1.8rem;
+        padding: 0 15px;
+    }
+    
+    .impact-privileges-section .impact-award-card {
+        min-height: 240px;
+    }
+    
+    .impact-privileges-section .award-header {
+        padding: 20px 18px 12px 18px;
+    }
+    
+    .impact-privileges-section .award-title {
+        font-size: 1rem;
+    }
+    
+    .impact-privileges-section .award-content {
+        padding: 18px;
+    }
+    
+    .impact-privileges-section .award-description {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+    
+    .impact-privileges-section .criteria-list li {
+        font-size: 0.8rem;
+        padding-left: 18px;
+    }
+}

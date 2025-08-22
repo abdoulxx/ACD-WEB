@@ -1239,7 +1239,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="impact-award-card h-100">
                         <div class="award-header">
-                            <h3 class="award-title">🏆 Trophée Impact Féminin – Partenaires de Dubaï</h3>
+                            <h3 class="award-title"><i class="fas fa-trophy"></i> Trophée Impact Féminin – Partenaires de Dubaï</h3>
                         </div>
                         <div class="award-content">
                             <p class="award-description">Un trophée de prestige, symbole d’innovation, de résilience et de leadership, offert en collaboration avec nos partenaires stratégiques basés à Dubaï.</p>
@@ -1250,7 +1250,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="impact-award-card h-100">
                         <div class="award-header">
-                            <h3 class="award-title">📰 Article exclusif dans le magazine Excellence AFRIK</h3>
+                            <h3 class="award-title"><i class="fas fa-newspaper"></i> Article exclusif dans le magazine Excellence AFRIK</h3>
                         </div>
                         <div class="award-content">
                             <p class="award-description">Un portrait détaillé retraçant le parcours, les réussites et la vision de la lauréate, publié dans le magazine numérique Excellence AFRIK, distribué sur l’ensemble du continent et auprès de la diaspora.</p>
@@ -1261,7 +1261,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="impact-award-card h-100">
                         <div class="award-header">
-                            <h3 class="award-title">🎥 Interview premium sur la Web TV Excellence AFRIK</h3>
+                            <h3 class="award-title"><i class="fas fa-video"></i> Interview premium sur la Web TV Excellence AFRIK</h3>
                         </div>
                         <div class="award-content">
                             <p class="award-description">Une interview dédiée diffusée sur notre plateforme Web TV, offrant une visibilité régionale et internationale auprès d’un public d’influence et d’investisseurs.</p>
@@ -1272,7 +1272,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="impact-award-card h-100">
                         <div class="award-header">
-                            <h3 class="award-title">🎬 Film institutionnel de l’entreprise</h3>
+                            <h3 class="award-title"><i class="fas fa-film"></i> Film institutionnel de l'entreprise</h3>
                         </div>
                         <div class="award-content">
                             <p class="award-description">La production professionnelle d’un film institutionnel pour valoriser la marque, les produits ou les projets de la lauréate, facilitant le storytelling auprès de futurs partenaires et investisseurs.</p>
@@ -1283,7 +1283,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="impact-award-card h-100">
                         <div class="award-header">
-                            <h3 class="award-title">📣 Plan de communication offert sur l’année 2026</h3>
+                            <h3 class="award-title"><i class="fas fa-bullhorn"></i> Plan de communication offert sur l'année 2026</h3>
                         </div>
                         <div class="award-content">
                             <p class="award-description">Une campagne de communication sur mesure dans le magazine Excellence AFRIK, incluant :</p>
