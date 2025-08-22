@@ -1202,7 +1202,6 @@
                         </div>
                         <div class="nominee-info">
                             <h4 class="nominee-name">Véronique Vonan</h4>
-                             <p class="nominee-title">PDG</p>
                             <p class="nominee-title">Fondatrice du Placali abouré</p>
                             <p class="nominee-company">&nbsp;</p>
                         </div>
@@ -1218,13 +1217,87 @@
                         </div>
                         <div class="nominee-info">
                             <h4 class="nominee-name">Fatim Cissé</h4>
-                            <p class="nominee-title">PDG</p>
                             <p class="nominee-title">DG DUX Côte d’Ivoire et d’IHS Towers CI</p>
                             <p class="nominee-company">&nbsp;</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION - Les privilèges réservés aux lauréates ===== -->
+    <section class="impact-privileges-section py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="impact-section-title" data-aos="fade-up" data-aos-duration="1000">Les privilèges réservés aux lauréates</h2>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Privilege 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="impact-award-card h-100">
+                        <div class="award-header">
+                            <h3 class="award-title">🏆 Trophée Impact Féminin – Partenaires de Dubaï</h3>
+                        </div>
+                        <div class="award-content">
+                            <p class="award-description">Un trophée de prestige, symbole d’innovation, de résilience et de leadership, offert en collaboration avec nos partenaires stratégiques basés à Dubaï.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Privilege 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="impact-award-card h-100">
+                        <div class="award-header">
+                            <h3 class="award-title">📰 Article exclusif dans le magazine Excellence AFRIK</h3>
+                        </div>
+                        <div class="award-content">
+                            <p class="award-description">Un portrait détaillé retraçant le parcours, les réussites et la vision de la lauréate, publié dans le magazine numérique Excellence AFRIK, distribué sur l’ensemble du continent et auprès de la diaspora.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Privilege 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="impact-award-card h-100">
+                        <div class="award-header">
+                            <h3 class="award-title">🎥 Interview premium sur la Web TV Excellence AFRIK</h3>
+                        </div>
+                        <div class="award-content">
+                            <p class="award-description">Une interview dédiée diffusée sur notre plateforme Web TV, offrant une visibilité régionale et internationale auprès d’un public d’influence et d’investisseurs.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Privilege 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="impact-award-card h-100">
+                        <div class="award-header">
+                            <h3 class="award-title">🎬 Film institutionnel de l’entreprise</h3>
+                        </div>
+                        <div class="award-content">
+                            <p class="award-description">La production professionnelle d’un film institutionnel pour valoriser la marque, les produits ou les projets de la lauréate, facilitant le storytelling auprès de futurs partenaires et investisseurs.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Privilege 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="impact-award-card h-100">
+                        <div class="award-header">
+                            <h3 class="award-title">📣 Plan de communication offert sur l’année 2026</h3>
+                        </div>
+                        <div class="award-content">
+                            <p class="award-description">Une campagne de communication sur mesure dans le magazine Excellence AFRIK, incluant :</p>
+                            <ul class="criteria-list">
+                                <li>Des insertions publicitaires ciblées,</li>
+                                <li>Des articles sponsorisés,</li>
+                                <li>Une promotion digitale multi-plateformes pour maximiser la notoriété et l’impact.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
         </div>
     </section>
 
